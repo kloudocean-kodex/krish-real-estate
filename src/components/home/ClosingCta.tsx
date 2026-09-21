@@ -5,7 +5,7 @@ export function ClosingCta() {
   return (
     <section className={`${styles.section} section`} aria-label="Get in touch">
       <div className={styles.container}>
-        <div className={styles.content}>
+        <div className={`${styles.content} reveal`}>
           <p className="overline">Ready to Start?</p>
           <h2 className={styles.title}>
             Let&apos;s have a conversation<br />about your property.

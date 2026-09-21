@@ -30,7 +30,7 @@ export const AREAS: Area[] = [
       'Growing retail and community infrastructure',
       'New parks, playgrounds, and walking trails',
     ],
-    image: '/images/hero-property.jpg',
+    image: '/images/suburb-wollert.jpg',
   },
   {
     slug: 'epping',
@@ -45,7 +45,7 @@ export const AREAS: Area[] = [
       'Established schools and community facilities',
       'Strong rental demand',
     ],
-    image: '/images/hero-property.jpg',
+    image: '/images/suburb-epping.jpg',
   },
   {
     slug: 'craigieburn',
@@ -60,7 +60,7 @@ export const AREAS: Area[] = [
       'Strong school network',
       'Easy access to Hume Freeway',
     ],
-    image: '/images/hero-property.jpg',
+    image: '/images/suburb-craigieburn.jpg',
   },
   {
     slug: 'donnybrook',
@@ -75,6 +75,6 @@ export const AREAS: Area[] = [
       'New schools and community facilities',
       'Affordable entry point for northern Melbourne',
     ],
-    image: '/images/hero-property.jpg',
+    image: '/images/suburb-donnybrook.jpg',
   },
 ];

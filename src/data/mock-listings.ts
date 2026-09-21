@@ -70,8 +70,9 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
     description: 'A beautifully presented four-bedroom family home in one of Wollert\'s most desirable estates. Featuring an open-plan living and dining area flooded with natural light, modern kitchen with stone benchtops and quality appliances, and a generous master suite with ensuite and walk-in robe. The low-maintenance rear garden is perfect for family living, while ducted heating and split-system cooling ensure year-round comfort.',
     features: ['Ducted Heating', 'Split System Cooling', 'Stone Benchtops', 'Walk-in Robe', 'Ensuite', 'Double Garage', 'Alarm System'],
     media: [
-      { url: '/images/hero-property.jpg', alt: 'Front facade of 15 Banksia Drive, Wollert', type: 'image' },
-      { url: '/images/property-interior.jpg', alt: 'Open-plan living and dining area', type: 'image' },
+      { url: '/images/listing-1.jpg', alt: 'Front facade of 15 Banksia Drive, Wollert — modern double-storey home', type: 'image' },
+      { url: '/images/property-interior.jpg', alt: 'Open-plan living and dining area with marble island', type: 'image' },
+      { url: '/images/listing-5.jpg', alt: 'Luxury kitchen with waterfall marble bench and brass pendants', type: 'image' },
     ],
     inspections: [
       { date: '2026-09-27', startTime: '11:00', endTime: '11:30' },
@@ -103,8 +104,9 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
     description: 'Set on a generous 512sqm block, this impressive double-storey residence offers the space and style modern families desire. With four spacious bedrooms, multiple living zones, a stunning chef\'s kitchen, and a private backyard with room for a future pool, this home delivers exceptional value in a family-focused community.',
     features: ['Multiple Living Zones', 'Chef\'s Kitchen', 'Remote Garage', 'Landscaped Garden', 'Downlights', 'Ducted Heating', 'Evaporative Cooling'],
     media: [
-      { url: '/images/hero-property.jpg', alt: 'Front facade of 28 Eucalyptus Crescent', type: 'image' },
-      { url: '/images/property-interior.jpg', alt: 'Kitchen and living area', type: 'image' },
+      { url: '/images/hero-property.jpg', alt: 'Front facade of 28 Eucalyptus Crescent — luxury family home at dusk', type: 'image' },
+      { url: '/images/listing-5.jpg', alt: 'Designer kitchen with timber cabinetry and marble', type: 'image' },
+      { url: '/images/listing-6.jpg', alt: 'Alfresco entertaining with pool and pergola', type: 'image' },
     ],
     inspections: [
       { date: '2026-09-27', startTime: '12:00', endTime: '12:30' },
@@ -135,7 +137,8 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
     description: 'A modern three-bedroom townhouse in a prime Epping location, just moments from the train station and Pacific Epping. Featuring contemporary finishes throughout, an open-plan ground floor with seamless indoor-outdoor flow, and a sun-drenched courtyard perfect for entertaining.',
     features: ['Open Plan Living', 'Courtyard', 'Close to Station', 'Modern Finishes', 'Split System', 'European Laundry'],
     media: [
-      { url: '/images/hero-property.jpg', alt: 'Townhouse at 3/12 Station Road, Epping', type: 'image' },
+      { url: '/images/listing-3.jpg', alt: 'Modern townhouse pair at Station Road, Epping', type: 'image' },
+      { url: '/images/property-interior.jpg', alt: 'Light-filled open-plan interior', type: 'image' },
     ],
     inspections: [
       { date: '2026-09-28', startTime: '10:00', endTime: '10:30' },
@@ -166,7 +169,8 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
     description: 'A near-new four-bedroom home available for lease in the heart of Donnybrook. Featuring a modern open-plan design, quality kitchen with dishwasher, ducted heating, and a secure double garage. Walking distance to local schools, parks, and the future town centre.',
     features: ['Near New', 'Ducted Heating', 'Dishwasher', 'Double Garage', 'Low Maintenance', 'Close to Schools'],
     media: [
-      { url: '/images/hero-property.jpg', alt: '42 Grevillea Boulevard, Donnybrook', type: 'image' },
+      { url: '/images/listing-2.jpg', alt: 'Elegant single-storey home at 42 Grevillea Boulevard, Donnybrook', type: 'image' },
+      { url: '/images/listing-5.jpg', alt: 'Modern kitchen interior', type: 'image' },
     ],
     inspections: [
       { date: '2026-09-26', startTime: '16:00', endTime: '16:15' },
@@ -197,7 +201,8 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
     description: 'This four-bedroom family home in a quiet Wollert street was sold after a successful campaign. Featuring quality finishes, multiple living areas, and a spacious backyard.',
     features: ['Ducted Heating', 'Split System', 'Alfresco', 'Walk-in Robe'],
     media: [
-      { url: '/images/hero-property.jpg', alt: '7 Wattle Lane, Wollert — Sold', type: 'image' },
+      { url: '/images/listing-4.jpg', alt: '7 Wattle Lane, Wollert — Sold — modern acreage property', type: 'image' },
+      { url: '/images/listing-6.jpg', alt: 'Premium outdoor entertaining area', type: 'image' },
     ],
     inspections: [],
     agents: [
@@ -226,7 +231,7 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
     description: 'A well-maintained three-bedroom home in a sought-after Craigieburn pocket, sold under the Krish Real Estate banner.',
     features: ['Central Heating', 'Double Garage', 'Pergola', 'Updated Kitchen'],
     media: [
-      { url: '/images/hero-property.jpg', alt: '19 Correa Close, Craigieburn — Sold', type: 'image' },
+      { url: '/images/listing-1.jpg', alt: '19 Correa Close, Craigieburn — Sold — double-storey home', type: 'image' },
     ],
     inspections: [],
     agents: [

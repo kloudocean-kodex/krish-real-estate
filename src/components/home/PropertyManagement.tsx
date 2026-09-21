@@ -27,9 +27,9 @@ export function PropertyManagement() {
               Request a Rental Appraisal
             </Link>
           </div>
-          <div className={styles.features}>
+          <div className={`${styles.features} reveal-stagger`}>
             {PM_FEATURES.map((feature) => (
-              <div key={feature.title} className={styles.feature}>
+              <div key={feature.title} className={`${styles.feature} reveal`}>
                 <div className={styles.featureIcon}>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <polyline points="20 6 9 17 4 12" />
