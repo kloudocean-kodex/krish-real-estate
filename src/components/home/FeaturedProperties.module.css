@@ -1,0 +1,169 @@
+/* ============================================================
+   KRISH REAL ESTATE — Featured Properties Showcase
+   ============================================================ */
+
+.section {
+  padding-block: var(--section-gap);
+  background-color: var(--color-paper);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-bottom: var(--content-gap);
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.overline {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.title {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h2);
+  font-weight: var(--weight-light);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-ink);
+  line-height: 1.15;
+}
+
+.titleEm {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+/* ── Minimalist Architectural Tabs ── */
+.tabs {
+  display: inline-flex;
+  gap: 0;
+  border-bottom: 1px solid var(--color-border);
+  background: transparent;
+}
+
+.tab {
+  padding: var(--space-3) var(--space-6);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.tab:hover {
+  color: var(--color-ink);
+}
+
+.tabActive {
+  color: var(--color-ink) !important;
+  font-weight: var(--weight-semibold);
+}
+
+.tabActive::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-gold);
+}
+
+/* ── Grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--duration-reveal) var(--ease-silk),
+              transform var(--duration-reveal) var(--ease-silk);
+}
+
+.gridRevealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 640px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── Empty State ── */
+.empty {
+  text-align: center;
+  padding: var(--space-16) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-xs);
+}
+
+.emptyText {
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+  max-width: 48ch;
+}
+
+/* ── View All ── */
+.viewAll {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-12);
+}
+
+.viewAllBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-8);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-ink);
+  background-color: transparent;
+  border: 1px solid var(--color-ink);
+  border-radius: var(--radius-xs);
+  text-decoration: none;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.viewAllBtn:hover {
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+  border-color: var(--color-ink);
+  transform: translateY(-2px);
+}

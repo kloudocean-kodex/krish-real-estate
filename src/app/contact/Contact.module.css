@@ -1,0 +1,371 @@
+/* ============================================================
+   KRISH REAL ESTATE — Contact Page Styles
+   ============================================================ */
+
+.page {
+  padding-top: var(--header-height);
+  background-color: var(--color-paper);
+  min-height: 100vh;
+}
+
+.masthead {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-10);
+  background-color: var(--color-paper-cool);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.mastheadContent {
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.prestigeOverline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.title {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h1);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+  line-height: var(--leading-tightest);
+  letter-spacing: var(--tracking-tight);
+}
+
+.titleItalic {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.subtitle {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-relaxed);
+  max-width: 58ch;
+}
+
+/* ── Contact Section ── */
+.contactSection {
+  padding-block: var(--space-16) var(--space-20);
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+}
+
+@media (min-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr 1.3fr;
+    gap: var(--space-16);
+    align-items: flex-start;
+  }
+}
+
+/* ── Left Column: Office Card ── */
+.officeCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xs);
+  padding: var(--space-10) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  box-shadow: 0 4px 20px rgba(26, 24, 20, 0.04);
+}
+
+.cardTag {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.officeTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: 2rem;
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+}
+
+.officeAddress {
+  font-size: 0.9375rem;
+  color: var(--color-ink-soft);
+  line-height: var(--leading-relaxed);
+}
+
+.contactMethods {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.methodItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.methodLabel {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.625rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.methodValue {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 1rem;
+  font-weight: var(--weight-medium);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.methodValue:hover {
+  color: var(--color-gold);
+}
+
+.hoursText {
+  font-size: 0.8125rem;
+  color: var(--color-ink-muted);
+  line-height: var(--leading-normal);
+  margin-bottom: 0;
+}
+
+.accreditationStrip {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.accreditationItem {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.6875rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-ink-muted);
+}
+
+/* ── Right Column: Form Card ── */
+.formCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  padding: var(--space-10) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  box-shadow: 0 16px 40px rgba(26, 24, 20, 0.05);
+}
+
+.formHeading {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: 1.75rem;
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+}
+
+.formSubheading {
+  font-size: 0.84375rem;
+  color: var(--color-ink-muted);
+  line-height: var(--leading-normal);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.typeSelector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.typeBtn {
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.75rem;
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-ink-muted);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.typeBtn:hover {
+  border-color: var(--color-ink);
+  color: var(--color-ink);
+}
+
+.typeBtnActive {
+  background-color: var(--color-ink);
+  color: var(--color-surface) !important;
+  border-color: var(--color-ink);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .fieldRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.label {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.75rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.input,
+.textarea {
+  background-color: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.875rem;
+  color: var(--color-ink);
+  outline: none;
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.input {
+  height: 48px;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--color-gold);
+}
+
+.submitBtn {
+  height: 52px;
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  margin-top: var(--space-2);
+}
+
+.submitBtn:hover {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+}
+
+.privacyNote {
+  font-size: 0.6875rem;
+  color: var(--color-ink-faint);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* ── Success Card ── */
+.successCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-xs);
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  box-shadow: 0 16px 40px rgba(184, 151, 90, 0.1);
+}
+
+.successIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  color: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.successTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h2);
+  color: var(--color-ink);
+}
+
+.successText {
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-relaxed);
+  max-width: 46ch;
+}
+
+.returnBtn {
+  margin-top: var(--space-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding-inline: var(--space-8);
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.returnBtn:hover {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+}

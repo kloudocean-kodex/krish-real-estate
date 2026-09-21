@@ -1,0 +1,39 @@
+.section {
+  background: linear-gradient(135deg, var(--color-accent) 0%, #647A59 50%, var(--color-ink) 100%);
+  padding-block: var(--section-gap);
+}
+
+.container { max-width: var(--max-width-narrow); margin-inline: auto; padding-inline: var(--gutter); }
+
+.content { text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--space-6); }
+.title { font-size: var(--text-h2); color: var(--color-paper); }
+.description { font-size: var(--text-body); color: rgba(244,241,234,0.75); max-width: 50ch; line-height: var(--leading-relaxed); }
+
+.actions { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; padding-top: var(--space-2); }
+
+.ctaPrimary {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: var(--btn-height-lg); padding-inline: var(--space-10);
+  font-family: var(--font-body); font-size: var(--text-button); font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide); text-transform: uppercase;
+  color: var(--color-ink); background-color: var(--color-paper);
+  border-radius: var(--radius-sm); text-decoration: none;
+  transition: background-color var(--duration-fast) var(--ease-out), transform var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out);
+}
+.ctaPrimary:hover { background-color: var(--color-paper-warm); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+.ctaSecondary {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: var(--btn-height-lg); padding-inline: var(--space-8);
+  font-family: var(--font-body); font-size: var(--text-button); font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide); text-transform: uppercase;
+  color: var(--color-paper); border: 1px solid rgba(244,241,234,0.4);
+  border-radius: var(--radius-sm); text-decoration: none;
+  transition: border-color var(--duration-fast) var(--ease-out), background-color var(--duration-fast) var(--ease-out);
+}
+.ctaSecondary:hover { border-color: var(--color-paper); background-color: rgba(244,241,234,0.08); }
+
+.contactDirect { display: flex; align-items: center; gap: var(--space-4); flex-wrap: wrap; justify-content: center; padding-top: var(--space-4); }
+.phone, .email { display: inline-flex; align-items: center; gap: var(--space-2); color: rgba(244,241,234,0.7); text-decoration: none; font-size: var(--text-body-sm); transition: color var(--duration-fast) var(--ease-out); }
+.phone:hover, .email:hover { color: var(--color-paper); }
+.separator { color: rgba(244,241,234,0.35); font-size: var(--text-caption); }

@@ -1,0 +1,343 @@
+/* ============================================================
+   KRISH REAL ESTATE — Buy Page Styles
+   ============================================================ */
+
+.page {
+  padding-top: var(--header-height);
+  background-color: var(--color-paper);
+  min-height: 100vh;
+}
+
+/* ── Masthead ── */
+.masthead {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-10);
+  border-bottom: 1px solid var(--color-border-light);
+  background-color: var(--color-paper-cool);
+}
+
+.mastheadContent {
+  max-width: 840px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.prestigeOverline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.prestigeOverline span:first-child,
+.prestigeOverline span:last-child {
+  font-size: 0.5rem;
+}
+
+.title {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h1);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+  line-height: var(--leading-tightest);
+  letter-spacing: var(--tracking-tight);
+}
+
+.titleItalic {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.subtitle {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-relaxed);
+  max-width: 60ch;
+}
+
+/* ── Filter Bar ── */
+.filterSection {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border-light);
+  padding-block: var(--space-4);
+  position: sticky;
+  top: var(--header-height);
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(26, 24, 20, 0.03);
+}
+
+.filterBar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+  .filterBar {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.filterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-3);
+}
+
+.filterItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.filterLabel {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.625rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-ink-faint);
+}
+
+.filterSelect {
+  background-color: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.8125rem;
+  color: var(--color-ink);
+  cursor: pointer;
+  outline: none;
+  height: 40px;
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.filterSelect:focus {
+  border-color: var(--color-gold);
+}
+
+.resetBtn {
+  background: transparent;
+  border: none;
+  color: var(--color-ink-muted);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: var(--space-2);
+  text-decoration: underline;
+  align-self: center;
+  margin-top: 14px;
+}
+
+.resetBtn:hover {
+  color: var(--color-gold);
+}
+
+.metaGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.resultCount {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.8125rem;
+  color: var(--color-ink-muted);
+}
+
+.resultCount strong {
+  color: var(--color-ink);
+  font-weight: var(--weight-semibold);
+}
+
+.viewToggle {
+  display: flex;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+}
+
+.toggleBtn {
+  background: var(--color-paper);
+  border: none;
+  padding: 8px 12px;
+  color: var(--color-ink-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.toggleBtn:hover {
+  color: var(--color-ink);
+}
+
+.toggleBtnActive {
+  background-color: var(--color-ink);
+  color: var(--color-surface) !important;
+}
+
+/* ── Results Section ── */
+.resultsSection {
+  padding-block: var(--space-10) var(--space-16);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.noResults {
+  text-align: center;
+  padding: var(--space-16) var(--space-4);
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.noResultsTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h3);
+  color: var(--color-ink);
+}
+
+.noResultsText {
+  font-size: var(--text-body-sm);
+  color: var(--color-ink-muted);
+  max-width: 48ch;
+}
+
+.resetLargeBtn {
+  margin-top: var(--space-4);
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+  border: none;
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* ── Off Market Banner ── */
+.offMarketBanner {
+  padding-bottom: var(--space-16);
+}
+
+.offMarketBox {
+  background: var(--color-ink);
+  color: var(--color-surface);
+  border-radius: var(--radius-xs);
+  padding: var(--space-10) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid rgba(184, 151, 90, 0.25);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .offMarketBox {
+    flex-direction: row;
+    align-items: center;
+    padding: var(--space-12) var(--space-12);
+  }
+}
+
+.offMarketContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 600px;
+}
+
+.offMarketTag {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.offMarketTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h3);
+  font-weight: var(--weight-light);
+  color: var(--color-surface);
+  line-height: var(--leading-tight);
+}
+
+.offMarketDesc {
+  font-size: var(--text-body-sm);
+  color: rgba(248, 245, 238, 0.7);
+  line-height: var(--leading-relaxed);
+}
+
+.offMarketCta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 48px;
+  padding-inline: var(--space-6);
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.offMarketCta:hover {
+  background-color: #C8A86C;
+  transform: translateY(-2px);
+}

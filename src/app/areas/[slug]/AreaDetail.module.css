@@ -1,0 +1,307 @@
+/* ============================================================
+   KRISH REAL ESTATE — Area Detail Styles
+   ============================================================ */
+
+.page {
+  padding-top: var(--header-height);
+  background-color: var(--color-paper);
+  min-height: 100vh;
+}
+
+.masthead {
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-10);
+  background-color: var(--color-paper-cool);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.mastheadContent {
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.prestigeOverline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.backLink {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+
+.title {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h1);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+  line-height: var(--leading-tightest);
+  letter-spacing: var(--tracking-tight);
+}
+
+.titleItalic {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.subtitle {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-relaxed);
+  max-width: 60ch;
+}
+
+/* ── Data Strip ── */
+.dataSection {
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+  padding-block: var(--space-10);
+  border-bottom: 1px solid rgba(184, 151, 90, 0.2);
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .dataGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.dataLabel {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.625rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.dataValue {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: 1.75rem;
+  font-weight: var(--weight-normal);
+  color: var(--color-surface);
+}
+
+.dataNote {
+  font-size: 0.8125rem;
+  color: rgba(248, 245, 238, 0.6);
+}
+
+/* ── Attributes Section ── */
+.attributesSection {
+  padding-block: var(--space-16);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.sectionHeader {
+  max-width: 680px;
+  margin-bottom: var(--space-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sectionOverline {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.sectionTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h2);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+}
+
+.attributesList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 800px;
+}
+
+.attributeRow {
+  display: flex;
+  gap: var(--space-5);
+  align-items: baseline;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.attributeNum {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--color-gold);
+  line-height: 1;
+}
+
+.attributeText {
+  font-size: var(--text-body);
+  color: var(--color-ink-soft);
+  margin-bottom: 0;
+}
+
+/* ── Listings Section ── */
+.listingsSection {
+  padding-block: var(--space-16);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.listingsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.listingsTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h2);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+}
+
+.listingsCount {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.8125rem;
+  color: var(--color-ink-muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.emptyNotice {
+  padding: var(--space-12);
+  background-color: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-xs);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.contactBtn {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-3) var(--space-6);
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* ── Appraisal CTA ── */
+.appraisalCtaSection {
+  padding-block: var(--space-16) var(--space-20);
+}
+
+.ctaBox {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-xs);
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  box-shadow: 0 16px 40px rgba(184, 151, 90, 0.08);
+}
+
+.ctaTag {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.ctaTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h2);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+}
+
+.ctaDesc {
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+  max-width: 50ch;
+  line-height: var(--leading-relaxed);
+}
+
+.ctaBtn {
+  margin-top: var(--space-2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  padding-inline: var(--space-8);
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.ctaBtn:hover {
+  background-color: var(--color-gold);
+  transform: translateY(-2px);
+}

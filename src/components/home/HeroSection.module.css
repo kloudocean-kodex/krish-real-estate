@@ -1,0 +1,449 @@
+/* ============================================================
+   KRISH REAL ESTATE — Architectural Hero Section
+   Aesthetic: Quiet Opulence × High Editorial Impact
+   ============================================================ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding-top: calc(var(--header-height) + var(--space-8));
+  padding-bottom: var(--space-12);
+  background-color: var(--color-ink);
+}
+
+/* ── Architectural Canvas & Vignette ── */
+.imageWrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center 38%;
+  transform: scale(1.02);
+  transition: transform 12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero:hover .image {
+  transform: scale(1.06);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 20, 18, 0.75) 0%,
+    rgba(22, 20, 18, 0.35) 45%,
+    rgba(22, 20, 18, 0.82) 80%,
+    rgba(22, 20, 18, 0.96) 100%
+  );
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 160px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+
+/* ── Architectural Crosshair Accents ── */
+.crosshairTL, .crosshairTR {
+  position: absolute;
+  color: rgba(184, 151, 90, 0.4);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 1.25rem;
+  font-weight: 300;
+  z-index: 2;
+  pointer-events: none;
+}
+.crosshairTL { top: calc(var(--header-height) + var(--space-4)); left: var(--gutter); }
+.crosshairTR { top: calc(var(--header-height) + var(--space-4)); right: var(--gutter); }
+
+/* ── Main Container ── */
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.headerBlock {
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* ── Prestige Badge ── */
+.prestigeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-1);
+}
+
+.badgeDiamond {
+  font-size: 0.5rem;
+  color: var(--color-gold);
+}
+
+/* ── Display Heading ── */
+.heading {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-hero);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-tightest);
+  color: var(--color-surface);
+  letter-spacing: var(--tracking-tight);
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+.headingItalic {
+  font-style: italic;
+  font-weight: var(--weight-normal);
+  color: var(--color-paper);
+  background: linear-gradient(135deg, #FFFFFF 0%, var(--color-gold-light) 60%, var(--color-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subheading {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-body);
+  line-height: var(--leading-relaxed);
+  color: rgba(248, 245, 238, 0.85);
+  max-width: 58ch;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Frosted Editorial Gateway Bar ── */
+.searchBarWrapper {
+  background: rgba(24, 22, 20, 0.72);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(184, 151, 90, 0.28);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  max-width: 960px;
+}
+
+.searchTabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tabBtn {
+  flex: 1;
+  padding: var(--space-4) var(--space-6);
+  background: transparent;
+  border: none;
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+  position: relative;
+  text-align: center;
+}
+
+.tabBtn:hover {
+  color: var(--color-surface);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.tabBtnActive {
+  color: var(--color-gold) !important;
+  font-weight: var(--weight-semibold);
+  background: rgba(184, 151, 90, 0.08);
+}
+
+.tabBtnActive::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-gold);
+}
+
+.searchForm {
+  padding: var(--space-5) var(--space-6);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  align-items: flex-end;
+}
+
+@media (min-width: 768px) {
+  .searchForm {
+    grid-template-columns: 1.4fr 1.4fr auto;
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.inputLabel {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.selectInput {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-xs);
+  color: var(--color-surface);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-body-sm);
+  padding: var(--space-3) var(--space-4);
+  height: 48px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.selectInput:focus {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 1px var(--color-gold);
+}
+
+.selectInput option {
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+}
+
+.searchSubmitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: 48px;
+  padding-inline: var(--space-6);
+  background-color: var(--color-gold);
+  color: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-out),
+              transform var(--duration-fast) var(--ease-out);
+  white-space: nowrap;
+}
+
+.searchSubmitBtn:hover {
+  background-color: var(--color-gold-hover);
+  transform: translateY(-1px);
+}
+
+/* Estimate Inline */
+.estimateFormInline {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .estimateFormInline {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.estimateText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.estimateTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h3);
+  color: var(--color-surface);
+}
+
+.estimateSubtitle {
+  font-size: var(--text-caption);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.estimateSubmitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: 48px;
+  padding-inline: var(--space-8);
+  background-color: var(--color-gold);
+  color: var(--color-surface);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color var(--duration-fast) var(--ease-out);
+  white-space: nowrap;
+}
+
+.estimateSubmitBtn:hover {
+  background-color: var(--color-gold-hover);
+}
+
+/* ── Proof Ribbon ── */
+.proofRibbon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4) var(--space-6);
+  padding-top: var(--space-2);
+}
+
+.proofItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.proofStars {
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+.proofGoldText {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-body-sm);
+  font-weight: var(--weight-bold);
+  color: var(--color-gold);
+}
+
+.proofLabel {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wider);
+  color: rgba(248, 245, 238, 0.7);
+}
+
+.proofDivider {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: var(--text-caption);
+}
+
+/* ============================================================
+   CINEMATIC HERO ENTRANCE SEQUENCE
+   Each element cascades in with staggered animation delays
+   ============================================================ */
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroImageReveal {
+  from {
+    transform: scale(1.12);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+}
+
+@keyframes heroOverlayReveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Image entrance */
+.image {
+  animation: heroImageReveal 2.4s var(--ease-silk) forwards;
+}
+
+/* Content entrance — staggered cascade */
+.prestigeBadge {
+  opacity: 0;
+  animation: heroFadeUp 800ms var(--ease-silk) 400ms forwards;
+}
+
+.heading {
+  opacity: 0;
+  animation: heroFadeUp 900ms var(--ease-silk) 600ms forwards;
+}
+
+.subheading {
+  opacity: 0;
+  animation: heroFadeUp 800ms var(--ease-silk) 850ms forwards;
+}
+
+.searchBarWrapper {
+  opacity: 0;
+  animation: heroFadeUp 800ms var(--ease-silk) 1050ms forwards;
+}
+
+.proofRibbon {
+  opacity: 0;
+  animation: heroFadeUp 700ms var(--ease-silk) 1250ms forwards;
+}
+
+/* Crosshair accents — fade in last */
+.crosshairTL, .crosshairTR {
+  opacity: 0;
+  animation: heroFadeUp 500ms var(--ease-silk) 1500ms forwards;
+}
+
+/* ── Reduced Motion Override ── */
+@media (prefers-reduced-motion: reduce) {
+  .prestigeBadge, .heading, .subheading,
+  .searchBarWrapper, .proofRibbon,
+  .crosshairTL, .crosshairTR, .image {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

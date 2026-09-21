@@ -1,0 +1,364 @@
+/* ============================================================
+   KRISH REAL ESTATE — Property Appraisal Styles
+   ============================================================ */
+
+.page {
+  padding-top: var(--header-height);
+  background-color: var(--color-paper);
+  min-height: 100vh;
+  padding-bottom: var(--space-20);
+}
+
+.wrapper {
+  max-width: 760px;
+  margin-inline: auto;
+  padding-top: var(--space-12);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.overline {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.title {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h1);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+  line-height: var(--leading-tightest);
+  letter-spacing: var(--tracking-tight);
+}
+
+.titleItalic {
+  font-style: italic;
+  color: var(--color-gold);
+}
+
+.subtitle {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-relaxed);
+  max-width: 52ch;
+  margin-top: var(--space-2);
+}
+
+/* ── Form Card ── */
+.formCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  padding: var(--space-8) var(--space-6);
+  box-shadow: 0 16px 40px rgba(26, 24, 20, 0.05);
+}
+
+@media (min-width: 768px) {
+  .formCard {
+    padding: var(--space-10) var(--space-10);
+  }
+}
+
+/* ── Progress Bar ── */
+.progressBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.progressStep {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-ink-faint);
+}
+
+.progressStepActive {
+  color: var(--color-ink);
+}
+
+.stepNum {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.6875rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-wider);
+  background-color: var(--color-paper);
+  color: var(--color-ink-muted);
+  padding: 2px 6px;
+  border-radius: var(--radius-xs);
+}
+
+.progressStepActive .stepNum {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+}
+
+.stepName {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.75rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+}
+
+.progressLine {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border-light);
+  margin-inline: var(--space-4);
+}
+
+/* ── Step Content ── */
+.stepPane {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.stepTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h3);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .fieldRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.label {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.75rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.input,
+.select,
+.textarea {
+  background-color: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.875rem;
+  color: var(--color-ink);
+  outline: none;
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.input,
+.select {
+  height: 48px;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--color-gold);
+}
+
+/* ── Radio Grid for Timeline ── */
+.radioGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .radioGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.radioCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.8125rem;
+  color: var(--color-ink);
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.radioCard:hover {
+  border-color: var(--color-gold);
+}
+
+.radioCardActive {
+  background-color: rgba(184, 151, 90, 0.08);
+  border-color: var(--color-gold);
+  font-weight: var(--weight-semibold);
+}
+
+.radioDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border-strong);
+}
+
+.radioCardActive .radioDot {
+  border-color: var(--color-gold);
+  background-color: var(--color-gold);
+}
+
+/* ── Actions ── */
+.actionsRight {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: var(--space-4);
+}
+
+.actionsBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-4);
+}
+
+.nextBtn,
+.submitBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding-inline: var(--space-8);
+  background-color: var(--color-ink);
+  color: var(--color-surface);
+  border: none;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.nextBtn:hover,
+.submitBtn:hover {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+}
+
+.nextBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.backBtn {
+  background: transparent;
+  border: none;
+  color: var(--color-ink-muted);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: 0.8125rem;
+  cursor: pointer;
+  padding: var(--space-2);
+  text-decoration: none;
+}
+
+.backBtn:hover {
+  color: var(--color-ink);
+}
+
+.discretionNotice {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.75rem;
+  color: var(--color-ink-muted);
+  background-color: var(--color-paper-cool);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-xs);
+}
+
+/* ── Success Card ── */
+.successCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-xs);
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  box-shadow: 0 16px 40px rgba(184, 151, 90, 0.1);
+}
+
+.successIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  color: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.successTitle {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h2);
+  color: var(--color-ink);
+}
+
+.successMessage {
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+  line-height: var(--leading-relaxed);
+  max-width: 50ch;
+}
+
+.successContactNotice {
+  font-size: 0.875rem;
+  color: var(--color-gold);
+}
+
+.successActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}

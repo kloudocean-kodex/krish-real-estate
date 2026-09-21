@@ -1,0 +1,214 @@
+/* ============================================================
+   KRISH REAL ESTATE — Ultra-Premium Design Token System v2
+   
+   Philosophy: Quiet Opulence × Editorial Property × Northern Melbourne Authority
+   
+   Inspired by: Sotheby's International Realty (museum-grade restraint),
+   Compass (high-contrast text-led brand system),
+   1st Dibs (editorial whitespace mastery),
+   Sixth Vision (architectural Australian premium)
+   
+   Typography: Cormorant Garamond (display) × DM Sans (body)
+   Palette: Champagne Noir — warm ivory, deep charcoal, bronze gold, sage
+   ============================================================ */
+
+:root {
+  /* ── Color: Champagne Noir Palette ── */
+  /* Warm papers — the "breath" between elements */
+  --color-paper:          #F8F5EE;   /* warm ivory — like aged gallery wall */
+  --color-paper-warm:     #F0EBE0;   /* deeper warm — linen */
+  --color-paper-cool:     #F9F8F6;   /* near white — clean light */
+  --color-surface:        #FEFDFB;   /* pure near-white surface */
+  --color-surface-elevated: #FFFFFF; /* cards and modals */
+
+  /* Deep inks — confidence without aggression */
+  --color-ink:            #1A1814;   /* warm near-black — not cold */
+  --color-ink-soft:       #2E2A25;   /* dark charcoal — body text */
+  --color-ink-muted:      #6B6459;   /* warm grey — secondary text */
+  --color-ink-faint:      #9E9589;   /* warm mist — captions */
+
+  /* Gold accent — the Krish peacock feather note */
+  --color-gold:           #B8975A;   /* burnished gold — from logo */
+  --color-gold-hover:     #A08246;   /* deeper gold */
+  --color-gold-light:     #F4EDD9;   /* gold wash — subtle bg tint */
+  --color-gold-pale:      #FAF6EC;   /* whisper gold */
+
+  /* Sage — Northern Melbourne nature palette */
+  --color-sage:           #7A8B6F;   /* muted sage green */
+  --color-sage-hover:     #6A7B5F;
+  --color-sage-light:     #E8EDE4;
+
+  /* Accent — primary action color (gold for premium feel) */
+  --color-accent:         var(--color-gold);
+  --color-accent-hover:   var(--color-gold-hover);
+  --color-accent-light:   var(--color-gold-light);
+
+  /* Teal — peacock eye from logo */
+  --color-teal:           #2A7A7A;
+  --color-teal-light:     #E0F0F0;
+
+  /* Borders */
+  --color-border:         #DDD8CE;
+  --color-border-light:   #E8E4DC;
+  --color-border-strong:  #C4BFB4;
+  --color-border-gold:    rgba(184, 151, 90, 0.3);
+
+  /* Semantic */
+  --color-success:        #4A7B5A;
+  --color-error:          #B85450;
+  --color-warning:        #C4963A;
+
+  /* Overlays */
+  --color-overlay:        rgba(26, 24, 20, 0.65);
+  --color-overlay-light:  rgba(26, 24, 20, 0.3);
+
+  /* ── Typography: Cormorant Garamond × DM Sans ──
+     
+     Cormorant Garamond: extreme thick-thin contrast, high-fashion editorial
+     serif with old-style numerals and elegant italic variants. 
+     Used by luxury brands, auction houses, architecture firms.
+     
+     DM Sans: Geometric, clean, designed for legibility at small sizes.
+     Modern and architectural without being cold.
+  */
+  --font-display: 'Cormorant Garamond', 'Cormorant', 'Garamond', 'Georgia', serif;
+  --font-body:    'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Fluid display scale — large and commanding */
+  --text-hero:       clamp(3rem, 6vw + 1rem, 6rem);       /* 48–96px */
+  --text-h1:         clamp(2.5rem, 5vw + 0.5rem, 5rem);   /* 40–80px */
+  --text-h2:         clamp(2rem, 4vw + 0.25rem, 3.75rem); /* 32–60px */
+  --text-h3:         clamp(1.5rem, 2.5vw + 0.25rem, 2.25rem); /* 24–36px */
+  --text-h4:         clamp(1.25rem, 1.5vw + 0.25rem, 1.625rem); /* 20–26px */
+  --text-body:       clamp(1rem, 0.5vw + 0.875rem, 1.125rem);
+  --text-body-sm:    clamp(0.875rem, 0.25vw + 0.8125rem, 0.9375rem);
+  --text-caption:    0.8125rem;
+  --text-overline:   0.6875rem;
+  --text-button:     0.875rem;
+  --text-nav:        0.8125rem;
+
+  /* Line heights */
+  --leading-tightest: 1.05;  /* hero display text */
+  --leading-tight:    1.15;
+  --leading-snug:     1.3;
+  --leading-normal:   1.6;
+  --leading-relaxed:  1.8;
+
+  /* Letter spacing */
+  --tracking-tight:    -0.03em;  /* large display headings */
+  --tracking-snug:     -0.01em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.06em;
+  --tracking-wider:    0.12em;
+  --tracking-widest:   0.2em;
+
+  /* Font weights — DM Sans uses 300–700, Cormorant uses 300–700 */
+  --weight-light:     300;
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+
+  /* ── Spacing Scale (8px base) ── */
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+  --space-32:  8rem;
+
+  /* Fluid section spacing — more generous on premium sites */
+  --section-gap:     clamp(4rem, 8vw + 1rem, 9rem);
+  --content-gap:     clamp(2rem, 4vw + 0.5rem, 4rem);
+
+  /* ── Layout ── */
+  --max-width:          1320px;
+  --max-width-narrow:   780px;
+  --max-width-wide:     1600px;
+  --gutter:             clamp(1.25rem, 4vw, 2.5rem);
+  --header-height:      80px;
+
+  /* ── Border Radius ── */
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+
+  /* ── Shadows — warm-toned, not cold grey ── */
+  --shadow-xs:   0 1px 2px rgba(26, 24, 20, 0.04);
+  --shadow-sm:   0 2px 6px rgba(26, 24, 20, 0.06);
+  --shadow-md:   0 6px 20px rgba(26, 24, 20, 0.08);
+  --shadow-lg:   0 12px 40px rgba(26, 24, 20, 0.10);
+  --shadow-xl:   0 24px 60px rgba(26, 24, 20, 0.12);
+  --shadow-card: 0 2px 10px rgba(26, 24, 20, 0.05);
+  --shadow-gold: 0 4px 20px rgba(184, 151, 90, 0.15);
+
+  /* ── Motion ── */
+  --ease-out:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:  cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-silk:    cubic-bezier(0.25, 0.46, 0.45, 0.94); /* smooth luxury */
+
+  --duration-instant: 80ms;
+  --duration-fast:    160ms;
+  --duration-normal:  280ms;
+  --duration-slow:    450ms;
+  --duration-reveal:  700ms;
+  --duration-hero:    1200ms;
+
+  /* ── Z-Index Scale ── */
+  --z-base:     1;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+
+  /* ── Component Tokens ── */
+
+  /* Buttons */
+  --btn-height:        52px;
+  --btn-height-sm:     40px;
+  --btn-height-lg:     60px;
+  --btn-padding-x:     var(--space-8);
+  --btn-padding-x-sm:  var(--space-5);
+  --btn-radius:        var(--radius-xs);  /* sharp corners = architectural */
+
+  /* Cards */
+  --card-radius:       var(--radius-sm);
+  --card-padding:      var(--space-8);
+  --card-shadow:       var(--shadow-card);
+
+  /* Inputs */
+  --input-height:      52px;
+  --input-padding-x:   var(--space-5);
+  --input-radius:      var(--radius-xs);
+  --input-border:      1px solid var(--color-border);
+  --input-focus-ring:  0 0 0 2px var(--color-gold-light);
+
+  /* Touch targets */
+  --touch-target-min:  44px;
+
+  /* Gold rule — horizontal accent line */
+  --gold-rule: 1px solid var(--color-border-gold);
+}
+
+/* ── Reduced Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast:   0ms;
+    --duration-normal: 0ms;
+    --duration-slow:   0ms;
+    --duration-reveal: 0ms;
+    --duration-hero:   0ms;
+  }
+}
