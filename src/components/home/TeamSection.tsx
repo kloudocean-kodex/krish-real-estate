@@ -4,6 +4,8 @@ import { TEAM } from '@/data/team';
 import styles from './TeamSection.module.css';
 
 export function TeamSection() {
+  const featuredTeam = TEAM.slice(0, 4);
+
   return (
     <section className={`${styles.section} section section--warm`} aria-label="Meet the team">
       <div className="container">
@@ -16,8 +18,8 @@ export function TeamSection() {
           </p>
         </div>
         <div className={`${styles.grid} reveal-stagger`}>
-          {TEAM.map((member) => (
-            <Link key={member.id} href={`/team/${member.slug}`} className={`${styles.card} reveal`}>
+          {featuredTeam.map((member) => (
+            <Link key={member.id} href="/team" className={`${styles.card} reveal`}>
               <div className={styles.photoWrapper}>
                 <Image
                   src={member.photo}

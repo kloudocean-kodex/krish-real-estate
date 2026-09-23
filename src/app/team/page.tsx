@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Our Team & Leadership | Krish Real Estate',
     description: 'Meet the people behind Melbourne\'s premier boutique northern real estate advisory.',
-    images: ['/images/agent-placeholder.jpg'],
+    images: ['/images/agent-chirag.jpg'],
   },
 };
 

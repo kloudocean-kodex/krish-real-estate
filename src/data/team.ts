@@ -20,7 +20,7 @@ export const TEAM: TeamMember[] = [
     name: 'Chirag Yadav',
     role: 'Director',
     title: 'Licensed Estate Agent (OIEC)',
-    phone: '0400 000 000', // PLACEHOLDER — needs client confirmation
+    phone: '0479 092 216',
     email: 'chirag@krishrealestate.com.au',
     photo: '/images/agent-chirag.jpg',
     bio: 'As Director and Licensed Estate Agent at Krish Real Estate, Chirag brings a personal approach to every property transaction across Melbourne\'s northern suburbs. Based in Wollert, Chirag and the team are committed to high-care representation — ensuring every client receives dedicated attention, honest guidance, and transparent communication throughout their property journey.',
@@ -29,10 +29,21 @@ export const TEAM: TeamMember[] = [
     slug: 'chirag-yadav',
   },
   {
+    id: 'rohan-rana',
+    name: 'Rohan Rana',
+    role: 'Property Consultant',
+    phone: '0497 093 332',
+    email: 'rohan@krishrealestate.com.au',
+    photo: '/images/agent-placeholder.jpg',
+    bio: 'Rohan is a committed property consultant at Krish Real Estate with an intimate understanding of the Wollert and northern growth corridor market. With a 5-star client satisfaction record, Rohan provides attentive guidance for vendors and purchasers alike.',
+    specialties: ['Residential Sales', 'Market Appraisals'],
+    slug: 'rohan-rana',
+  },
+  {
     id: 'jagtar-singh',
     name: 'Jagtar Singh',
     role: 'Property Consultant',
-    phone: '0400 000 001', // PLACEHOLDER
+    phone: '0400 000 001',
     email: 'jagtar@krishrealestate.com.au',
     photo: '/images/agent-placeholder.jpg',
     bio: 'Jagtar is a dedicated property consultant specialising in the northern Melbourne growth corridor. With a focus on building genuine relationships and understanding each client\'s unique needs, Jagtar delivers results grounded in local market knowledge and attentive service.',
@@ -43,7 +54,7 @@ export const TEAM: TeamMember[] = [
     id: 'meenu-bhagtana',
     name: 'Meenu Bhagtana',
     role: 'Property Consultant',
-    phone: '0400 000 002', // PLACEHOLDER
+    phone: '0400 000 002',
     email: 'meenu@krishrealestate.com.au',
     photo: '/images/agent-placeholder.jpg',
     bio: 'Meenu brings a thoughtful, client-first approach to every property consultation. Specialising in Melbourne\'s northern suburbs, Meenu takes pride in guiding families through one of life\'s most significant decisions with care and clarity.',
@@ -72,7 +83,7 @@ export const BUSINESS = {
     country: 'AU',
     display: '22 Wollemi Avenue, Wollert VIC 3750',
   },
-  phone: '03 0000 0000', // PLACEHOLDER — needs client confirmation
+  phone: '0479 092 216',
   email: 'info@krishrealestate.com.au',
   website: 'https://krishrealestate.com.au',
   socialMedia: {

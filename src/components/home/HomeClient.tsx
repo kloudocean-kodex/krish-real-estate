@@ -13,7 +13,7 @@ import { SoldProof } from '@/components/home/SoldProof';
 import { ClosingCta } from '@/components/home/ClosingCta';
 
 /**
- * Client wrapper that mounts the IntersectionObserver for 
+ * Client wrapper that mounts the IntersectionObserver for
  * all `.reveal` elements across the homepage sections.
  */
 export function HomeClient() {
