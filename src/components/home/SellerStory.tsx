@@ -9,8 +9,8 @@ export function SellerStory() {
         <div className={`${styles.imageCol} reveal reveal--left`}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/property-interior.jpg"
-              alt="Light-filled open plan architectural living space representative of Krish listings"
+              src="/images/lifestyle-handshake.jpg"
+              alt="Krish Real Estate agent congratulating a homeowner on a successful sale"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className={styles.image}

@@ -79,7 +79,7 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
       { date: '2026-09-28', startTime: '14:00', endTime: '14:30' },
     ],
     agents: [
-      { name: 'Chirag Yadav', phone: '0400 000 000', email: 'chirag@krishrealestate.com.au', photo: '/images/agent-placeholder.jpg' },
+      { name: 'Chirag Yadav', phone: '0400 000 000', email: 'chirag@krishrealestate.com.au', photo: '/images/agent-chirag.jpg' },
     ],
     slug: '15-banksia-drive-wollert-3750',
     updatedAt: '2026-09-20T10:00:00Z',
@@ -176,7 +176,7 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
       { date: '2026-09-26', startTime: '16:00', endTime: '16:15' },
     ],
     agents: [
-      { name: 'Chirag Yadav', phone: '0400 000 000', email: 'chirag@krishrealestate.com.au', photo: '/images/agent-placeholder.jpg' },
+      { name: 'Chirag Yadav', phone: '0400 000 000', email: 'chirag@krishrealestate.com.au', photo: '/images/agent-chirag.jpg' },
     ],
     slug: '42-grevillea-boulevard-donnybrook-3064',
     updatedAt: '2026-09-17T11:00:00Z',

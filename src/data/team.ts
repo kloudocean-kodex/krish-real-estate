@@ -22,7 +22,7 @@ export const TEAM: TeamMember[] = [
     title: 'Licensed Estate Agent (OIEC)',
     phone: '0400 000 000', // PLACEHOLDER — needs client confirmation
     email: 'chirag@krishrealestate.com.au',
-    photo: '/images/agent-placeholder.jpg',
+    photo: '/images/agent-chirag.jpg',
     bio: 'As Director and Licensed Estate Agent at Krish Real Estate, Chirag brings a personal approach to every property transaction across Melbourne\'s northern suburbs. Based in Wollert, Chirag and the team are committed to high-care representation — ensuring every client receives dedicated attention, honest guidance, and transparent communication throughout their property journey.',
     specialties: ['Residential Sales', 'Property Appraisals', 'Vendor Advocacy'],
     isDirector: true,

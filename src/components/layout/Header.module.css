@@ -66,16 +66,16 @@
 }
 
 .logoImage {
-  height: 52px;
+  height: 56px;
   width: auto;
   object-fit: contain;
   transition: filter var(--duration-slow) var(--ease-silk),
               opacity var(--duration-slow) var(--ease-silk);
 }
 
-/* In hero mode, add subtle white glow behind logo so it reads on dark images */
+/* In hero mode, invert the dark logo to WHITE for clear contrast on dark hero images */
 .logoImageLight {
-  filter: drop-shadow(0 2px 8px rgba(255, 255, 255, 0.4));
+  filter: brightness(0) invert(1) drop-shadow(0 2px 12px rgba(0, 0, 0, 0.3));
 }
 
 /* ── Desktop Nav ── */
