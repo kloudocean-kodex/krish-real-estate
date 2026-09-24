@@ -1,0 +1,87 @@
+.page {
+  padding-top: var(--header-height);
+  background-color: var(--color-paper);
+  min-height: 100vh;
+}
+
+.masthead {
+  padding-block: var(--space-12) var(--space-10);
+  background-color: var(--color-paper-cool);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.overline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-3);
+}
+
+.title {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h1);
+  font-weight: var(--weight-light);
+  color: var(--color-ink);
+  line-height: var(--leading-tightest);
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: var(--space-3);
+}
+
+.subtitle {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+}
+
+.contentSection {
+  padding-block: var(--space-12) var(--space-16);
+}
+
+.contentWrapper {
+  max-width: 780px;
+  margin-inline: auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-10);
+  box-shadow: 0 4px 20px rgba(26, 24, 20, 0.03);
+}
+
+.prose h2 {
+  font-family: var(--font-display-loaded, var(--font-display));
+  font-size: var(--text-h3);
+  font-weight: var(--weight-medium);
+  color: var(--color-ink);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.prose h2:first-of-type {
+  margin-top: 0;
+}
+
+.prose p, .prose li {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-body-sm);
+  color: var(--color-ink-soft);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-4);
+}
+
+.prose ul {
+  padding-left: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.prose strong {
+  color: var(--color-ink);
+  font-weight: var(--weight-semibold);
+}
