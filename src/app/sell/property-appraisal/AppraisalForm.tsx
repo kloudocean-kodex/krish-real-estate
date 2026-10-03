@@ -7,6 +7,7 @@ import styles from './Appraisal.module.css';
 export function AppraisalForm() {
   const [step, setStep] = useState<number>(1);
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   // Form State
   const [address, setAddress] = useState('');
@@ -20,8 +21,46 @@ export function AppraisalForm() {
   const [email, setEmail] = useState('');
   const [notes, setNotes] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    const payload = {
+      name: fullName,
+      phone,
+      email,
+      address: `${address}, ${suburb}`,
+      property_type: propertyType,
+      bedrooms: beds,
+      bathrooms: baths,
+      timeline,
+      notes,
+      source: 'krishrealestate.com.au — Property Appraisal Request',
+    };
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: 'YOUR_WEB3FORMS_KEY',
+          ...payload,
+          subject: `New Property Appraisal Request: ${address}, ${suburb} from ${fullName}`,
+          from_name: 'Krish Real Estate Valuation Suite',
+          to: 'chirag@krishrealestate.com.au',
+        }),
+      });
+
+      if (!res.ok) throw new Error('Form API failed');
+    } catch {
+      const subject = encodeURIComponent(`Property Appraisal Request: ${address}, ${suburb} — ${fullName}`);
+      const body = encodeURIComponent(
+        `Name: ${fullName}\nPhone: ${phone}\nEmail: ${email}\nAddress: ${address}, ${suburb}\nProperty: ${beds} bed, ${baths} bath ${propertyType}\nTimeline: ${timeline}\n\nNotes:\n${notes}`
+      );
+      window.open(`mailto:chirag@krishrealestate.com.au?subject=${subject}&body=${body}`, '_blank');
+    }
+
+    setIsSubmitting(false);
     setIsSubmitted(true);
   };
 
@@ -265,8 +304,8 @@ export function AppraisalForm() {
                       <button type="button" onClick={() => setStep(2)} className={styles.backBtn}>
                         ← Back
                       </button>
-                      <button type="submit" className={styles.submitBtn}>
-                        Submit Valuation Request
+                      <button type="submit" className={styles.submitBtn} disabled={isSubmitting}>
+                        {isSubmitting ? 'Sending Request...' : 'Submit Valuation Request'}
                       </button>
                     </div>
                   </div>

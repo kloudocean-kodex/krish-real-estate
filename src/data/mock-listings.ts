@@ -112,7 +112,7 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
       { date: '2026-09-27', startTime: '12:00', endTime: '12:30' },
     ],
     agents: [
-      { name: 'Jagtar Singh', phone: '0400 000 001', email: 'jagtar@krishrealestate.com.au', photo: '/images/agent-placeholder.jpg' },
+      { name: 'Jagtar Singh', phone: '0400 000 001', email: 'jagtar@krishrealestate.com.au', photo: '/images/team-jagtar.jpg' },
     ],
     slug: '28-eucalyptus-crescent-wollert-3750',
     updatedAt: '2026-09-19T14:00:00Z',
@@ -144,7 +144,7 @@ export const MOCK_LISTINGS: NormalizedListing[] = [
       { date: '2026-09-28', startTime: '10:00', endTime: '10:30' },
     ],
     agents: [
-      { name: 'Meenu Bhagtana', phone: '0400 000 002', email: 'meenu@krishrealestate.com.au', photo: '/images/agent-placeholder.jpg' },
+      { name: 'Meenu Bhagtana', phone: '0400 000 002', email: 'meenu@krishrealestate.com.au', photo: '/images/team-meenu.jpg' },
     ],
     slug: '3-12-station-road-epping-3076',
     updatedAt: '2026-09-18T09:00:00Z',
