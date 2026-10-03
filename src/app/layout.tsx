@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Cormorant_Garamond, DM_Sans } from 'next/font/google';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { FloatingCta } from '@/components/layout/FloatingCta';
 import { JsonLdOrganization } from '@/components/seo/JsonLd';
 import './globals.css';
 
@@ -103,6 +104,7 @@ export default function RootLayout({
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <FloatingCta />
         <JsonLdOrganization />
       </body>
     </html>

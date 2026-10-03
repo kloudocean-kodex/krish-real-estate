@@ -1,19 +1,82 @@
+/* ── Team Section — Premium Agent Cards ── */
 .section { padding-block: var(--section-gap); }
+
 .header { text-align: center; margin-bottom: var(--content-gap); }
 .title { font-size: var(--text-h2); margin-bottom: var(--space-4); }
-.subtitle { font-size: var(--text-body); color: var(--color-ink-muted); max-width: 50ch; margin-inline: auto; }
+.subtitle {
+  font-size: var(--text-body);
+  color: var(--color-ink-muted);
+  max-width: 52ch;
+  margin-inline: auto;
+}
 
+/* 2-col mobile, 4-col desktop */
 .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
-@media (min-width: 768px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 768px) { .grid { grid-template-columns: repeat(4, 1fr); gap: var(--space-8); } }
 
-.card { text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: var(--space-4); }
-.photoWrapper { position: relative; aspect-ratio: 3/4; border-radius: var(--radius-lg); overflow: hidden; background-color: var(--color-border-light); }
+/* Agent card — link-based, no underline */
+.card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+.card:hover { transform: translateY(-4px); }
+
+/* Photo wrapper — 3:4 portrait */
+.photoWrapper {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-paper-warm);
+  box-shadow: var(--shadow-md);
+  transition: box-shadow var(--duration-normal) var(--ease-out);
+}
+.card:hover .photoWrapper { box-shadow: var(--shadow-lg); }
+
 .photo { object-fit: cover; transition: transform var(--duration-reveal) var(--ease-out); }
-.card:hover .photo { transform: scale(1.03); }
+.card:hover .photo { transform: scale(1.04); }
 
+/* Gold accent bar at bottom of photo */
+.photoWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-out);
+}
+.card:hover .photoWrapper::after { opacity: 1; }
+
+/* Info block */
 .info { text-align: center; }
-.name { font-family: var(--font-body); font-size: var(--text-body); font-weight: var(--weight-semibold); color: var(--color-ink); }
-.role { font-size: var(--text-caption); color: var(--color-accent); font-weight: var(--weight-medium); margin-bottom: 0; }
-.title2 { font-size: var(--text-caption); color: var(--color-ink-muted); margin-bottom: 0; }
+.name {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: var(--weight-semibold);
+  color: var(--color-ink);
+  margin-bottom: var(--space-1);
+}
+.role {
+  font-size: var(--text-caption);
+  color: var(--color-accent);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.title2 {
+  font-size: var(--text-caption);
+  color: var(--color-ink-muted);
+  margin-bottom: 0;
+  margin-top: var(--space-1);
+}
 
-.teamCta { display: flex; justify-content: center; padding-top: var(--space-10); }
+/* CTA row */
+.teamCta { display: flex; justify-content: center; padding-top: var(--space-12); }
