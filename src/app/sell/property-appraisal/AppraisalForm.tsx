@@ -43,7 +43,7 @@ export function AppraisalForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_KEY',
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_KEY',
           ...payload,
           subject: `New Property Appraisal Request: ${address}, ${suburb} from ${fullName}`,
           from_name: 'Krish Real Estate Valuation Suite',

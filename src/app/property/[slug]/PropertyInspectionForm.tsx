@@ -26,7 +26,7 @@ export function PropertyInspectionForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_KEY',
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_KEY',
           ...payload,
           subject: `Private Viewing Request from ${name} (${phone})`,
           from_name: 'Krish Real Estate Inspection Booking',

@@ -145,4 +145,11 @@
 }
 
 /* View all link */
-.viewAll { display: flex; justify-content: center; padding-top: var(--space-6); }
+.viewAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  padding-top: var(--space-6);
+}

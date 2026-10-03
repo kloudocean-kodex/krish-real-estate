@@ -95,6 +95,46 @@
   color: var(--color-accent);
 }
 
+.socialStrip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--color-paper-warm);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.socialLink:hover {
+  background-color: var(--color-accent);
+  color: var(--color-surface);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.reaBadge {
+  font-family: var(--font-body);
+  font-size: 0.625rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.05em;
+  color: var(--color-paper-warm);
+}
+
+.socialLink:hover .reaBadge {
+  color: var(--color-surface);
+}
+
 /* ── Navigation Columns ── */
 .navColumn {
   display: flex;

@@ -87,8 +87,10 @@ export const BUSINESS = {
   email: 'info@krishrealestate.com.au',
   website: 'https://krishrealestate.com.au',
   socialMedia: {
-    facebook: 'https://facebook.com/krishrealestate', // PLACEHOLDER
-    instagram: 'https://instagram.com/krishrealestate', // PLACEHOLDER
+    facebook: 'https://www.facebook.com/krishrealestateptyltd',
+    instagram: 'https://www.instagram.com/krishrealestate',
+    realestateAgency: 'https://www.realestate.com.au/agency/krish-real-estate-wollert-ZPVXDP',
+    realestateAgent: 'https://www.realestate.com.au/agent/chirag-yadav-3604086',
   },
   memberships: ['REIV'],
   director: 'Chirag Yadav',

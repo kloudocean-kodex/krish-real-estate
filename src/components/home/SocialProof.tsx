@@ -69,10 +69,10 @@ export function SocialProof() {
         <div className={`${styles.header} reveal`}>
           <p className="overline">What Our Clients Say</p>
           <h2 className={styles.title}>Real feedback, real people.</h2>
-          <div className={styles.ratingBadge} aria-label="22 verified 5-star reviews">
+          <div className={styles.ratingBadge} aria-label="150+ verified 5-star reviews on realestate.com.au">
             <span className={styles.ratingStars} aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             <span className={styles.ratingScore}>5.0</span>
-            <span className={styles.ratingCount}>22 Verified Reviews</span>
+            <span className={styles.ratingCount}>150+ Verified Reviews</span>
             <span className={styles.ratingSource}>&middot; realestate.com.au</span>
           </div>
         </div>
@@ -112,12 +112,20 @@ export function SocialProof() {
 
         <div className={styles.viewAll}>
           <a
-            href="https://www.realestate.com.au/agent/chirag-yadav-2393386"
+            href="https://www.realestate.com.au/agency/krish-real-estate-wollert-ZPVXDP"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--ghost"
           >
-            View all 22 reviews on realestate.com.au &rarr;
+            View Agency on realestate.com.au &rarr;
+          </a>
+          <a
+            href="https://www.realestate.com.au/agent/chirag-yadav-3604086"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn--secondary"
+          >
+            View Chirag's 150+ Reviews (5.0 ★) &rarr;
           </a>
         </div>
       </div>

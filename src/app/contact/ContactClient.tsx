@@ -34,7 +34,7 @@ export function ContactClient() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key: 'YOUR_WEB3FORMS_KEY', // TODO: Replace with actual key from web3forms.com
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_KEY',
           ...payload,
           subject: `New ${enquiryType} enquiry from ${fullName} — Krish Real Estate`,
           from_name: 'Krish Real Estate Website',
