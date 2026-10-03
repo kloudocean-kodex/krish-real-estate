@@ -25,10 +25,10 @@
 }
 .card:hover { transform: translateY(-4px); }
 
-/* Photo wrapper — 3:4 portrait */
+/* Photo wrapper — 4:5 luxury studio portrait */
 .photoWrapper {
   position: relative;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background-color: var(--color-paper-warm);
@@ -37,7 +37,11 @@
 }
 .card:hover .photoWrapper { box-shadow: var(--shadow-lg); }
 
-.photo { object-fit: cover; transition: transform var(--duration-reveal) var(--ease-out); }
+.photo {
+  object-fit: cover;
+  object-position: center center;
+  transition: transform var(--duration-reveal) var(--ease-out);
+}
 .card:hover .photo { transform: scale(1.04); }
 
 /* Gold accent bar at bottom of photo */

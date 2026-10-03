@@ -66,11 +66,19 @@
 }
 
 .logoImage {
-  height: 54px;
+  height: 42px;
   width: auto;
+  max-width: 190px;
   object-fit: contain;
   transition: filter var(--duration-slow) var(--ease-silk),
               opacity var(--duration-slow) var(--ease-silk);
+}
+
+@media (max-width: 640px) {
+  .logoImage {
+    height: 34px;
+    max-width: 155px;
+  }
 }
 
 /* In hero mode, invert the dark logo to WHITE for clear contrast on dark hero images */

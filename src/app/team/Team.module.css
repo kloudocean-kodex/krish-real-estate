@@ -90,7 +90,7 @@
 
 .directorPhoto {
   object-fit: cover;
-  object-position: top center;
+  object-position: center center;
 }
 
 .directorBadge {
@@ -296,6 +296,7 @@
 
 .memberPhoto {
   object-fit: cover;
+  object-position: center center;
 }
 
 .memberRoleBadge {

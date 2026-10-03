@@ -66,10 +66,10 @@ export function Header() {
           {/* ── Logo ── */}
           <Link href="/" className={styles.logo} aria-label="Krish Real Estate — Home">
             <Image
-              src="/images/krish-logo-original.png"
+              src="/images/krish-logo-horizontal.png"
               alt="Krish Real Estate"
-              width={160}
-              height={72}
+              width={180}
+              height={44}
               priority
               className={`${styles.logoImage} ${isHeroMode ? styles.logoImageLight : ''}`}
             />
