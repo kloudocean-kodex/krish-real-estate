@@ -77,9 +77,9 @@ export function SocialProof() {
           </div>
         </div>
 
-        <div className={`${styles.grid} reveal-stagger`} key={page}>
+        <div className={styles.grid} key={page}>
           {visible.map((review, index) => (
-            <blockquote key={`${page}-${index}`} className={`${styles.card} reveal`}>
+            <blockquote key={`${page}-${index}`} className={styles.card}>
               <div className={styles.stars} aria-label={`${review.rating} out of 5 stars`}>
                 {Array.from({ length: review.rating }).map((_, i) => (
                   <span key={i} aria-hidden="true">&#9733;</span>
