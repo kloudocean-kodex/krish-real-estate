@@ -12,9 +12,47 @@ export function ContactClient() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    // Build the enquiry payload
+    const payload = {
+      name: fullName,
+      phone,
+      email,
+      message,
+      enquiry_type: enquiryType,
+      source: 'krishrealestate.com.au — Contact Form',
+    };
+
+    try {
+      // Attempt Web3Forms API (free tier — 250 emails/month)
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: 'YOUR_WEB3FORMS_KEY', // TODO: Replace with actual key from web3forms.com
+          ...payload,
+          subject: `New ${enquiryType} enquiry from ${fullName} — Krish Real Estate`,
+          from_name: 'Krish Real Estate Website',
+          to: 'chirag@krishrealestate.com.au',
+        }),
+      });
+
+      if (!res.ok) throw new Error('Form API failed');
+    } catch {
+      // Fallback: open mailto with pre-filled data
+      const subject = encodeURIComponent(`New ${enquiryType} enquiry from ${fullName}`);
+      const body = encodeURIComponent(
+        `Name: ${fullName}\nPhone: ${phone}\nEmail: ${email}\nType: ${enquiryType}\n\nMessage:\n${message}`
+      );
+      window.open(`mailto:chirag@krishrealestate.com.au?subject=${subject}&body=${body}`, '_blank');
+    }
+
+    setIsSubmitting(false);
     setIsSubmitted(true);
   };
 
@@ -171,8 +209,8 @@ export function ContactClient() {
                       />
                     </div>
 
-                    <button type="submit" className={styles.submitBtn}>
-                      Send Confidential Message
+                    <button type="submit" className={styles.submitBtn} disabled={isSubmitting}>
+                      {isSubmitting ? 'Sending…' : 'Send Confidential Message'}
                     </button>
 
                     <p className={styles.privacyNote}>
