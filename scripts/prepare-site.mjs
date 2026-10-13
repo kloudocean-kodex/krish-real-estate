@@ -2,7 +2,6 @@ import { readFileSync, writeFileSync, copyFileSync } from "node:fs";
 import sharp from "sharp";
 const { listings } = JSON.parse(readFileSync("src/data/listings.json", "utf8"));
 const redirects = [
-  ["https://www.krishrealestate.com.au/*", "https://krishrealestate.com.au/:splat"],
   ["/contact-us", "/contact/"],
   ["/get-a-free-appraisal", "/sell/property-appraisal/"],
   ["/properties-for-sale", "/buy/"],
@@ -10,7 +9,6 @@ const redirects = [
   ["/land-for-sale", "/buy/?type=land"],
   ["/sold-properties", "/sold/"],
   ["/our-team", "/team/"],
-  ["/our-team/*", "/team/"],
   ["/privacy-policy", "/privacy/"],
   ["/terms-and-conditions", "/terms/"],
 ];
@@ -26,6 +24,7 @@ for (const l of listings)
       `/property/${l.slug}/`,
     ]);
 redirects.push(
+  ["/our-team/*", "/team/"],
   ["/properties-for-sale/*", "/buy/"],
   ["/properties-for-rent/*", "/rent/"],
   ["/land-for-sale/*", "/buy/"],

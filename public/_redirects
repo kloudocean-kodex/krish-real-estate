@@ -1,4 +1,3 @@
-https://www.krishrealestate.com.au/* https://krishrealestate.com.au/:splat 301
 /contact-us /contact/ 301
 /get-a-free-appraisal /sell/property-appraisal/ 301
 /properties-for-sale /buy/ 301
@@ -6,7 +5,6 @@ https://www.krishrealestate.com.au/* https://krishrealestate.com.au/:splat 301
 /land-for-sale /buy/?type=land 301
 /sold-properties /sold/ 301
 /our-team /team/ 301
-/our-team/* /team/ 301
 /privacy-policy /privacy/ 301
 /terms-and-conditions /terms/ 301
 /properties-for-sale/eagle_1855355 /property/58-hardwood-grove-donnybrook-3064-1855355/ 301
@@ -433,6 +431,7 @@ https://www.krishrealestate.com.au/* https://krishrealestate.com.au/:splat 301
 /land-for-sale/eagle_1402307 /property/19-wombargo-crescent-wollert-3750-1402307/ 301
 /properties-for-rent/eagle_1402307 /property/19-wombargo-crescent-wollert-3750-1402307/ 301
 /sold-properties/eagle_1402307 /property/19-wombargo-crescent-wollert-3750-1402307/ 301
+/our-team/* /team/ 301
 /properties-for-sale/* /buy/ 301
 /properties-for-rent/* /rent/ 301
 /land-for-sale/* /buy/ 301
