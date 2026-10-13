@@ -369,16 +369,18 @@
 .videoPlaying { opacity: 1; }
 .filmToolbar {
   position: absolute; top: calc(var(--header-height) + 24px); right: var(--gutter);
-  z-index: 3; display: flex; align-items: center; gap: 16px;
+  z-index: 3;
 }
-.mediaNote { font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; color: #eee6d7; }
 .filmControl {
-  display: inline-flex; gap: 8px; align-items: center; justify-content: center;
-  min-height: 44px; padding: 8px 14px; border: 1px solid rgba(242, 230, 206, 0.45);
-  border-radius: 2px; color: #fff; background: rgba(26, 24, 20, 0.6);
-  font-size: 0.6875rem; letter-spacing: 0.06em; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px; padding: 0;
+  border: 1px solid rgba(242, 230, 206, 0.65); border-radius: 50%;
+  color: #f2e6ce; background: rgba(26, 24, 20, 0.48);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 0 4px rgba(242, 230, 206, 0.04);
+  cursor: pointer; transition: background 180ms ease, border-color 180ms ease;
 }
-.filmControl:hover { background: rgba(26, 24, 20, 0.9); }
+.filmControl:hover { background: rgba(26, 24, 20, 0.8); border-color: #f2e6ce; }
 @media (max-width: 640px) {
   .video { object-position: 77% 38%; }
   .hero { padding-bottom: 32px; }
@@ -392,8 +394,6 @@
   .proofDivider { display: none; }
   .proofItem { gap: 8px; }
   .proofLabel { font-size: 0.6rem; letter-spacing: 0.06em; }
-  .filmToolbar { left: var(--gutter); gap: 10px; justify-content: space-between; }
-  .mediaNote { max-width: 15ch; line-height: 1.5; }
 }
 
 .proofDivider {

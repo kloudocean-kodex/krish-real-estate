@@ -18,14 +18,6 @@ export function SellerStory() {
                 className={styles.image}
               />
             </picture>
-            <div className={styles.imageOverlay} />
-            <figcaption className={styles.imagePlacard}>
-              <span className={styles.placardIcon} aria-hidden="true">✦</span>
-              <span>
-                <span className={styles.placardText}>CURATED PRESENTATION · MELBOURNE NORTH</span>
-                <span className={styles.imageNote}>Conceptual brand imagery</span>
-              </span>
-            </figcaption>
           </figure>
         </div>
 

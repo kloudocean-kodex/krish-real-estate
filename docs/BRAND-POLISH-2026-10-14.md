@@ -4,12 +4,12 @@ Chirag's chosen promise, **Working together means winning together.**, now leads
 
 ## Creative assets
 
-Generated with the built-in image-generation tool. The supplied Krish logo and Eagle property photographs remain authentic supplied assets. The new artwork is conceptual brand imagery and is labelled accordingly in the hero.
+Generated with the built-in image-generation tool. The supplied Krish logo and Eagle property photographs remain authentic supplied assets. The new artwork is conceptual brand imagery; its provenance is recorded here. At the owner's request, the hero has an icon-only play/pause control and no visible imagery label, and the seller-section photograph has no caption panel.
 
 - `public/images/brand/together-exterior.avif` / `.webp`: original architectural brand composition, desktop hero.
 - `public/images/brand/together-mobile.avif` / `.webp`: responsive crop of that same artwork.
 - `public/images/brand/together-interior.avif` / `.webp`: original interior and keys composition, closing section and film.
-- `public/images/brand/seller-presentation.avif` / `.webp`: original warm Australian living-room composition for “Your home deserves more than a template.” The visible caption identifies it as conceptual brand imagery. It replaces the unrelated catalogue-photo selection in this brand section, while listing cards retain their authentic Eagle photographs.
+- `public/images/brand/seller-presentation.avif` / `.webp`: original warm Australian living-room composition for “Your home deserves more than a template.” It replaces the unrelated catalogue-photo selection in this brand section, while listing cards retain their authentic Eagle photographs.
 - `public/images/brand/together-brand-film.mp4`: 12-second, silent, 1280×720 H.264 film, gentle motion and dissolves between the generated stills. It is an editorial motion treatment of images, not AI-generated spatial footage or footage of an actual listing.
 - Full PNG originals are retained privately in `audit-private/creative/`.
 - Reproduce encoding with `scripts/render-brand-film.py`. It requires Pillow and imageio-ffmpeg, and is not part of the site's production runtime or build dependency chain.

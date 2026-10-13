@@ -93,15 +93,17 @@ export function HeroMedia() {
       <div className={styles.vignette} />
     </div>
     <div className={styles.filmToolbar}>
-      <span className={styles.mediaNote}>Conceptual brand imagery</span>
       <button type="button" className={styles.filmControl} aria-pressed={playing}
+        aria-label={playing ? 'Pause brand film' : 'Play brand film'}
         onClick={() => {
           manuallyControlled.current = true;
           if (playing) { wantsPlayback.current = false; video.current?.pause(); }
           else start();
         }}>
-        <span aria-hidden="true">{playing ? 'Ⅱ' : '▷'}</span>
-        {playing ? 'Pause film' : 'Play brand film'}
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          {playing ? <><rect x="6" y="5" width="4" height="14" rx="1" /><rect x="14" y="5" width="4" height="14" rx="1" /></>
+            : <path d="M8 5.5a.75.75 0 0 1 1.14-.64l10 6.5a.75.75 0 0 1 0 1.28l-10 6.5A.75.75 0 0 1 8 18.5z" />}
+        </svg>
       </button>
     </div>
   </>;
