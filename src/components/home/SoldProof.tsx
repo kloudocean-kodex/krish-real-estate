@@ -78,11 +78,11 @@ export function SoldProof({ allResults, counts }: {
         </div>
 
         {/* ── Property Showcase Grid ── */}
-        <div className={`${styles.grid} ${displayedListings.length === 3 ? styles.grid3 : ''} ${displayedListings.length === 2 ? styles.grid2 : ''} reveal-stagger`}>
+        <div className={`${styles.grid} ${displayedListings.length === 3 ? styles.grid3 : ''} ${displayedListings.length === 2 ? styles.grid2 : ''} reveal`}>
           {displayedListings.map((listing) => {
             const isSold = listing.status === 'sold';
             return (
-              <article key={listing.listingId} className={`${styles.card} reveal`}>
+              <article key={listing.listingId} className={styles.card}>
                 <Link href={`/property/${listing.slug}`} className={styles.cardLink} aria-label={`View details of ${listing.address.display}`}>
                   <div className={styles.imageWrapper}>
                     {listing.media[0] && (
