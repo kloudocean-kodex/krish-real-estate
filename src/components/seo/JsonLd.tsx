@@ -9,6 +9,7 @@ export function JsonLdOrganization() {
     taxID: BUSINESS.abn,
     logo: `${BUSINESS.website}/images/krish-logo-stacked.png`,
     description: BUSINESS.description,
+    slogan: BUSINESS.tagline,
     url: BUSINESS.website,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,

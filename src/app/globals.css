@@ -109,7 +109,7 @@ a:not([class]):hover {
   font-weight: var(--weight-semibold);
   letter-spacing: var(--tracking-widest);
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: #805f28;
   margin-bottom: var(--space-4);
 }
 
@@ -274,7 +274,7 @@ a:not([class]):hover {
 
 .btn--primary {
   background-color: var(--color-accent);
-  color: var(--color-surface);
+  color: var(--color-ink);
 }
 
 .btn--primary:hover {

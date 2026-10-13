@@ -230,7 +230,7 @@
   font-weight: var(--weight-semibold);
   letter-spacing: var(--tracking-widest);
   text-transform: uppercase;
-  color: var(--color-surface);
+  color: var(--color-ink);
   background-color: var(--color-gold);
   border-radius: var(--radius-xs);
   text-decoration: none;

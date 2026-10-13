@@ -88,6 +88,7 @@ export const BUSINESS = {
   email: 'chirag@krishrealestate.com.au',
   website: 'https://krishrealestate.com.au',
   socialMedia: {
+    googleBusiness: 'https://www.google.com/maps/place/Krish+Real+Estate+Pty+Ltd/@-37.6067795,144.9994168,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad64dce250cdab9:0x4d578f6f7d52c269!8m2!3d-37.6067795!4d144.9994168!16s%2Fg%2F11rylmqc99',
     facebook: 'https://www.facebook.com/krishrealestateptyltd',
     instagram: 'https://www.instagram.com/krishrealestate',
     realestateAgency: 'https://www.realestate.com.au/agency/krish-real-estate-wollert-YXQTHO',
@@ -95,7 +96,7 @@ export const BUSINESS = {
   },
   memberships: [],
   director: 'Chirag Yadav',
-  tagline: 'Property, handled personally.',
+  tagline: 'Working together means winning together.',
   motto: 'Working Together Means Winning Together.',
   description: 'Independent real estate agency serving Melbourne\'s northern suburbs — Wollert, Epping, Craigieburn, Donnybrook, and surrounding areas. Residential sales, property management, and appraisals.',
 } as const;

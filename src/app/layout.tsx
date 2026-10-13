@@ -24,7 +24,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://krishrealestate.com.au'),
   title: {
-    default: 'Krish Real Estate — Property, Handled Personally | Melbourne North',
+    default: 'Krish Real Estate | Wollert & Melbourne North',
     template: '%s | Krish Real Estate',
   },
   description:
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     locale: 'en_AU',
     url: 'https://krishrealestate.com.au',
     siteName: 'Krish Real Estate',
-    title: 'Krish Real Estate — Property, Handled Personally',
+    title: 'Krish Real Estate — Working Together Means Winning Together',
     description:
       'Independent real estate agency serving Melbourne\'s northern suburbs — Wollert, Epping, Craigieburn, Donnybrook.',
     images: [
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Krish Real Estate — Property, Handled Personally',
+    title: 'Krish Real Estate — Working Together Means Winning Together',
     description:
       'Independent real estate agency serving Melbourne\'s northern suburbs.',
     images: ['/images/og-brand.jpg'],

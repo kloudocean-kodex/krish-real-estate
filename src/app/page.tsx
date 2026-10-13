@@ -4,9 +4,9 @@ import { JsonLdWebSite } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
   alternates: {canonical: '/'},
-  title: {absolute: 'Krish Real Estate — Property, Handled Personally | Melbourne North'},
+  title: {absolute: 'Krish Real Estate | Wollert & Melbourne North'},
   description:
-    'Independent real estate agency serving Wollert, Epping, Craigieburn & Donnybrook. Residential sales, property management, and honest appraisals across Melbourne\'s northern suburbs.',
+    'Working together means winning together. Personal real estate service in Wollert, Epping, Craigieburn and Donnybrook: sales, property management and appraisals.',
 };
 
 export default function HomePage() {

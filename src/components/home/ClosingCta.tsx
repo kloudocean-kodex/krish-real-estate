@@ -8,14 +8,17 @@ export function ClosingCta() {
     <section className={`${styles.section} section`} aria-label="Get in touch with Krish Real Estate">
       {/* Full-bleed lifestyle image background */}
       <div className={styles.bgImage} aria-hidden="true">
-        <Image
-          src="/images/lifestyle-family.jpg"
+        <picture>
+          <source srcSet="/images/brand/together-interior.avif" type="image/avif" />
+          <Image
+          src="/images/brand/together-interior.webp"
           alt=""
           fill
           sizes="100vw"
           quality={85}
           className={styles.bgImageEl}
         />
+        </picture>
       </div>
       <div className={styles.overlay} aria-hidden="true" />
 

@@ -2,11 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import styles from './HeroSection.module.css';
-import {getActiveListings} from '@/data/listing-summaries';
-const heroProperty=getActiveListings('sale').find(l=>l.propertyType==='House');
+import { REPUTATION } from '@/data/reputation';
+import { HeroMedia } from './HeroMedia';
 
 export function HeroSection() {
   const router = useRouter();
@@ -26,24 +25,8 @@ export function HeroSection() {
   };
 
   return (
-    <section className={styles.hero} aria-label="Krish Real Estate — Northern Melbourne Authority">
-      {/* Background Architectural Canvas */}
-      <div className={styles.imageWrapper}>
-        <picture>
-          <source media="(max-width: 640px)" srcSet="/images/hero-mobile.webp" type="image/webp" />
-          <Image
-            src={heroProperty?.media[0]?.url || "/images/hero-property.jpg"}
-            alt={heroProperty?.media[0]?.alt || "Krish Real Estate property"}
-            fill
-            loading="eager"
-            fetchPriority="high"
-            sizes="100vw"
-            className={styles.image}
-          />
-        </picture>
-        <div className={styles.overlay} />
-        <div className={styles.vignette} />
-      </div>
+    <section className={styles.hero} aria-label="Krish Real Estate — Melbourne's northern suburbs">
+      <HeroMedia />
 
       {/* Architectural Crosshair Accents */}
       <div className={styles.crosshairTL} aria-hidden="true">+</div>
@@ -59,37 +42,37 @@ export function HeroSection() {
           </div>
 
           <h1 className={styles.heading}>
-            Property,<br />
-            <span className={styles.headingItalic}>Handled Personally.</span>
+            Working together{' '}<br />
+            <span className={styles.headingItalic}>means winning together.</span>
           </h1>
 
           <p className={styles.subheading}>
-            Your local team for buying, selling and property management in Wollert, Epping, Craigieburn, Donnybrook and Melbourne’s north.
+            Buying, selling or managing a property in Melbourne’s north? Work directly with a local team that puts your goals at the centre.
           </p>
         </div>
 
         {/* ── Frosted Editorial Gateway Bar ── */}
         <div className={styles.searchBarWrapper}>
-          <div className={styles.searchTabs} role="tablist">
+          <div className={styles.searchTabs} role="group" aria-label="Property search type">
             <button
-              role="tab"
-              aria-selected={activeTab === 'buy'}
+              type="button"
+              aria-pressed={activeTab === 'buy'}
               className={`${styles.tabBtn} ${activeTab === 'buy' ? styles.tabBtnActive : ''}`}
               onClick={() => setActiveTab('buy')}
             >
               Buy
             </button>
             <button
-              role="tab"
-              aria-selected={activeTab === 'rent'}
+              type="button"
+              aria-pressed={activeTab === 'rent'}
               className={`${styles.tabBtn} ${activeTab === 'rent' ? styles.tabBtnActive : ''}`}
               onClick={() => setActiveTab('rent')}
             >
               Rent
             </button>
             <button
-              role="tab"
-              aria-selected={activeTab === 'estimate'}
+              type="button"
+              aria-pressed={activeTab === 'estimate'}
               className={`${styles.tabBtn} ${activeTab === 'estimate' ? styles.tabBtnActive : ''}`}
               onClick={() => setActiveTab('estimate')}
             >
@@ -155,20 +138,15 @@ export function HeroSection() {
 
         {/* ── Editorial Proof Ticker ── */}
         <div className={styles.proofRibbon}>
-          <div className={styles.proofItem}>
-            <span className={styles.proofStars}>★★★★★</span>
-            <span className={styles.proofLabel}>CHIRAG · 5.0 ON REA</span>
-          </div>
+          <a className={styles.proofItem} href={REPUTATION.google.url} target="_blank" rel="noopener noreferrer">
+            <span className={styles.proofGoldText}>4.9 ★</span>
+            <span className={styles.proofLabel}>KRISH ON GOOGLE ↗</span>
+          </a>
           <span className={styles.proofDivider}>·</span>
-          <div className={styles.proofItem}>
-            <span className={styles.proofGoldText}>Personal</span>
-            <span className={styles.proofLabel}>LOCAL REPRESENTATION</span>
-          </div>
-          <span className={styles.proofDivider}>·</span>
-          <div className={styles.proofItem}>
-            <span className={styles.proofGoldText}>DIRECT</span>
-            <span className={styles.proofLabel}>AGENT CONTACT</span>
-          </div>
+          <a className={styles.proofItem} href={REPUTATION.chirag.url} target="_blank" rel="noopener noreferrer">
+            <span className={styles.proofGoldText}>5.0 ★</span>
+            <span className={styles.proofLabel}>CHIRAG ON REALESTATE.COM.AU ↗</span>
+          </a>
           <span className={styles.proofDivider}>·</span>
           <div className={styles.proofItem}>
             <span className={styles.proofGoldText}>WOLLERT</span>
