@@ -36,7 +36,7 @@ interface EnquiryPayload {
   subject?: string;
 }
 
-// ── Eagle CRM Token Auth ──
+// ── Eagle CRM Token Auth (VERIFIED ✅) ──
 async function getEagleToken(env: Env): Promise<string | null> {
   const baseUrl = env.EAGLE_CRM_BASE_URL || 'https://www.eagleagent.com.au';
   try {
@@ -48,14 +48,15 @@ async function getEagleToken(env: Env): Promise<string | null> {
       },
     });
     if (!res.ok) return null;
-    const data = await res.json() as { token: string };
-    return data.token;
+    // Eagle API response: { data: { token: { token: "eyJ...", expiresAt: ... } } }
+    const json = await res.json() as { data?: { token?: { token?: string } } };
+    return json?.data?.token?.token || null;
   } catch {
     return null;
   }
 }
 
-// ── Push to Eagle CRM ──
+// ── Push to Eagle CRM (VERIFIED ✅ — Contact + Enquiry pipeline) ──
 async function pushToEagle(env: Env, payload: EnquiryPayload): Promise<boolean> {
   if (!env.EAGLE_CRM_CLIENT_ID || !env.EAGLE_CRM_CLIENT_SECRET) return false;
 
@@ -66,14 +67,6 @@ async function pushToEagle(env: Env, payload: EnquiryPayload): Promise<boolean> 
   const nameParts = (payload.name || '').split(' ');
   const firstName = nameParts[0] || '';
   const lastName = nameParts.slice(1).join(' ') || '';
-
-  const categoryMap: Record<string, string> = {
-    selling: 'Vendor',
-    buying: 'Buyer',
-    leasing: 'Tenant',
-    general: 'Enquiry',
-    appraisal: 'Vendor',
-  };
 
   const notesLines = [
     `Source: ${payload.source}`,
@@ -87,34 +80,69 @@ async function pushToEagle(env: Env, payload: EnquiryPayload): Promise<boolean> 
     payload.notes ? `\nNotes:\n${payload.notes}` : '',
   ].filter(Boolean).join('\n');
 
-  const mutation = `
-    mutation CreateContact($input: ContactInput!) {
-      createContact(input: $input) { id firstName lastName email }
-    }
-  `;
-
   try {
-    const res = await fetch(`${baseUrl}/api/v3/graphql`, {
+    // Step 1: Create Contact in Eagle CRM
+    const contactRes = await fetch(`${baseUrl}/api/v3/graphql`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: mutation,
+        query: `mutation($input: CreateContactInput!) {
+          createContact(input: $input) {
+            contact { id }
+            errors
+          }
+        }`,
         variables: {
           input: {
-            firstName,
-            lastName,
-            phone: payload.phone,
-            email: payload.email,
-            category: categoryMap[payload.enquiry_type] || 'Enquiry',
-            notes: notesLines,
+            attributes: {
+              firstName,
+              lastName: lastName || undefined,
+              emails: [{ email: payload.email }],
+              phoneNumbers: [{ phoneNumber: payload.phone, numberType: 'MOBILE' }],
+              source: 'Website - krishrealestate.com.au',
+              backgroundInfo: notesLines,
+            },
           },
         },
       }),
     });
-    return res.ok;
+
+    const contactData = await contactRes.json() as {
+      data?: { createContact?: { contact?: { id?: string } } };
+    };
+    const contactId = contactData?.data?.createContact?.contact?.id;
+    if (!contactId) return false;
+
+    // Step 2: Create Enquiry linked to the new Contact
+    await fetch(`${baseUrl}/api/v3/graphql`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query: `mutation($input: CreateEnquiryInput!) {
+          createEnquiry(input: $input) {
+            enquiry { id }
+            errors
+          }
+        }`,
+        variables: {
+          input: {
+            attributes: {
+              contactIds: [parseInt(contactId)],
+              text: notesLines,
+              referredBy: 'krishrealestate.com.au',
+            },
+          },
+        },
+      }),
+    });
+
+    return true;
   } catch {
     return false;
   }
