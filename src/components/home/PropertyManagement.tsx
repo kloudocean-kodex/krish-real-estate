@@ -7,7 +7,7 @@ const PM_FEATURES = [
   { title: 'Clear Communication', description: 'Proactive updates on your property — no surprises, no silence.' },
   { title: 'Maintenance Coordination', description: 'Trusted tradespeople and prompt resolution of maintenance issues.' },
   { title: 'Market-Rate Reviews', description: 'Annual rent reviews based on current market data to maximise your return.' },
-  { title: 'Full Transparency', description: 'Itemised statements, real-time access, and honest advice on your investment.' },
+  { title: 'Full Transparency', description: 'Clear statements, regular updates, and straightforward advice on your investment.' },
 ];
 
 const PM_STATS = [{value:'Local',suffix:'',label:'Northern Melbourne'},{value:'Direct',suffix:'',label:'Team Communication'},{value:'Personal',suffix:'',label:'Property Care'}];
@@ -22,8 +22,8 @@ export function PropertyManagement() {
             <h2 className={styles.title}>Your investment,<br />looked after personally.</h2>
             <p className={styles.description}>
               Property management isn&apos;t a side service for us — it&apos;s a core commitment.
-              We treat every rental property as if it were our own, with transparent communication
-              and proactive management that protects your investment and keeps tenants happy.
+              We focus on clear communication, timely maintenance coordination, and careful
+              attention to the people and property involved.
             </p>
 
             {/* Stat Strip */}

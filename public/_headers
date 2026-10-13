@@ -6,3 +6,6 @@
 
 https://krish-real-estate.pages.dev/*
   X-Robots-Tag: noindex
+
+/images/properties/*
+  Cache-Control: public, max-age=31536000, immutable

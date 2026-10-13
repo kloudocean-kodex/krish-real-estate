@@ -58,8 +58,8 @@ export function ContactClient() {
               <span className={styles.titleItalic}>conversation.</span>
             </h1>
             <p className={styles.subtitle}>
-              Whether you are contemplating a sale, seeking an off-market acquisition in the northern corridor,
-              or require your investment managed with forensic care — our advisory desk is at your disposal.
+              Thinking of selling, looking for a home, or seeking help with a rental property?
+              Tell our Wollert-based team what you need and we will be in touch.
             </p>
           </div>
         </div>

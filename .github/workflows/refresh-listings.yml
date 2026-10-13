@@ -29,7 +29,7 @@ jobs:
           CF_PAGES: '1'
       - name: Publish changed catalogue through Cloudflare Git integration
         run: |
-          git add src/data/listings.json src/data/listing-summaries.json public/images/properties public/_redirects
+          git add src/data/listings.json src/data/listing-summaries.json public/images/properties public/images/hero-mobile.webp public/_redirects
           if git diff --cached --quiet; then
             echo "Catalogue unchanged"
             exit 0

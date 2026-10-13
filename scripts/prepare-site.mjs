@@ -41,6 +41,13 @@ writeFileSync(
     "\n",
 );
 copyFileSync("public/images/krish-favicon.ico", "public/favicon.ico");
+const hero = listings.find(l => ['active', 'under-offer'].includes(l.status) && l.transactionType === 'sale' && l.propertyType === 'House');
+if (hero?.media[0]?.url?.startsWith('/images/properties/')) {
+  await sharp(`public${hero.media[0].url}`)
+    .resize(640, 1138, { fit: 'cover', position: 'centre' })
+    .webp({ quality: 78 })
+    .toFile('public/images/hero-mobile.webp');
+}
 await sharp("public/images/krish-logo-stacked.png")
   .resize(180, 180, { fit: "contain", background: "#f4f1ea" })
   .png()

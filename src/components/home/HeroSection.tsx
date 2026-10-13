@@ -29,15 +29,18 @@ export function HeroSection() {
     <section className={styles.hero} aria-label="Krish Real Estate — Northern Melbourne Authority">
       {/* Background Architectural Canvas */}
       <div className={styles.imageWrapper}>
-        <Image
-          src={heroProperty?.media[0]?.url || "/images/hero-property.jpg"}
-          alt={heroProperty?.media[0]?.alt || "Krish Real Estate property"}
-          fill
-          priority
-          quality={90}
-          sizes="100vw"
-          className={styles.image}
-        />
+        <picture>
+          <source media="(max-width: 640px)" srcSet="/images/hero-mobile.webp" type="image/webp" />
+          <Image
+            src={heroProperty?.media[0]?.url || "/images/hero-property.jpg"}
+            alt={heroProperty?.media[0]?.alt || "Krish Real Estate property"}
+            fill
+            loading="eager"
+            fetchPriority="high"
+            sizes="100vw"
+            className={styles.image}
+          />
+        </picture>
         <div className={styles.overlay} />
         <div className={styles.vignette} />
       </div>
