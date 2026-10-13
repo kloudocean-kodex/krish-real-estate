@@ -49,8 +49,8 @@ export function FeaturedProperties() {
 
         {listings.length > 0 ? (
           <div className={`${styles.grid} ${isRevealed ? styles.gridRevealed : ''}`}>
-            {listings.slice(0,3).map((listing, index) => (
-              <PropertyCard key={listing.listingId} listing={listing} priority={index === 0} />
+            {listings.slice(0,3).map((listing) => (
+              <PropertyCard key={listing.listingId} listing={listing} />
             ))}
           </div>
         ) : (

@@ -26,7 +26,8 @@
       {
         "url": "/images/properties/1855355-0-8d87326d.webp",
         "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1855355-0-8d87326d-360.webp 360w, /images/properties/1855355-0-8d87326d-720.webp 720w, /images/properties/1855355-0-8d87326d-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -80,7 +81,8 @@
       {
         "url": "/images/properties/1864076-0-c75b89da.webp",
         "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1864076-0-c75b89da-360.webp 360w, /images/properties/1864076-0-c75b89da-720.webp 720w, /images/properties/1864076-0-c75b89da-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -142,7 +144,8 @@
       {
         "url": "/images/properties/1848847-0-42eff56d.webp",
         "alt": "78 Huntington Drive, Craigieburn VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1848847-0-42eff56d-360.webp 360w, /images/properties/1848847-0-42eff56d-720.webp 720w, /images/properties/1848847-0-42eff56d-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -196,7 +199,8 @@
       {
         "url": "/images/properties/1847091-0-e2775b40.webp",
         "alt": "158 Dwyer Street, Kalkallo VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1847091-0-e2775b40-360.webp 360w, /images/properties/1847091-0-e2775b40-720.webp 720w, /images/properties/1847091-0-e2775b40-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -236,7 +240,8 @@
       {
         "url": "/images/properties/1855513-0-ad44c63a.webp",
         "alt": "1 Barn Avenue, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1855513-0-ad44c63a-360.webp 360w, /images/properties/1855513-0-ad44c63a-720.webp 720w, /images/properties/1855513-0-ad44c63a-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -284,7 +289,8 @@
       {
         "url": "/images/properties/1786542-0-61e9dcd4.webp",
         "alt": "Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1786542-0-61e9dcd4-360.webp 360w, /images/properties/1786542-0-61e9dcd4-720.webp 720w, /images/properties/1786542-0-61e9dcd4-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -326,7 +332,8 @@
       {
         "url": "/images/properties/1795181-0-759e080f.webp",
         "alt": "Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1795181-0-759e080f-360.webp 360w, /images/properties/1795181-0-759e080f-720.webp 720w, /images/properties/1795181-0-759e080f-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -366,7 +373,8 @@
       {
         "url": "/images/properties/1813608-0-285847b2.webp",
         "alt": "46 Majorelle Boulevard, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1813608-0-285847b2-360.webp 360w, /images/properties/1813608-0-285847b2-720.webp 720w, /images/properties/1813608-0-285847b2-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -408,7 +416,8 @@
       {
         "url": "/images/properties/1795252-0-826774c3.webp",
         "alt": "Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1795252-0-826774c3-360.webp 360w, /images/properties/1795252-0-826774c3-720.webp 720w, /images/properties/1795252-0-826774c3-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -448,7 +457,8 @@
       {
         "url": "/images/properties/1813620-0-76463584.webp",
         "alt": "23 Overnewton Way, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1813620-0-76463584-360.webp 360w, /images/properties/1813620-0-76463584-720.webp 720w, /images/properties/1813620-0-76463584-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -488,7 +498,8 @@
       {
         "url": "/images/properties/1814419-0-633ba495.webp",
         "alt": "12 Catisfield Circuit, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1814419-0-633ba495-360.webp 360w, /images/properties/1814419-0-633ba495-720.webp 720w, /images/properties/1814419-0-633ba495-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -533,7 +544,8 @@
       {
         "url": "/images/properties/1814425-0-a8a6c0cb.webp",
         "alt": "Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1814425-0-a8a6c0cb-360.webp 360w, /images/properties/1814425-0-a8a6c0cb-720.webp 720w, /images/properties/1814425-0-a8a6c0cb-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -578,7 +590,8 @@
       {
         "url": "/images/properties/1814415-0-88d3b10c.webp",
         "alt": "14 Peanut Avenue, Mickleham VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1814415-0-88d3b10c-360.webp 360w, /images/properties/1814415-0-88d3b10c-720.webp 720w, /images/properties/1814415-0-88d3b10c-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -623,7 +636,8 @@
       {
         "url": "/images/properties/1814403-0-f635ea4d.webp",
         "alt": "6 Claude Street, Kalkallo VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1814403-0-f635ea4d-360.webp 360w, /images/properties/1814403-0-f635ea4d-720.webp 720w, /images/properties/1814403-0-f635ea4d-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -663,7 +677,8 @@
       {
         "url": "/images/properties/1814398-0-c9385026.webp",
         "alt": "78 Huntington Drive, Craigieburn VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1814398-0-c9385026-360.webp 360w, /images/properties/1814398-0-c9385026-720.webp 720w, /images/properties/1814398-0-c9385026-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -705,7 +720,8 @@
       {
         "url": "/images/properties/1649302-0-2bed3c3b.webp",
         "alt": "3 Marigold Way, Wallan VIC 3756 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1649302-0-2bed3c3b-360.webp 360w, /images/properties/1649302-0-2bed3c3b-720.webp 720w, /images/properties/1649302-0-2bed3c3b-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -751,7 +767,8 @@
       {
         "url": "/images/properties/1786076-0-b638f3d0.webp",
         "alt": "7 Davis Circuit, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1786076-0-b638f3d0-360.webp 360w, /images/properties/1786076-0-b638f3d0-720.webp 720w, /images/properties/1786076-0-b638f3d0-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -798,7 +815,8 @@
       {
         "url": "/images/properties/1752088-0-64ba1491.webp",
         "alt": "49  ELEVATION BOULEVARD, Craigieburn VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1752088-0-64ba1491-360.webp 360w, /images/properties/1752088-0-64ba1491-720.webp 720w, /images/properties/1752088-0-64ba1491-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -846,7 +864,8 @@
       {
         "url": "/images/properties/1752137-0-d8c7a863.webp",
         "alt": "19 CUTLEAF CRESCENT, Tarneit VIC 3029 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1752137-0-d8c7a863-360.webp 360w, /images/properties/1752137-0-d8c7a863-720.webp 720w, /images/properties/1752137-0-d8c7a863-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -895,7 +914,8 @@
       {
         "url": "/images/properties/1755442-0-8b2ca34b.webp",
         "alt": "Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1755442-0-8b2ca34b-360.webp 360w, /images/properties/1755442-0-8b2ca34b-720.webp 720w, /images/properties/1755442-0-8b2ca34b-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -938,7 +958,8 @@
       {
         "url": "/images/properties/1460287-0-309e6e8e.webp",
         "alt": "84 Eastside Boulevard, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1460287-0-309e6e8e-360.webp 360w, /images/properties/1460287-0-309e6e8e-720.webp 720w, /images/properties/1460287-0-309e6e8e-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -978,7 +999,8 @@
       {
         "url": "/images/properties/1742284-0-dde51a86.webp",
         "alt": "28 BANK STREET, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1742284-0-dde51a86-360.webp 360w, /images/properties/1742284-0-dde51a86-720.webp 720w, /images/properties/1742284-0-dde51a86-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1026,7 +1048,8 @@
       {
         "url": "/images/properties/1418614-0-4b2d92ac.webp",
         "alt": "Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1418614-0-4b2d92ac-360.webp 360w, /images/properties/1418614-0-4b2d92ac-720.webp 720w, /images/properties/1418614-0-4b2d92ac-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -1074,7 +1097,8 @@
       {
         "url": "/images/properties/1742240-0-20180c1f.webp",
         "alt": "19 Wombargo Crescent , Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1742240-0-20180c1f-360.webp 360w, /images/properties/1742240-0-20180c1f-720.webp 720w, /images/properties/1742240-0-20180c1f-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1120,7 +1144,8 @@
       {
         "url": "/images/properties/1724600-0-13dae705.webp",
         "alt": "13 Thorold Street, Doreen VIC 3754 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1724600-0-13dae705-360.webp 360w, /images/properties/1724600-0-13dae705-720.webp 720w, /images/properties/1724600-0-13dae705-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1166,7 +1191,8 @@
       {
         "url": "/images/properties/1716276-0-5f70b64d.webp",
         "alt": "21 Platypus Chase, Beveridge VIC 3753 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1716276-0-5f70b64d-360.webp 360w, /images/properties/1716276-0-5f70b64d-720.webp 720w, /images/properties/1716276-0-5f70b64d-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1212,7 +1238,8 @@
       {
         "url": "/images/properties/1735034-0-494fa657.webp",
         "alt": "7 Cerulean Street, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1735034-0-494fa657-360.webp 360w, /images/properties/1735034-0-494fa657-720.webp 720w, /images/properties/1735034-0-494fa657-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1259,7 +1286,8 @@
       {
         "url": "/images/properties/1701925-0-d515bd4f.webp",
         "alt": "3 Tender Street, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1701925-0-d515bd4f-360.webp 360w, /images/properties/1701925-0-d515bd4f-720.webp 720w, /images/properties/1701925-0-d515bd4f-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -1307,7 +1335,8 @@
       {
         "url": "/images/properties/1729195-0-59bbef7e.webp",
         "alt": "50 Woodman Circuit, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1729195-0-59bbef7e-360.webp 360w, /images/properties/1729195-0-59bbef7e-720.webp 720w, /images/properties/1729195-0-59bbef7e-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1353,7 +1382,8 @@
       {
         "url": "/images/properties/1693577-0-d57c1e95.webp",
         "alt": "3 Tender Street, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1693577-0-d57c1e95-360.webp 360w, /images/properties/1693577-0-d57c1e95-720.webp 720w, /images/properties/1693577-0-d57c1e95-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1399,7 +1429,8 @@
       {
         "url": "/images/properties/1724599-0-f93cb105.webp",
         "alt": "78 Lacombe Blvd, Doreen VIC 3754 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1724599-0-f93cb105-360.webp 360w, /images/properties/1724599-0-f93cb105-720.webp 720w, /images/properties/1724599-0-f93cb105-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1446,7 +1477,8 @@
       {
         "url": "/images/properties/1720677-0-77c37734.webp",
         "alt": "12 Gallop Court , Kilmore VIC 3764 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1720677-0-77c37734-360.webp 360w, /images/properties/1720677-0-77c37734-720.webp 720w, /images/properties/1720677-0-77c37734-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1498,7 +1530,8 @@
       {
         "url": "/images/properties/1699732-0-4f6bcc67.webp",
         "alt": "7 Cerulean Street, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1699732-0-4f6bcc67-360.webp 360w, /images/properties/1699732-0-4f6bcc67-720.webp 720w, /images/properties/1699732-0-4f6bcc67-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -1546,7 +1579,8 @@
       {
         "url": "/images/properties/1708212-0-d1b5dad7.webp",
         "alt": "13 Melville Avenue, Wallan VIC 3756 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1708212-0-d1b5dad7-360.webp 360w, /images/properties/1708212-0-d1b5dad7-720.webp 720w, /images/properties/1708212-0-d1b5dad7-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1592,7 +1626,8 @@
       {
         "url": "/images/properties/1711153-0-373102e9.webp",
         "alt": "181 Vearings Road, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1711153-0-373102e9-360.webp 360w, /images/properties/1711153-0-373102e9-720.webp 720w, /images/properties/1711153-0-373102e9-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1638,7 +1673,8 @@
       {
         "url": "/images/properties/1697165-0-33efb2a2.webp",
         "alt": "5 Monaco Circuit, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1697165-0-33efb2a2-360.webp 360w, /images/properties/1697165-0-33efb2a2-720.webp 720w, /images/properties/1697165-0-33efb2a2-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1685,7 +1721,8 @@
       {
         "url": "/images/properties/1703188-0-3074152f.webp",
         "alt": "16 Gallop Court, Kilmore VIC 3764 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1703188-0-3074152f-360.webp 360w, /images/properties/1703188-0-3074152f-720.webp 720w, /images/properties/1703188-0-3074152f-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1732,7 +1769,8 @@
       {
         "url": "/images/properties/1689142-0-9408b02d.webp",
         "alt": "10 Jeffrey Court, Epping VIC 3076 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1689142-0-9408b02d-360.webp 360w, /images/properties/1689142-0-9408b02d-720.webp 720w, /images/properties/1689142-0-9408b02d-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -1781,7 +1819,8 @@
       {
         "url": "/images/properties/1700907-0-ae1f2447.webp",
         "alt": "4 Byron Street, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1700907-0-ae1f2447-360.webp 360w, /images/properties/1700907-0-ae1f2447-720.webp 720w, /images/properties/1700907-0-ae1f2447-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1828,7 +1867,8 @@
       {
         "url": "/images/properties/1664431-0-a9307ae5.webp",
         "alt": "15 Aldergrove Parade, Mickleham VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1664431-0-a9307ae5-360.webp 360w, /images/properties/1664431-0-a9307ae5-720.webp 720w, /images/properties/1664431-0-a9307ae5-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1874,7 +1914,8 @@
       {
         "url": "/images/properties/1688887-0-d4008c51.webp",
         "alt": "29 Bunurong Avenue, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1688887-0-d4008c51-360.webp 360w, /images/properties/1688887-0-d4008c51-720.webp 720w, /images/properties/1688887-0-d4008c51-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1914,7 +1955,8 @@
       {
         "url": "/images/properties/1684160-0-ba192289.webp",
         "alt": "78 Lacombe Boulevard, Doreen VIC 3754 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1684160-0-ba192289-360.webp 360w, /images/properties/1684160-0-ba192289-720.webp 720w, /images/properties/1684160-0-ba192289-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -1959,7 +2001,8 @@
       {
         "url": "/images/properties/1624826-0-4acc157f.webp",
         "alt": "4 Byron Street, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1624826-0-4acc157f-360.webp 360w, /images/properties/1624826-0-4acc157f-720.webp 720w, /images/properties/1624826-0-4acc157f-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -2007,7 +2050,8 @@
       {
         "url": "/images/properties/1682491-0-fd7d0a45.webp",
         "alt": "78 Lacombe Boulevard, Doreen VIC 3754 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1682491-0-fd7d0a45-360.webp 360w, /images/properties/1682491-0-fd7d0a45-720.webp 720w, /images/properties/1682491-0-fd7d0a45-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2053,7 +2097,8 @@
       {
         "url": "/images/properties/1659562-0-f1890dc8.webp",
         "alt": "12/148 Waterloo Road, Oak Park VIC 3046 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1659562-0-f1890dc8-360.webp 360w, /images/properties/1659562-0-f1890dc8-720.webp 720w, /images/properties/1659562-0-f1890dc8-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2100,7 +2145,8 @@
       {
         "url": "/images/properties/1646227-0-b98516c1.webp",
         "alt": "3 Flame Road, Kalkallo VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1646227-0-b98516c1-360.webp 360w, /images/properties/1646227-0-b98516c1-720.webp 720w, /images/properties/1646227-0-b98516c1-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2147,7 +2193,8 @@
       {
         "url": "/images/properties/1664427-0-b12eae78.webp",
         "alt": "53 Ramornie Loop, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1664427-0-b12eae78-360.webp 360w, /images/properties/1664427-0-b12eae78-720.webp 720w, /images/properties/1664427-0-b12eae78-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2193,7 +2240,8 @@
       {
         "url": "/images/properties/1647235-0-2d1f2d9f.webp",
         "alt": "1 Barn Avenue, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1647235-0-2d1f2d9f-360.webp 360w, /images/properties/1647235-0-2d1f2d9f-720.webp 720w, /images/properties/1647235-0-2d1f2d9f-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2240,7 +2288,8 @@
       {
         "url": "/images/properties/1663594-0-b1a8af80.webp",
         "alt": "23 Belvedere Circuit, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1663594-0-b1a8af80-360.webp 360w, /images/properties/1663594-0-b1a8af80-720.webp 720w, /images/properties/1663594-0-b1a8af80-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2281,7 +2330,8 @@
       {
         "url": "/images/properties/1659561-0-e2d2dec0.webp",
         "alt": "1A Ealing Close, Epping VIC 3076 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1659561-0-e2d2dec0-360.webp 360w, /images/properties/1659561-0-e2d2dec0-720.webp 720w, /images/properties/1659561-0-e2d2dec0-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2329,7 +2379,8 @@
       {
         "url": "/images/properties/1583110-0-a90ec270.webp",
         "alt": "Wallan VIC 3756 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1583110-0-a90ec270-360.webp 360w, /images/properties/1583110-0-a90ec270-720.webp 720w, /images/properties/1583110-0-a90ec270-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -2372,7 +2423,8 @@
       {
         "url": "/images/properties/1607542-0-d5cd224e.webp",
         "alt": "34 Tungsten Drive, Kalkallo VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1607542-0-d5cd224e-360.webp 360w, /images/properties/1607542-0-d5cd224e-720.webp 720w, /images/properties/1607542-0-d5cd224e-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -2420,7 +2472,8 @@
       {
         "url": "/images/properties/1642985-0-c19cc6a6.webp",
         "alt": "8 Cowes Street, Craigieburn VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1642985-0-c19cc6a6-360.webp 360w, /images/properties/1642985-0-c19cc6a6-720.webp 720w, /images/properties/1642985-0-c19cc6a6-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2467,7 +2520,8 @@
       {
         "url": "/images/properties/1639233-0-3f3eb484.webp",
         "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1639233-0-3f3eb484-360.webp 360w, /images/properties/1639233-0-3f3eb484-720.webp 720w, /images/properties/1639233-0-3f3eb484-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2514,7 +2568,8 @@
       {
         "url": "/images/properties/1646746-0-49f86999.webp",
         "alt": "11 Kingfisher Way, Wallan VIC 3756 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1646746-0-49f86999-360.webp 360w, /images/properties/1646746-0-49f86999-720.webp 720w, /images/properties/1646746-0-49f86999-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2560,7 +2615,8 @@
       {
         "url": "/images/properties/1646217-0-e04c635e.webp",
         "alt": "49 Elevation Boulevard, Craigieburn VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1646217-0-e04c635e-360.webp 360w, /images/properties/1646217-0-e04c635e-720.webp 720w, /images/properties/1646217-0-e04c635e-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2608,7 +2664,8 @@
       {
         "url": "/images/properties/1413486-0-81ab58c1.webp",
         "alt": "Sunbury VIC 3429 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1413486-0-81ab58c1-360.webp 360w, /images/properties/1413486-0-81ab58c1-720.webp 720w, /images/properties/1413486-0-81ab58c1-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2650,7 +2707,8 @@
       {
         "url": "/images/properties/1630779-0-afabd666.webp",
         "alt": "1 Barn Avenue, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1630779-0-afabd666-360.webp 360w, /images/properties/1630779-0-afabd666-720.webp 720w, /images/properties/1630779-0-afabd666-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -2698,7 +2756,8 @@
       {
         "url": "/images/properties/1642121-0-02a7ded4.webp",
         "alt": "11 Teagreen Street, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1642121-0-02a7ded4-360.webp 360w, /images/properties/1642121-0-02a7ded4-720.webp 720w, /images/properties/1642121-0-02a7ded4-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2738,7 +2797,8 @@
       {
         "url": "/images/properties/1642126-0-566537e3.webp",
         "alt": "13 Thorold Street, Doreen VIC 3754 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1642126-0-566537e3-360.webp 360w, /images/properties/1642126-0-566537e3-720.webp 720w, /images/properties/1642126-0-566537e3-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2778,7 +2838,8 @@
       {
         "url": "/images/properties/1642134-0-1100bf4a.webp",
         "alt": "28 Bank Street, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1642134-0-1100bf4a-360.webp 360w, /images/properties/1642134-0-1100bf4a-720.webp 720w, /images/properties/1642134-0-1100bf4a-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2820,7 +2881,8 @@
       {
         "url": "/images/properties/1401838-0-f350a4e6.webp",
         "alt": "Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1401838-0-f350a4e6-360.webp 360w, /images/properties/1401838-0-f350a4e6-720.webp 720w, /images/properties/1401838-0-f350a4e6-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2860,7 +2922,8 @@
       {
         "url": "/images/properties/1603234-0-355999f5.webp",
         "alt": "9 Herne Street, Wallan VIC 3756 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1603234-0-355999f5-360.webp 360w, /images/properties/1603234-0-355999f5-720.webp 720w, /images/properties/1603234-0-355999f5-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2907,7 +2970,8 @@
       {
         "url": "/images/properties/1609677-0-fdcb5e1a.webp",
         "alt": "8 Cygnet Way, Mickleham VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1609677-0-fdcb5e1a-360.webp 360w, /images/properties/1609677-0-fdcb5e1a-720.webp 720w, /images/properties/1609677-0-fdcb5e1a-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2953,7 +3017,8 @@
       {
         "url": "/images/properties/1624930-0-3ed95977.webp",
         "alt": "3 Caladoc Road, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1624930-0-3ed95977-360.webp 360w, /images/properties/1624930-0-3ed95977-720.webp 720w, /images/properties/1624930-0-3ed95977-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -2993,7 +3058,8 @@
       {
         "url": "/images/properties/1610005-0-24617228.webp",
         "alt": "36 Canary View, Beveridge VIC 3753 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1610005-0-24617228-360.webp 360w, /images/properties/1610005-0-24617228-720.webp 720w, /images/properties/1610005-0-24617228-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3041,7 +3107,8 @@
       {
         "url": "/images/properties/1590590-0-8e0f0dc0.webp",
         "alt": "82 Gypsum Drive, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1590590-0-8e0f0dc0-360.webp 360w, /images/properties/1590590-0-8e0f0dc0-720.webp 720w, /images/properties/1590590-0-8e0f0dc0-1080.webp 1080w"
       }
     ],
     "tours": [
@@ -3090,7 +3157,8 @@
       {
         "url": "/images/properties/1590420-0-1f2efcff.webp",
         "alt": "125 Arrowsmith Street, Beveridge VIC 3753 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1590420-0-1f2efcff-360.webp 360w, /images/properties/1590420-0-1f2efcff-720.webp 720w, /images/properties/1590420-0-1f2efcff-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3138,7 +3206,8 @@
       {
         "url": "/images/properties/1591053-0-e49d7aa6.webp",
         "alt": "8 Davis Circuit, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1591053-0-e49d7aa6-360.webp 360w, /images/properties/1591053-0-e49d7aa6-720.webp 720w, /images/properties/1591053-0-e49d7aa6-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3184,7 +3253,8 @@
       {
         "url": "/images/properties/1599251-0-edf3dc33.webp",
         "alt": "Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1599251-0-edf3dc33-360.webp 360w, /images/properties/1599251-0-edf3dc33-720.webp 720w, /images/properties/1599251-0-edf3dc33-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3224,7 +3294,8 @@
       {
         "url": "/images/properties/1582665-0-d8cbb2f6.webp",
         "alt": "4 Topiary Way, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1582665-0-d8cbb2f6-360.webp 360w, /images/properties/1582665-0-d8cbb2f6-720.webp 720w, /images/properties/1582665-0-d8cbb2f6-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3272,7 +3343,8 @@
       {
         "url": "/images/properties/1547836-0-09ab2791.webp",
         "alt": "19 Valais Street, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1547836-0-09ab2791-360.webp 360w, /images/properties/1547836-0-09ab2791-720.webp 720w, /images/properties/1547836-0-09ab2791-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3318,7 +3390,8 @@
       {
         "url": "/images/properties/1583192-0-884086ad.webp",
         "alt": "19 Wombargo Crescent, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1583192-0-884086ad-360.webp 360w, /images/properties/1583192-0-884086ad-720.webp 720w, /images/properties/1583192-0-884086ad-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3364,7 +3437,8 @@
       {
         "url": "/images/properties/1576577-0-a4125947.webp",
         "alt": "13 Melville Avenue, Wallan VIC 3756 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1576577-0-a4125947-360.webp 360w, /images/properties/1576577-0-a4125947-720.webp 720w, /images/properties/1576577-0-a4125947-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3411,7 +3485,8 @@
       {
         "url": "/images/properties/1570135-0-02c9165c.webp",
         "alt": "17 Vintage Avenue, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1570135-0-02c9165c-360.webp 360w, /images/properties/1570135-0-02c9165c-720.webp 720w, /images/properties/1570135-0-02c9165c-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3458,7 +3533,8 @@
       {
         "url": "/images/properties/1555239-0-e929410c.webp",
         "alt": "50 Lynwood Drive, Thornhill Park VIC 3335 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1555239-0-e929410c-360.webp 360w, /images/properties/1555239-0-e929410c-720.webp 720w, /images/properties/1555239-0-e929410c-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3505,7 +3581,8 @@
       {
         "url": "/images/properties/1462244-0-eab6f679.webp",
         "alt": "6 Sim Street, Wallan VIC 3756 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1462244-0-eab6f679-360.webp 360w, /images/properties/1462244-0-eab6f679-720.webp 720w, /images/properties/1462244-0-eab6f679-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3546,7 +3623,8 @@
       {
         "url": "/images/properties/1571071-0-9f1bc351.webp",
         "alt": "9 Tooronga Drive, Mickleham VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1571071-0-9f1bc351-360.webp 360w, /images/properties/1571071-0-9f1bc351-720.webp 720w, /images/properties/1571071-0-9f1bc351-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3593,7 +3671,8 @@
       {
         "url": "/images/properties/1557886-0-fb81e3e6.webp",
         "alt": "7 Melville Avenue, Wallan VIC 3756 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1557886-0-fb81e3e6-360.webp 360w, /images/properties/1557886-0-fb81e3e6-720.webp 720w, /images/properties/1557886-0-fb81e3e6-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3634,7 +3713,8 @@
       {
         "url": "/images/properties/1564137-0-55e37255.webp",
         "alt": "19 Spafield Road, Beveridge VIC 3753 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1564137-0-55e37255-360.webp 360w, /images/properties/1564137-0-55e37255-720.webp 720w, /images/properties/1564137-0-55e37255-1048.webp 1048w"
       }
     ],
     "tours": [],
@@ -3681,7 +3761,8 @@
       {
         "url": "/images/properties/1561893-0-2d030dd2.webp",
         "alt": "17 Punchbowl Road, Kalkallo VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1561893-0-2d030dd2-360.webp 360w, /images/properties/1561893-0-2d030dd2-720.webp 720w, /images/properties/1561893-0-2d030dd2-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3723,7 +3804,8 @@
       {
         "url": "/images/properties/1552673-0-24517594.webp",
         "alt": "15 Innes Street, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1552673-0-24517594-360.webp 360w, /images/properties/1552673-0-24517594-720.webp 720w, /images/properties/1552673-0-24517594-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3771,7 +3853,8 @@
       {
         "url": "/images/properties/1495121-0-0825b7cd.webp",
         "alt": "10 Bentons Way, Mickleham VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1495121-0-0825b7cd-360.webp 360w, /images/properties/1495121-0-0825b7cd-720.webp 720w, /images/properties/1495121-0-0825b7cd-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3817,7 +3900,8 @@
       {
         "url": "/images/properties/1524986-0-f3bedba4.webp",
         "alt": "11 Werribee Crescent, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1524986-0-f3bedba4-360.webp 360w, /images/properties/1524986-0-f3bedba4-720.webp 720w, /images/properties/1524986-0-f3bedba4-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3864,7 +3948,8 @@
       {
         "url": "/images/properties/1484214-0-57f5404a.webp",
         "alt": "53 Boomerang Road, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1484214-0-57f5404a-360.webp 360w, /images/properties/1484214-0-57f5404a-720.webp 720w, /images/properties/1484214-0-57f5404a-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3910,7 +3995,8 @@
       {
         "url": "/images/properties/1510503-0-f6677704.webp",
         "alt": "9 Tooronga Drive, Mickleham VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1510503-0-f6677704-360.webp 360w, /images/properties/1510503-0-f6677704-720.webp 720w, /images/properties/1510503-0-f6677704-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3950,7 +4036,8 @@
       {
         "url": "/images/properties/1512934-0-33b8852a.webp",
         "alt": "5 Monaco Circuit, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1512934-0-33b8852a-360.webp 360w, /images/properties/1512934-0-33b8852a-720.webp 720w, /images/properties/1512934-0-33b8852a-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -3998,7 +4085,8 @@
       {
         "url": "/images/properties/1491635-0-abf58fa3.webp",
         "alt": "15 Wollemi Avenue, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1491635-0-abf58fa3-360.webp 360w, /images/properties/1491635-0-abf58fa3-720.webp 720w, /images/properties/1491635-0-abf58fa3-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4045,7 +4133,8 @@
       {
         "url": "/images/properties/1491719-0-77dc5c8e.webp",
         "alt": "84 Eastside Boulevard, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1491719-0-77dc5c8e-360.webp 360w, /images/properties/1491719-0-77dc5c8e-720.webp 720w, /images/properties/1491719-0-77dc5c8e-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4091,7 +4180,8 @@
       {
         "url": "/images/properties/1505339-0-d5a2fbb5.webp",
         "alt": "1A Ealing Close, Epping VIC 3076 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1505339-0-d5a2fbb5-360.webp 360w, /images/properties/1505339-0-d5a2fbb5-720.webp 720w, /images/properties/1505339-0-d5a2fbb5-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4138,7 +4228,8 @@
       {
         "url": "/images/properties/1469909-0-1708b8db.webp",
         "alt": "131 Brightvale Boulevard, Wyndham Vale VIC 3024 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1469909-0-1708b8db-360.webp 360w, /images/properties/1469909-0-1708b8db-720.webp 720w, /images/properties/1469909-0-1708b8db-1034.webp 1034w"
       }
     ],
     "tours": [],
@@ -4185,7 +4276,8 @@
       {
         "url": "/images/properties/1492163-0-5e91ad34.webp",
         "alt": "71 Innovation Avenue, Rockbank VIC 3335 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1492163-0-5e91ad34-360.webp 360w, /images/properties/1492163-0-5e91ad34-720.webp 720w, /images/properties/1492163-0-5e91ad34-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4233,7 +4325,8 @@
       {
         "url": "/images/properties/1425995-0-05d4b4df.webp",
         "alt": "88 Gypsum Drive, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1425995-0-05d4b4df-360.webp 360w, /images/properties/1425995-0-05d4b4df-720.webp 720w, /images/properties/1425995-0-05d4b4df-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4279,7 +4372,8 @@
       {
         "url": "/images/properties/1485655-0-53f9be6e.webp",
         "alt": "17 Holman Road, Kilmore VIC 3764 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1485655-0-53f9be6e-360.webp 360w, /images/properties/1485655-0-53f9be6e-720.webp 720w, /images/properties/1485655-0-53f9be6e-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4325,7 +4419,8 @@
       {
         "url": "/images/properties/1485660-0-05d0fd2a.webp",
         "alt": "18 Dysart Road, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1485660-0-05d0fd2a-360.webp 360w, /images/properties/1485660-0-05d0fd2a-720.webp 720w, /images/properties/1485660-0-05d0fd2a-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4371,7 +4466,8 @@
       {
         "url": "/images/properties/1472212-0-fed03818.webp",
         "alt": "37 Eastside Boulevard, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1472212-0-fed03818-360.webp 360w, /images/properties/1472212-0-fed03818-720.webp 720w, /images/properties/1472212-0-fed03818-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4417,7 +4513,8 @@
       {
         "url": "/images/properties/1453745-0-b0dbc11f.webp",
         "alt": "50 Lynwood Drive, Thornhill Park VIC 3335 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1453745-0-b0dbc11f-360.webp 360w, /images/properties/1453745-0-b0dbc11f-720.webp 720w, /images/properties/1453745-0-b0dbc11f-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4465,7 +4562,8 @@
       {
         "url": "/images/properties/1414639-0-a39e8369.webp",
         "alt": "2 Myall Street, Kalkallo VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1414639-0-a39e8369-360.webp 360w, /images/properties/1414639-0-a39e8369-720.webp 720w, /images/properties/1414639-0-a39e8369-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4507,7 +4605,8 @@
       {
         "url": "/images/properties/1426978-0-4557a06c.webp",
         "alt": "9 Patch Road, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1426978-0-4557a06c-360.webp 360w, /images/properties/1426978-0-4557a06c-720.webp 720w, /images/properties/1426978-0-4557a06c-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4553,7 +4652,8 @@
       {
         "url": "/images/properties/1445306-0-0e1e7e3c.webp",
         "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1445306-0-0e1e7e3c-360.webp 360w, /images/properties/1445306-0-0e1e7e3c-720.webp 720w, /images/properties/1445306-0-0e1e7e3c-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4600,7 +4700,8 @@
       {
         "url": "/images/properties/1423080-0-963baea8.webp",
         "alt": "9 Melville Avenue, Wallan VIC 3756 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1423080-0-963baea8-360.webp 360w, /images/properties/1423080-0-963baea8-720.webp 720w, /images/properties/1423080-0-963baea8-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4647,7 +4748,8 @@
       {
         "url": "/images/properties/1427121-0-ffa23811.webp",
         "alt": "125 Arrowsmith Street, Beveridge VIC 3753 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1427121-0-ffa23811-360.webp 360w, /images/properties/1427121-0-ffa23811-720.webp 720w, /images/properties/1427121-0-ffa23811-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4687,7 +4789,8 @@
       {
         "url": "/images/properties/1430483-0-91151686.webp",
         "alt": "3 Decumbens Way, Donnybrook VIC 3064 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1430483-0-91151686-360.webp 360w, /images/properties/1430483-0-91151686-720.webp 720w, /images/properties/1430483-0-91151686-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4729,7 +4832,8 @@
       {
         "url": "/images/properties/1414971-0-11e48334.webp",
         "alt": "18 Andromeda Loop, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1414971-0-11e48334-360.webp 360w, /images/properties/1414971-0-11e48334-720.webp 720w, /images/properties/1414971-0-11e48334-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4769,7 +4873,8 @@
       {
         "url": "/images/properties/1404590-0-da4bb4ef.webp",
         "alt": "23 Overnewton Way, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1404590-0-da4bb4ef-360.webp 360w, /images/properties/1404590-0-da4bb4ef-720.webp 720w, /images/properties/1404590-0-da4bb4ef-1080.webp 1080w"
       }
     ],
     "tours": [],
@@ -4809,7 +4914,8 @@
       {
         "url": "/images/properties/1402307-0-6d31b2ed.webp",
         "alt": "19 Wombargo Crescent, Wollert VIC 3750 — property photograph 1",
-        "type": "image"
+        "type": "image",
+        "srcSet": "/images/properties/1402307-0-6d31b2ed-360.webp 360w, /images/properties/1402307-0-6d31b2ed-720.webp 720w, /images/properties/1402307-0-6d31b2ed-1080.webp 1080w"
       }
     ],
     "tours": [],

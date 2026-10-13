@@ -34,6 +34,18 @@ await Promise.all(
         downloaded++;
       }
       m.url = `/images/properties/${name}`;
+      if (index === 0) {
+        const variants = [];
+        const originalWidth = (await sharp(dest).metadata()).width;
+        for (const width of new Set([360, 720, 1080].map(w => Math.min(w, originalWidth)))) {
+          const variant = name.replace('.webp', `-${width}.webp`);
+          const path = `public/images/properties/${variant}`;
+          if (!existsSync(path)) await sharp(dest)
+            .resize({ width, withoutEnlargement: true }).webp({ quality: 78 }).toFile(path);
+          variants.push(`/images/properties/${variant} ${width}w`);
+        }
+        m.srcSet = variants.join(', ');
+      }
     }
   }),
 );

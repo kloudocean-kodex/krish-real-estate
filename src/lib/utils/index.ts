@@ -23,6 +23,8 @@ export function formatDate(dateString: string): string {
     weekday: 'short',
     day: 'numeric',
     month: 'short',
+    // Eagle supplies a local calendar date, not an instant in the visitor's timezone.
+    timeZone: 'UTC',
   }).format(date);
 }
 

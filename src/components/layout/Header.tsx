@@ -78,14 +78,18 @@ export function Header() {
             className={styles.logo}
             aria-label="Krish Real Estate — Home"
           >
+            <picture>
+            <source type="image/webp" srcSet="/images/krish-logo-horizontal-240.webp 240w, /images/krish-logo-horizontal-480.webp 480w" sizes="180px" />
             <Image
               src="/images/krish-logo-horizontal.png"
               alt="Krish Real Estate"
               width={180}
               height={44}
-              priority
+              loading="eager"
+              fetchPriority="high"
               className={`${styles.logoImage} ${isHeroMode ? styles.logoImageLight : ""}`}
             />
+            </picture>
           </Link>
 
           {/* ── Desktop Navigation ── */}

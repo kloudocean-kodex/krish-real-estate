@@ -1,28 +1,32 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SellerStory.module.css';
-import {getActiveListings} from '@/data/listing-summaries';
-const property=getActiveListings('sale').find(l=>l.propertyType==='House');
 
 export function SellerStory() {
   return (
     <section className={`${styles.section} section`} aria-label="The Krish Selling Standard">
       <div className={styles.container}>
         <div className={`${styles.imageCol} reveal reveal--left`}>
-          <div className={styles.imageWrapper}>
-            <Image
-              src={property?.media[0]?.url || "/images/property-interior.jpg"}
-              alt={property?.media[0]?.alt || "Property presentation"}
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className={styles.image}
-            />
+          <figure className={styles.imageWrapper}>
+            <picture>
+              <source srcSet="/images/brand/seller-presentation.avif" type="image/avif" />
+              <Image
+                src="/images/brand/seller-presentation.webp"
+                alt="Conceptual living room with warm linen, natural oak and soft garden light"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className={styles.image}
+              />
+            </picture>
             <div className={styles.imageOverlay} />
-            <div className={styles.imagePlacard}>
-              <span className={styles.placardIcon}>✦</span>
-              <span className={styles.placardText}>CURATED PRESENTATION · MELBOURNE NORTH</span>
-            </div>
-          </div>
+            <figcaption className={styles.imagePlacard}>
+              <span className={styles.placardIcon} aria-hidden="true">✦</span>
+              <span>
+                <span className={styles.placardText}>CURATED PRESENTATION · MELBOURNE NORTH</span>
+                <span className={styles.imageNote}>Conceptual brand imagery</span>
+              </span>
+            </figcaption>
+          </figure>
         </div>
 
         <div className={`${styles.contentCol} reveal reveal--right`}>

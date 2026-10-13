@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import type { NormalizedListing } from '@/data/listings';
+import { formatDate, formatTime } from '@/lib/utils';
 import styles from './PropertyCard.module.css';
 
 interface PropertyCardProps {
@@ -18,14 +19,19 @@ export function PropertyCard({ listing, priority = false }: PropertyCardProps) {
         {/* Visual Frame */}
         <div className={styles.imageWrapper}>
           {mainImage && (
-            <Image
+            <picture>
+              {mainImage.srcSet && <source srcSet={mainImage.srcSet}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" type="image/webp" />}
+              <Image
               src={mainImage.url}
               alt={mainImage.alt}
               fill
-              priority={priority}
+              loading={priority ? 'eager' : 'lazy'}
+              fetchPriority={priority ? 'high' : 'auto'}
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className={styles.image}
             />
+            </picture>
           )}
 
           <div className={styles.imageOverlay} />
@@ -97,10 +103,5 @@ export function PropertyCard({ listing, priority = false }: PropertyCardProps) {
 }
 
 function formatInspectionBrief(inspection: { date: string; startTime: string; endTime: string }): string {
-  const date = new Date(inspection.date);
-  const day = new Intl.DateTimeFormat('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }).format(date);
-  const [startH, startM] = inspection.startTime.split(':').map(Number);
-  const startPeriod = startH >= 12 ? 'pm' : 'am';
-  const startDisplay = `${startH % 12 || 12}${startM > 0 ? `:${startM.toString().padStart(2, '0')}` : ''}${startPeriod}`;
-  return `${day}, ${startDisplay}`;
+  return `${formatDate(inspection.date)}, ${formatTime(inspection.startTime)}`;
 }

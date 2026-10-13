@@ -156,7 +156,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                     <div key={idx} className={styles.inspectionRow}>
                       <div className={styles.inspectionDateInfo}>
                         <span className={styles.inspectionCalendarIcon}>📅</span>
-                        <strong>{new Date(insp.date).toLocaleDateString('en-AU', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}</strong>
+                        <strong>{new Date(insp.date).toLocaleDateString('en-AU', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</strong>
                       </div>
                       <span className={styles.inspectionTime}>
                         {insp.startTime} – {insp.endTime}

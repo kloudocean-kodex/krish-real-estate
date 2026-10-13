@@ -41,6 +41,10 @@ writeFileSync(
     "\n",
 );
 copyFileSync("public/images/krish-favicon.ico", "public/favicon.ico");
+// Small derivatives of the original supplied artwork; retain its proportions and transparency.
+for (const width of [240, 480]) await sharp('public/images/krish-logo-horizontal.png')
+  .resize({ width, withoutEnlargement: true }).webp({ quality: 90 })
+  .toFile(`public/images/krish-logo-horizontal-${width}.webp`);
 const hero = listings.find(l => ['active', 'under-offer'].includes(l.status) && l.transactionType === 'sale' && l.propertyType === 'House');
 if (hero?.media[0]?.url?.startsWith('/images/properties/')) {
   await sharp(`public${hero.media[0].url}`)

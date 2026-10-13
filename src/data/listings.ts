@@ -27,6 +27,7 @@ export interface NormalizedListing {
   features: string[];
   media: {
     url: string;
+    srcSet?: string;
     alt: string;
     type: 'image' | 'floorplan' | 'video';
   }[];
