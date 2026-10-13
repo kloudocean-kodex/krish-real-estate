@@ -8,7 +8,7 @@ import { submitEnquiry } from '@/lib/submitEnquiry';
 import styles from './Contact.module.css';
 
 export function ContactClient() {
-  const [enquiryType, setEnquiryType] = useState('selling');
+  const [enquiryType, setEnquiryType] = useState('general');
   const [fullName, setFullName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
@@ -132,6 +132,7 @@ export function ContactClient() {
                         <button
                           key={type.id}
                           type="button"
+                          aria-pressed={enquiryType === type.id}
                           className={`${styles.typeBtn} ${enquiryType === type.id ? styles.typeBtnActive : ''}`}
                           onClick={() => setEnquiryType(type.id)}
                         >
@@ -210,7 +211,7 @@ export function ContactClient() {
                   <span className={styles.successIcon}>✓</span>
                   <h2 className={styles.successTitle}>Thank you, {fullName}.</h2>
                   <p className={styles.successText}>
-                    Your enquiry regarding <strong>{enquiryType}</strong> has been received by our Wollert office.
+                    Your {enquiryType === 'general' ? 'general enquiry' : `${enquiryType} enquiry`} has been received by our Wollert office.
                     Our team will review your message and contact you on <strong>{phone}</strong> shortly.
                   </p>
                   <Link href="/" className={styles.returnBtn}>
