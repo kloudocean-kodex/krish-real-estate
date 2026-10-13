@@ -37,6 +37,8 @@ This is a presentation change. Eagle data, enquiry submission, subscriptions, no
 
 A narrow-screen property detail overflow was found in browser QA. The grid tracks and columns now permit shrinking to their available width rather than expanding the page to an intrinsic child width.
 
+Live phone QA also found that the multi-row catalogue filters and property summary occupied too much fixed screen space while scrolling. Below 768px these bars now flow with the page, leaving the photographs and facts unobstructed. Larger screens retain sticky controls. Buy and rent catalogues share the filter styles.
+
 Pre-release checks passed: 127 generated routes, lint, diff whitespace check, and export audit (122 public pages, 1,366 files, no broken local references). Edge responsive checks covered 320, 390, 768 and 1440 requested viewport widths. House detail and land detail return the correct facts; the land filter returns four land listings and the house filter six houses. Both grid and list modes fit a narrow phone. Native accessibility readback includes complete facts in each card link name.
 
 Conservative desktop text contrast, assuming a completely white photograph under the lightest fully opaque part of the backdrop: champagne 5.49:1, body copy 7.54:1, step copy 6.72:1. Dark CTA text on gold is 6.43:1. The masked edge finishes before the text starts. These are calculated colour ratios, not a claim of a new site-wide accessibility certification.
