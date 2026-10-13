@@ -1,9 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { submitEnquiry } from '@/lib/submitEnquiry';
-import styles from './Appraisal.module.css';
+import { useState } from "react";
+import Link from "next/link";
+import { EnquiryProtection } from "@/components/EnquiryProtection";
+import { submitEnquiry } from "@/lib/submitEnquiry";
+import styles from "./Appraisal.module.css";
 
 export function AppraisalForm() {
   const [step, setStep] = useState<number>(1);
@@ -11,37 +12,53 @@ export function AppraisalForm() {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   // Form State
-  const [address, setAddress] = useState('');
-  const [suburb, setSuburb] = useState('Wollert');
-  const [propertyType, setPropertyType] = useState('House');
-  const [beds, setBeds] = useState('4');
-  const [baths, setBaths] = useState('2');
-  const [timeline, setTimeline] = useState('1-3 months');
-  const [fullName, setFullName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [email, setEmail] = useState('');
-  const [notes, setNotes] = useState('');
+  const [address, setAddress] = useState("");
+  const [suburb, setSuburb] = useState("Wollert");
+  const [propertyType, setPropertyType] = useState("House");
+  const [beds, setBeds] = useState("4");
+  const [baths, setBaths] = useState("2");
+  const [timeline, setTimeline] = useState("1 to 3 Months");
+  const [fullName, setFullName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [notes, setNotes] = useState("");
+
+  const [error, setError] = useState("");
+  const [attempt, setAttempt] = useState(0);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const form = e.currentTarget as HTMLFormElement;
+    if (isSubmitting) return;
+    setError("");
     setIsSubmitting(true);
 
-    await submitEnquiry({
-      name: fullName,
-      phone,
-      email,
-      address: `${address}, ${suburb}`,
-      property_type: propertyType,
-      bedrooms: beds,
-      bathrooms: baths,
-      timeline,
-      notes,
-      enquiry_type: 'appraisal',
-      source: 'krishrealestate.com.au — Property Appraisal Request',
-      subject: `New Property Appraisal Request: ${address}, ${suburb} from ${fullName}`,
-    });
+    const result = await submitEnquiry(
+      {
+        name: fullName,
+        phone,
+        email,
+        address: `${address}, ${suburb}`,
+        property_type: propertyType,
+        bedrooms: beds,
+        bathrooms: baths,
+        timeline,
+        notes,
+        enquiry_type: "appraisal",
+        source: "krishrealestate.com.au — Property Appraisal Request",
+        subject: `New Property Appraisal Request: ${address}, ${suburb} from ${fullName}`,
+      },
+      form,
+    );
 
+    setAttempt((a) => a + 1);
     setIsSubmitting(false);
+    if (!result.success) {
+      setError(
+        `${result.error || "Unable to send. Please call 0479 092 216."}${result.reference ? ` Reference: ${result.reference}` : ""}`,
+      );
+      return;
+    }
     setIsSubmitted(true);
   };
 
@@ -51,14 +68,20 @@ export function AppraisalForm() {
         <div className={styles.wrapper}>
           {/* Header */}
           <div className={styles.header}>
-            <span className={styles.overline}>◆ CONFIDENTIAL VALUATION SUITE</span>
+            <span className={styles.overline}>
+              ◆ YOUR LOCAL MARKET APPRAISAL
+            </span>
             <h1 className={styles.title}>
-              What is your home<br />
-              <span className={styles.titleItalic}>worth in today&apos;s market?</span>
+              What is your home
+              <br />
+              <span className={styles.titleItalic}>
+                worth in today&apos;s market?
+              </span>
             </h1>
             <p className={styles.subtitle}>
-              Receive an evidence-backed valuation prepared by our street-level specialists.
-              No automated algorithmic guesses — a genuine appraisal grounded in real buyer demand.
+              Understand your property’s position with a personal market appraisal,
+              informed by comparable sales and local buyer demand. An appraisal
+              is an estimate of market value, rather than a formal valuation.
             </p>
           </div>
 
@@ -66,17 +89,23 @@ export function AppraisalForm() {
             <div className={styles.formCard}>
               {/* Progress Steps */}
               <div className={styles.progressBar}>
-                <div className={`${styles.progressStep} ${step >= 1 ? styles.progressStepActive : ''}`}>
+                <div
+                  className={`${styles.progressStep} ${step >= 1 ? styles.progressStepActive : ""}`}
+                >
                   <span className={styles.stepNum}>01</span>
                   <span className={styles.stepName}>Property</span>
                 </div>
                 <div className={styles.progressLine} />
-                <div className={`${styles.progressStep} ${step >= 2 ? styles.progressStepActive : ''}`}>
+                <div
+                  className={`${styles.progressStep} ${step >= 2 ? styles.progressStepActive : ""}`}
+                >
                   <span className={styles.stepNum}>02</span>
                   <span className={styles.stepName}>Timeline</span>
                 </div>
                 <div className={styles.progressLine} />
-                <div className={`${styles.progressStep} ${step >= 3 ? styles.progressStepActive : ''}`}>
+                <div
+                  className={`${styles.progressStep} ${step >= 3 ? styles.progressStepActive : ""}`}
+                >
                   <span className={styles.stepNum}>03</span>
                   <span className={styles.stepName}>Contact</span>
                 </div>
@@ -86,10 +115,17 @@ export function AppraisalForm() {
                 {/* STEP 1 */}
                 {step === 1 && (
                   <div className={styles.stepPane}>
-                    <h2 className={styles.stepTitle}>Property Location &amp; Configuration</h2>
+                    <h2 className={styles.stepTitle}>
+                      Property Location &amp; Configuration
+                    </h2>
 
                     <div className={styles.field}>
-                      <label htmlFor="appraisal-address" className={styles.label}>Street Address *</label>
+                      <label
+                        htmlFor="appraisal-address"
+                        className={styles.label}
+                      >
+                        Street Address *
+                      </label>
                       <input
                         id="appraisal-address"
                         type="text"
@@ -103,7 +139,12 @@ export function AppraisalForm() {
 
                     <div className={styles.fieldRow}>
                       <div className={styles.field}>
-                        <label htmlFor="appraisal-suburb" className={styles.label}>Suburb *</label>
+                        <label
+                          htmlFor="appraisal-suburb"
+                          className={styles.label}
+                        >
+                          Suburb *
+                        </label>
                         <select
                           id="appraisal-suburb"
                           value={suburb}
@@ -112,15 +153,24 @@ export function AppraisalForm() {
                         >
                           <option value="Wollert">Wollert VIC 3750</option>
                           <option value="Epping">Epping VIC 3076</option>
-                          <option value="Craigieburn">Craigieburn VIC 3064</option>
-                          <option value="Donnybrook">Donnybrook VIC 3064</option>
+                          <option value="Craigieburn">
+                            Craigieburn VIC 3064
+                          </option>
+                          <option value="Donnybrook">
+                            Donnybrook VIC 3064
+                          </option>
                           <option value="Mickleham">Mickleham VIC 3064</option>
                           <option value="Other">Other Northern Suburb</option>
                         </select>
                       </div>
 
                       <div className={styles.field}>
-                        <label htmlFor="appraisal-type" className={styles.label}>Property Style</label>
+                        <label
+                          htmlFor="appraisal-type"
+                          className={styles.label}
+                        >
+                          Property Style
+                        </label>
                         <select
                           id="appraisal-type"
                           value={propertyType}
@@ -137,7 +187,12 @@ export function AppraisalForm() {
 
                     <div className={styles.fieldRow}>
                       <div className={styles.field}>
-                        <label htmlFor="appraisal-beds" className={styles.label}>Bedrooms</label>
+                        <label
+                          htmlFor="appraisal-beds"
+                          className={styles.label}
+                        >
+                          Bedrooms
+                        </label>
                         <select
                           id="appraisal-beds"
                           value={beds}
@@ -152,7 +207,12 @@ export function AppraisalForm() {
                       </div>
 
                       <div className={styles.field}>
-                        <label htmlFor="appraisal-baths" className={styles.label}>Bathrooms</label>
+                        <label
+                          htmlFor="appraisal-baths"
+                          className={styles.label}
+                        >
+                          Bathrooms
+                        </label>
                         <select
                           id="appraisal-baths"
                           value={baths}
@@ -183,21 +243,31 @@ export function AppraisalForm() {
                 {/* STEP 2 */}
                 {step === 2 && (
                   <div className={styles.stepPane}>
-                    <h2 className={styles.stepTitle}>Your Timeline &amp; Objective</h2>
+                    <h2 className={styles.stepTitle}>
+                      Your Timeline &amp; Objective
+                    </h2>
 
                     <div className={styles.field}>
-                      <label className={styles.label}>When are you contemplating a move?</label>
+                      <label className={styles.label}>
+                        When are you contemplating a move?
+                      </label>
                       <div className={styles.radioGrid}>
                         {[
-                          { id: 'immediate', label: 'Immediately (Next 30 days)' },
-                          { id: '1-3m', label: '1 to 3 Months' },
-                          { id: '3-6m', label: '3 to 6 Months' },
-                          { id: 'curious', label: 'Just curious / Refinancing' },
+                          {
+                            id: "immediate",
+                            label: "Immediately (Next 30 days)",
+                          },
+                          { id: "1-3m", label: "1 to 3 Months" },
+                          { id: "3-6m", label: "3 to 6 Months" },
+                          {
+                            id: "curious",
+                            label: "Just curious / Refinancing",
+                          },
                         ].map((item) => (
                           <button
                             key={item.id}
                             type="button"
-                            className={`${styles.radioCard} ${timeline === item.label ? styles.radioCardActive : ''}`}
+                            className={`${styles.radioCard} ${timeline === item.label ? styles.radioCardActive : ""}`}
                             onClick={() => setTimeline(item.label)}
                           >
                             <span className={styles.radioDot} />
@@ -208,7 +278,9 @@ export function AppraisalForm() {
                     </div>
 
                     <div className={styles.field}>
-                      <label htmlFor="appraisal-notes" className={styles.label}>Any special features or upgrades?</label>
+                      <label htmlFor="appraisal-notes" className={styles.label}>
+                        Any special features or upgrades?
+                      </label>
                       <textarea
                         id="appraisal-notes"
                         rows={3}
@@ -220,10 +292,18 @@ export function AppraisalForm() {
                     </div>
 
                     <div className={styles.actionsBetween}>
-                      <button type="button" onClick={() => setStep(1)} className={styles.backBtn}>
+                      <button
+                        type="button"
+                        onClick={() => setStep(1)}
+                        className={styles.backBtn}
+                      >
                         ← Back
                       </button>
-                      <button type="button" onClick={() => setStep(3)} className={styles.nextBtn}>
+                      <button
+                        type="button"
+                        onClick={() => setStep(3)}
+                        className={styles.nextBtn}
+                      >
                         Continue to Contact →
                       </button>
                     </div>
@@ -233,10 +313,14 @@ export function AppraisalForm() {
                 {/* STEP 3 */}
                 {step === 3 && (
                   <div className={styles.stepPane}>
-                    <h2 className={styles.stepTitle}>Where should we deliver your report?</h2>
+                    <h2 className={styles.stepTitle}>
+                      Where should we deliver your report?
+                    </h2>
 
                     <div className={styles.field}>
-                      <label htmlFor="appraisal-name" className={styles.label}>Full Name *</label>
+                      <label htmlFor="appraisal-name" className={styles.label}>
+                        Full Name *
+                      </label>
                       <input
                         id="appraisal-name"
                         type="text"
@@ -250,7 +334,12 @@ export function AppraisalForm() {
 
                     <div className={styles.fieldRow}>
                       <div className={styles.field}>
-                        <label htmlFor="appraisal-phone" className={styles.label}>Mobile Phone *</label>
+                        <label
+                          htmlFor="appraisal-phone"
+                          className={styles.label}
+                        >
+                          Mobile Phone *
+                        </label>
                         <input
                           id="appraisal-phone"
                           type="tel"
@@ -263,7 +352,12 @@ export function AppraisalForm() {
                       </div>
 
                       <div className={styles.field}>
-                        <label htmlFor="appraisal-email" className={styles.label}>Email Address *</label>
+                        <label
+                          htmlFor="appraisal-email"
+                          className={styles.label}
+                        >
+                          Email Address *
+                        </label>
                         <input
                           id="appraisal-email"
                           type="email"
@@ -278,15 +372,33 @@ export function AppraisalForm() {
 
                     <div className={styles.discretionNotice}>
                       <span className={styles.lockIcon}>🔒</span>
-                      <span>100% Confidential. Zero spam. We never disclose vendor enquiries.</span>
+                      <span>
+                        Your details are used to respond to your enquiry.
+                      </span>
                     </div>
 
+                    <EnquiryProtection attempt={attempt} />
+                    {error && (
+                      <p role="alert" className="form-error">
+                        {error}
+                      </p>
+                    )}
                     <div className={styles.actionsBetween}>
-                      <button type="button" onClick={() => setStep(2)} className={styles.backBtn}>
+                      <button
+                        type="button"
+                        onClick={() => setStep(2)}
+                        className={styles.backBtn}
+                      >
                         ← Back
                       </button>
-                      <button type="submit" className={styles.submitBtn} disabled={isSubmitting}>
-                        {isSubmitting ? 'Sending Request...' : 'Submit Valuation Request'}
+                      <button
+                        type="submit"
+                        className={styles.submitBtn}
+                        disabled={isSubmitting}
+                      >
+                        {isSubmitting
+                          ? "Sending Request..."
+                          : "Submit Appraisal Request"}
                       </button>
                     </div>
                   </div>
@@ -296,13 +408,20 @@ export function AppraisalForm() {
           ) : (
             <div className={styles.successCard}>
               <span className={styles.successIcon}>✓</span>
-              <h2 className={styles.successTitle}>Thank you, {fullName || 'Valued Client'}.</h2>
+              <h2 className={styles.successTitle}>
+                Thank you, {fullName || "Valued Client"}.
+              </h2>
               <p className={styles.successMessage}>
-                Your confidential appraisal request for <strong>{address}, {suburb}</strong> has been received by our lead advisory desk.
-                We are currently reviewing recent comparable sales and active buyer depth in your immediate street.
+                Your confidential appraisal request for{" "}
+                <strong>
+                  {address}, {suburb}
+                </strong>{" "}
+                has been received by our team. We will review local comparable
+                sales and contact you to discuss your property.
               </p>
               <p className={styles.successContactNotice}>
-                One of our senior partners will contact you directly on <strong>{phone}</strong> within 24 hours.
+                Our team will contact you on{" "}
+                <strong>{phone}</strong> to discuss your property.
               </p>
               <div className={styles.successActions}>
                 <Link href="/" className={styles.nextBtn}>

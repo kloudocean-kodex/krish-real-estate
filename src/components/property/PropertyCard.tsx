@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import type { NormalizedListing } from '@/data/mock-listings';
+import type { NormalizedListing } from '@/data/listings';
 import styles from './PropertyCard.module.css';
 
 interface PropertyCardProps {

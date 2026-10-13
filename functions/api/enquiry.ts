@@ -1,229 +1,232 @@
-/**
- * Cloudflare Pages Function — /api/enquiry
- * ─────────────────────────────────────────
- * Server-side handler that receives form submissions from the website
- * and pushes them to:
- *   1. Web3Forms (email notification to Chirag)
- *   2. Eagle CRM (lead record creation)
- *
- * Environment variables (set in Cloudflare Pages dashboard):
- *   - WEB3FORMS_KEY          — Web3Forms access key
- *   - EAGLE_CRM_CLIENT_ID    — Eagle API Client ID
- *   - EAGLE_CRM_CLIENT_SECRET — Eagle API Client Secret
- *   - EAGLE_CRM_BASE_URL     — Eagle API base URL (default: https://www.eagleagent.com.au)
- */
-
-interface Env {
-  WEB3FORMS_KEY: string;
-  EAGLE_CRM_CLIENT_ID: string;
-  EAGLE_CRM_CLIENT_SECRET: string;
-  EAGLE_CRM_BASE_URL?: string;
+import {
+  pushLeadToEagleCRM,
+  type EagleLead,
+  type EagleConfig,
+} from "../../src/lib/eagleCrm";
+interface Env extends EagleConfig {
+  TURNSTILE_SECRET?: string;
+  ENQUIRIES: KVNamespace;
 }
-
-interface EnquiryPayload {
-  name: string;
-  phone: string;
-  email: string;
-  message?: string;
-  enquiry_type: string;
-  source: string;
-  address?: string;
-  property_type?: string;
-  bedrooms?: string;
-  bathrooms?: string;
-  timeline?: string;
-  notes?: string;
-  subject?: string;
-}
-
-// ── Eagle CRM Token Auth (VERIFIED ✅) ──
-async function getEagleToken(env: Env): Promise<string | null> {
-  const baseUrl = env.EAGLE_CRM_BASE_URL || 'https://www.eagleagent.com.au';
-  try {
-    const res = await fetch(`${baseUrl}/api/v3/token`, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${env.EAGLE_CRM_CLIENT_ID}:${env.EAGLE_CRM_CLIENT_SECRET}`,
-        'Content-Type': 'application/json',
-      },
-    });
-    if (!res.ok) return null;
-    // Eagle API response: { data: { token: { token: "eyJ...", expiresAt: ... } } }
-    const json = await res.json() as { data?: { token?: { token?: string } } };
-    return json?.data?.token?.token || null;
-  } catch {
-    return null;
-  }
-}
-
-// ── Push to Eagle CRM (VERIFIED ✅ — Contact + Enquiry pipeline) ──
-async function pushToEagle(env: Env, payload: EnquiryPayload): Promise<boolean> {
-  if (!env.EAGLE_CRM_CLIENT_ID || !env.EAGLE_CRM_CLIENT_SECRET) return false;
-
-  const token = await getEagleToken(env);
-  if (!token) return false;
-
-  const baseUrl = env.EAGLE_CRM_BASE_URL || 'https://www.eagleagent.com.au';
-  const nameParts = (payload.name || '').split(' ');
-  const firstName = nameParts[0] || '';
-  const lastName = nameParts.slice(1).join(' ') || '';
-
-  const notesLines = [
-    `Source: ${payload.source}`,
-    `Enquiry Type: ${payload.enquiry_type}`,
-    payload.address ? `Property: ${payload.address}` : '',
-    payload.property_type ? `Type: ${payload.property_type}` : '',
-    payload.bedrooms ? `Beds: ${payload.bedrooms}` : '',
-    payload.bathrooms ? `Baths: ${payload.bathrooms}` : '',
-    payload.timeline ? `Timeline: ${payload.timeline}` : '',
-    payload.message ? `\nMessage:\n${payload.message}` : '',
-    payload.notes ? `\nNotes:\n${payload.notes}` : '',
-  ].filter(Boolean).join('\n');
-
-  try {
-    // Step 1: Create Contact in Eagle CRM
-    const contactRes = await fetch(`${baseUrl}/api/v3/graphql`, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        query: `mutation($input: CreateContactInput!) {
-          createContact(input: $input) {
-            contact { id }
-            errors
-          }
-        }`,
-        variables: {
-          input: {
-            attributes: {
-              firstName,
-              lastName: lastName || undefined,
-              emails: [{ email: payload.email }],
-              phoneNumbers: [{ phoneNumber: payload.phone, numberType: 'MOBILE' }],
-              source: 'Website - krishrealestate.com.au',
-              backgroundInfo: notesLines,
-            },
-          },
-        },
-      }),
-    });
-
-    const contactData = await contactRes.json() as {
-      data?: { createContact?: { contact?: { id?: string } } };
-    };
-    const contactId = contactData?.data?.createContact?.contact?.id;
-    if (!contactId) return false;
-
-    // Step 2: Create Enquiry linked to the new Contact
-    await fetch(`${baseUrl}/api/v3/graphql`, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        query: `mutation($input: CreateEnquiryInput!) {
-          createEnquiry(input: $input) {
-            enquiry { id }
-            errors
-          }
-        }`,
-        variables: {
-          input: {
-            attributes: {
-              contactIds: [parseInt(contactId)],
-              text: notesLines,
-              referredBy: 'krishrealestate.com.au',
-            },
-          },
-        },
-      }),
-    });
-
-    return true;
-  } catch {
-    return false;
-  }
-}
-
-// ── Push to Web3Forms ──
-async function pushToWeb3Forms(env: Env, payload: EnquiryPayload): Promise<boolean> {
-  if (!env.WEB3FORMS_KEY) return false;
-
-  try {
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        access_key: env.WEB3FORMS_KEY,
-        ...payload,
-        subject: payload.subject || `New ${payload.enquiry_type} enquiry from ${payload.name} — Krish Real Estate`,
-        from_name: 'Krish Real Estate Website',
-        to: 'chirag@krishrealestate.com.au',
-      }),
-    });
-    return res.ok;
-  } catch {
-    return false;
-  }
-}
-
-// ── Main Handler ──
-export const onRequestPost: PagesFunction<Env> = async (context) => {
-  // CORS headers
-  const corsHeaders = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
-  };
-
-  try {
-    const payload = await context.request.json() as EnquiryPayload;
-
-    // Validate required fields
-    if (!payload.name || !payload.email || !payload.phone) {
-      return new Response(
-        JSON.stringify({ success: false, error: 'Name, email, and phone are required' }),
-        { status: 400, headers: { 'Content-Type': 'application/json', ...corsHeaders } }
-      );
-    }
-
-    // Send to both services concurrently
-    const [web3Result, eagleResult] = await Promise.allSettled([
-      pushToWeb3Forms(context.env, payload),
-      pushToEagle(context.env, payload),
-    ]);
-
-    const web3Success = web3Result.status === 'fulfilled' && web3Result.value;
-    const eagleSuccess = eagleResult.status === 'fulfilled' && eagleResult.value;
-
-    return new Response(
-      JSON.stringify({
-        success: web3Success || eagleSuccess,
-        channels: {
-          email: web3Success ? 'delivered' : 'failed',
-          crm: eagleSuccess ? 'synced' : 'skipped',
-        },
-      }),
-      { status: 200, headers: { 'Content-Type': 'application/json', ...corsHeaders } }
-    );
-  } catch {
-    return new Response(
-      JSON.stringify({ success: false, error: 'Invalid request' }),
-      { status: 400, headers: { 'Content-Type': 'application/json', ...corsHeaders } }
-    );
-  }
-};
-
-// Handle CORS preflight
-export const onRequestOptions: PagesFunction = async () => {
-  return new Response(null, {
+const json = (body: unknown, status = 200) =>
+  Response.json(body, {
+    status,
     headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff",
     },
   });
+const types = new Set([
+  "selling",
+  "buying",
+  "leasing",
+  "general",
+  "appraisal",
+  "rental-appraisal",
+]);
+export const onRequestPost: PagesFunction<Env> = async (context) => {
+  const request = context.request,
+    url = new URL(request.url);
+  if (request.headers.get("Origin") !== url.origin)
+    return json(
+      { success: false, error: "Please submit from the Krish website." },
+      403,
+    );
+  if (!request.headers.get("Content-Type")?.includes("application/json"))
+    return json({ success: false, error: "JSON required" }, 415);
+  if (Number(request.headers.get("Content-Length") || 0) > 16000)
+    return json({ success: false, error: "Request too large" }, 413);
+  let raw: Record<string, unknown>;
+  try {
+    const body = await request.text();
+    if (body.length > 16000)
+      return json({ success: false, error: "Request too large" }, 413);
+    raw = JSON.parse(body);
+    if (!raw || Array.isArray(raw) || typeof raw !== "object")
+      throw new Error();
+  } catch {
+    return json({ success: false, error: "Invalid request" }, 400);
+  }
+  if (raw.website)
+    return json({ success: false, error: "Unable to submit" }, 400);
+  const fields: Record<string, string> = {};
+  for (const key of [
+    "name",
+    "email",
+    "phone",
+    "message",
+    "enquiry_type",
+    "source",
+    "address",
+    "property_type",
+    "bedrooms",
+    "bathrooms",
+    "timeline",
+    "notes",
+    "property_id",
+    "page_url",
+    "referrer",
+    "campaign",
+    "request_id",
+  ]) {
+    if (raw[key] !== undefined && typeof raw[key] !== "string")
+      return json({ success: false, error: "Invalid field" }, 400);
+    fields[key] = typeof raw[key] === "string" ? raw[key].trim() : "";
+  }
+  const p = fields;
+  if (
+    p.name.length < 2 ||
+    p.name.length > 120 ||
+    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(p.email) ||
+    p.email.length > 254 ||
+    !/^\+?[\d\s().-]{8,25}$/.test(p.phone) ||
+    !types.has(p.enquiry_type) ||
+    !p.source ||
+    !/^[-a-f0-9]{36}$/i.test(p.request_id) ||
+    [p.message, p.notes].some((v) => v.length > 4000) ||
+    [p.address, p.page_url, p.referrer, p.campaign].some(
+      (v) => v.length > 500,
+    ) ||
+    (p.property_id && !/^\d{1,12}$/.test(p.property_id))
+  )
+    return json(
+      {
+        success: false,
+        error: "Please check your name, email, phone and enquiry details.",
+      },
+      400,
+    );
+  if (!context.env.TURNSTILE_SECRET)
+    return json(
+      {
+        success: false,
+        error:
+          "Security verification is temporarily unavailable. Please call 0479 092 216.",
+      },
+      503,
+    );
+  if (context.env.TURNSTILE_SECRET) {
+    const token = raw["cf-turnstile-response"];
+    if (typeof token !== "string" || !token || token.length > 2048)
+      return json(
+        { success: false, error: "Please complete the security check." },
+        403,
+      );
+    try {
+      const check = await fetch(
+        "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams({
+            secret: context.env.TURNSTILE_SECRET,
+            response: token,
+            remoteip: request.headers.get("CF-Connecting-IP") || "",
+          }),
+          signal: AbortSignal.timeout(10000),
+        },
+      );
+      const result = (await check.json()) as {
+        success: boolean;
+        hostname: string;
+        action: string;
+      };
+      if (
+        !check.ok ||
+        result.success !== true ||
+        result.hostname !== url.hostname ||
+        result.action !== "enquiry"
+      )
+        return json(
+          {
+            success: false,
+            error: "Security check expired. Please try again.",
+          },
+          403,
+        );
+    } catch {
+      return json(
+        {
+          success: false,
+          error: "Security check unavailable. Please try again.",
+        },
+        503,
+      );
+    }
+  }
+  if (!context.env.ENQUIRIES)
+    return json(
+      {
+        success: false,
+        error: "Enquiries temporarily unavailable. Please call 0479 092 216.",
+      },
+      503,
+    );
+  const key = `request:${p.request_id}`,
+    existing = await context.env.ENQUIRIES.get(key);
+  if (existing) {
+    const saved = JSON.parse(existing);
+    return json(saved, saved.success ? 200 : 503);
+  }
+  const digest = Array.from(
+    new Uint8Array(
+      await crypto.subtle.digest(
+        "SHA-256",
+        new TextEncoder().encode(
+          request.headers.get("CF-Connecting-IP") || "unknown",
+        ),
+      ),
+    ),
+  )
+    .map((n) => n.toString(16).padStart(2, "0"))
+    .join("");
+  const rateKey = `rate:${digest}:${Math.floor(Date.now() / 600000)}`;
+  const count = Number((await context.env.ENQUIRIES.get(rateKey)) || 0);
+  if (count >= 5)
+    return json(
+      {
+        success: false,
+        error: "Please wait a few minutes or call 0479 092 216.",
+      },
+      429,
+    );
+  await context.env.ENQUIRIES.put(rateKey, String(count + 1), {
+    expirationTtl: 660,
+  });
+  const payload: EagleLead = {
+    ...p,
+    name: p.name,
+    email: p.email,
+    phone: p.phone,
+    enquiry_type: p.enquiry_type,
+    source: p.source,
+  };
+  const crm = await pushLeadToEagleCRM(context.env, payload);
+  const result = {
+    success: crm.success,
+    reference: p.request_id,
+    channels: {
+      crm: crm.success ? "synced" : crm.contactId ? "partial" : "failed",
+      notification: "eagle",
+    },
+    ...(crm.success
+      ? {}
+      : {
+          error: crm.contactId
+            ? "Your details were saved, but the enquiry needs review. Please call 0479 092 216 and quote your reference."
+            : "We could not send your enquiry. Please try again or call 0479 092 216.",
+        }),
+  };
+  if (crm.success || crm.contactId)
+    await context.env.ENQUIRIES.put(key, JSON.stringify(result), {
+      expirationTtl: 86400,
+    });
+  console.log(
+    JSON.stringify({
+      event: "enquiry",
+      reference: p.request_id,
+      stage: crm.stage,
+      notification: "eagle",
+    }),
+  );
+  return json(result, crm.success ? 200 : 503);
 };

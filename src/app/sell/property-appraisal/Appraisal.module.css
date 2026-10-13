@@ -138,6 +138,7 @@
 }
 
 .field {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
@@ -145,13 +146,13 @@
 
 .fieldRow {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-4);
 }
 
 @media (min-width: 640px) {
   .fieldRow {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -167,6 +168,9 @@
 .input,
 .select,
 .textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
   background-color: var(--color-paper);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xs);
@@ -192,13 +196,13 @@
 /* ── Radio Grid for Timeline ── */
 .radioGrid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-2);
 }
 
 @media (min-width: 640px) {
   .radioGrid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -362,3 +366,6 @@
   gap: var(--space-4);
   margin-top: var(--space-4);
 }
+
+@media(max-width:639px){.actionsBetween{flex-wrap:wrap;gap:16px;}.nextBtn,.submitBtn{max-width:100%;min-height:50px;height:auto;white-space:normal;padding:14px 20px;}.stepName{font-size:10px;}.progressLine{margin-inline:8px;}}
+@media(max-width:479px){.stepName{display:none}.progressBar{justify-content:center}.progressLine{flex:1;max-width:64px}}

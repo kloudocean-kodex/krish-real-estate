@@ -3,11 +3,12 @@ import Link from 'next/link';
 import styles from './PropertyManagement.module.css';
 
 export const metadata: Metadata = {
-  title: 'Property Management & Asset Stewardship | Melbourne North | Krish Real Estate',
+  alternates: {canonical: '/property-management/'},
+  title: 'Property Management & Asset Stewardship | Melbourne North',
   description:
-    'Protect and grow your rental yield with boutique property management in Wollert, Epping, Craigieburn, and Donnybrook. Zero vacancy focus, verified tenants, and complete asset stewardship.',
+    'Protect and grow your rental yield with boutique property management in Wollert, Epping, Craigieburn, and Donnybrook. Clear communication, careful tenant selection, and attentive investment care.',
   openGraph: {
-    title: 'Property Management & Asset Stewardship | Krish Real Estate',
+    title: 'Property Management & Asset Stewardship',
     description: 'Boutique asset stewardship for northern corridor property investors.',
     images: ['/images/property-interior.jpg'],
   },
@@ -35,40 +36,12 @@ export default function PropertyManagementPage() {
               we would demand for our own investments.
             </p>
             <div className={styles.mastheadActions}>
-              <Link href="/sell/property-appraisal" className={styles.ctaPrimary}>
+              <Link href="/rental-appraisal" className={styles.ctaPrimary}>
                 Request Rental Appraisal
               </Link>
               <a href="#transfer" className={styles.ctaSecondary}>
                 Switching is Seamless
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Stewardship Metrics ── */}
-      <section className={styles.metricsSection}>
-        <div className="container">
-          <div className={styles.metricsGrid}>
-            <div className={styles.metricItem}>
-              <span className={styles.metricValue}>0.8%</span>
-              <span className={styles.metricLabel}>PORTFOLIO VACANCY RATE</span>
-              <p className={styles.metricDesc}>Average time to secure high-caliber tenants: 6 days</p>
-            </div>
-            <div className={styles.metricItem}>
-              <span className={styles.metricValue}>99.4%</span>
-              <span className={styles.metricLabel}>ON-TIME RENT COLLECTION</span>
-              <p className={styles.metricDesc}>Zero tolerance for arrears with automated digital tracking</p>
-            </div>
-            <div className={styles.metricItem}>
-              <span className={styles.metricValue}>100%</span>
-              <span className={styles.metricLabel}>DIGITAL VIDEO INSPECTIONS</span>
-              <p className={styles.metricDesc}>Complete photographic &amp; video walkthroughs every 6 months</p>
-            </div>
-            <div className={styles.metricItem}>
-              <span className={styles.metricValue}>1:60</span>
-              <span className={styles.metricLabel}>STAFF TO PROPERTY RATIO</span>
-              <p className={styles.metricDesc}>Industry standard is 1:180. We prioritize attention.</p>
             </div>
           </div>
         </div>
@@ -95,7 +68,7 @@ export default function PropertyManagementPage() {
               <span className={styles.protectionIcon}>✦</span>
               <h3 className={styles.protectionTitle}>Proactive Rent Reviews</h3>
               <p className={styles.protectionText}>
-                We audit street-level market rents quarterly. We ensure your yield keeps pace with inflation and capital growth without alienating premier tenants.
+                We review comparable rents and discuss appropriate rental reviews with you, taking current tenancy requirements into account.
               </p>
             </div>
 
@@ -103,7 +76,7 @@ export default function PropertyManagementPage() {
               <span className={styles.protectionIcon}>✦</span>
               <h3 className={styles.protectionTitle}>Trusted Trade Network</h3>
               <p className={styles.protectionText}>
-                Licensed local electricians, plumbers, and maintenance specialists who charge fair rates and protect your asset value. Zero inflated contractor markups.
+                Licensed local electricians, plumbers, and maintenance specialists who charge fair rates and protect your asset value. Maintenance approvals and costs are discussed with you.
               </p>
             </div>
 
@@ -111,7 +84,7 @@ export default function PropertyManagementPage() {
               <span className={styles.protectionIcon}>✦</span>
               <h3 className={styles.protectionTitle}>Strict Legislative Compliance</h3>
               <p className={styles.protectionText}>
-                Complete compliance with Victoria&apos;s Residential Tenancies Act, smoke alarm checks, electrical safety audits, and gas safety certifications handled end-to-end.
+                We help coordinate safety checks, maintenance and tenancy documentation with appropriately qualified providers.
               </p>
             </div>
           </div>
@@ -124,7 +97,7 @@ export default function PropertyManagementPage() {
           <div className={styles.transferBox}>
             <div className={styles.transferLeft}>
               <span className={styles.transferTag}>CURRENTLY WITH ANOTHER AGENCY?</span>
-              <h2 className={styles.transferTitle}>Switching management takes less than two minutes.</h2>
+              <h2 className={styles.transferTitle}>A clear path to switching property managers.</h2>
               <p className={styles.transferDesc}>
                 You don&apos;t have to have any awkward conversations with your current agent.
                 We handle the entire handover, collect the keys, notify your tenant respectfully,
@@ -146,7 +119,7 @@ export default function PropertyManagementPage() {
                   <span>We collect files and assume stewardship</span>
                 </div>
               </div>
-              <Link href="/sell/property-appraisal" className={styles.transferCtaBtn}>
+              <Link href="/rental-appraisal" className={styles.transferCtaBtn}>
                 Initiate Management Transfer
               </Link>
             </div>

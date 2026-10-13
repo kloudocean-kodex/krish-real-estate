@@ -3,6 +3,7 @@ import { BUSINESS } from '@/data/team';
 import styles from './Privacy.module.css';
 
 export const metadata: Metadata = {
+  alternates: {canonical: '/privacy/'},
   title: `Privacy Policy | ${BUSINESS.name}`,
   description: `Privacy policy and personal information handling practices of ${BUSINESS.legalName} in Victoria, Australia.`,
 };
@@ -47,12 +48,14 @@ export default function PrivacyPage() {
                 <li>Fulfill our statutory obligations under the <em>Estate Agents Act 1980 (Vic)</em> and other relevant legislation.</li>
               </ul>
 
-              <h2>4. Security &amp; Storage</h2>
+              <h2>4. Website Enquiries &amp; Service Providers</h2>
+              <p>Website enquiries are processed through Cloudflare and stored in Eagle Software so our team can respond. Eagle Software also sends enquiry notifications to our team. Bot protection may process technical information to prevent abuse. We do not treat an enquiry as consent to marketing subscriptions.</p>
+              <h2>5. Security &amp; Storage</h2>
               <p>
-                We store your information securely in encrypted digital systems and secure physical records where applicable. We take all reasonable precautions to prevent unauthorized access, modification, or disclosure.
+                We use access-controlled systems and take reasonable steps to protect personal information. Contact us to request access, correction, or to raise a privacy concern.
               </p>
 
-              <h2>5. Contact Our Privacy Officer</h2>
+              <h2>6. Contact Our Privacy Officer</h2>
               <p>
                 If you have questions regarding this Privacy Policy or wish to access or correct your personal information, please contact:
               </p>

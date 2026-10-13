@@ -62,7 +62,7 @@
 }
 
 .card:hover {
-  border-color: var(--color-accent);
+  border-color: #805f28;
   box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
 }
@@ -74,7 +74,7 @@
   width: 52px;
   height: 52px;
   background-color: var(--color-accent-light);
-  color: var(--color-accent);
+  color: #805f28;
   border-radius: var(--radius-md);
 }
 
@@ -96,7 +96,7 @@
 .cardArrow {
   margin-top: auto;
   font-size: 1.25rem;
-  color: var(--color-accent);
+  color: #805f28;
   transition: transform var(--duration-fast) var(--ease-out);
 }
 

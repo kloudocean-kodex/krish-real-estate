@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { getActiveListings } from '@/data/mock-listings';
+import { getActiveListings } from '@/data/listing-summaries';
 import { PropertyCard } from '@/components/property/PropertyCard';
 import { useScrollReveal } from '@/lib/hooks/useScrollReveal';
 import Link from 'next/link';
@@ -49,7 +49,7 @@ export function FeaturedProperties() {
 
         {listings.length > 0 ? (
           <div className={`${styles.grid} ${isRevealed ? styles.gridRevealed : ''}`}>
-            {listings.map((listing, index) => (
+            {listings.slice(0,3).map((listing, index) => (
               <PropertyCard key={listing.listingId} listing={listing} priority={index === 0} />
             ))}
           </div>
@@ -57,10 +57,10 @@ export function FeaturedProperties() {
           <div className={styles.empty}>
             <p className={styles.emptyText}>
               No properties currently available{activeTab === 'rent' ? ' for lease' : ' for purchase'}.
-              New architectural residences are introduced weekly. Register your requirements for priority off-market previews.
+              Tell us your preferred location and budget, and our team can help with your search.
             </p>
             <Link href="/contact" className={styles.viewAllBtn}>
-              Register Acquisition Brief
+              Tell Us What You’re Looking For
             </Link>
           </div>
         )}

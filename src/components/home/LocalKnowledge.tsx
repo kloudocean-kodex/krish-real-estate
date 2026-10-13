@@ -18,7 +18,7 @@ export function LocalKnowledge() {
           {AREAS.map((area) => (
             <Link key={area.slug} href={`/areas/${area.slug}`} className={`${styles.card} reveal`}>
               <div className={styles.imageWrapper}>
-                <Image src={area.image} alt={`${area.name} suburb, Melbourne`} fill sizes="(max-width: 768px) 100vw, 25vw" className={styles.image} />
+                <Image src={area.image} alt={`Property represented by Krish Real Estate in ${area.name}`} fill sizes="(max-width: 768px) 100vw, 25vw" className={styles.image} />
                 <div className={styles.imageOverlay} />
               </div>
               <div className={styles.cardContent}>

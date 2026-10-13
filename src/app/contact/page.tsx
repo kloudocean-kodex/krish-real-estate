@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { ContactClient } from './ContactClient';
 
 export const metadata: Metadata = {
-  title: 'Contact & Private Concierge | Wollert Office | Krish Real Estate',
+  alternates: {canonical: '/contact/'},
+  title: 'Contact Our Wollert Team',
   description:
     'Connect with the leadership team at Krish Real Estate. Office located at 22 Wollemi Avenue, Wollert VIC 3750. Confidential consultations for buyers, vendors, and property investors.',
   openGraph: {

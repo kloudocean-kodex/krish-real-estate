@@ -1,8 +1,8 @@
 .section { padding-block: var(--section-gap); }
-.layout { display: grid; grid-template-columns: 1fr; gap: var(--content-gap); }
-@media (min-width: 1024px) { .layout { grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: start; } }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--content-gap); }
+@media (min-width: 1024px) { .layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-16); align-items: start; } }
 
-.content { display: flex; flex-direction: column; gap: var(--space-6); }
+.content { display: flex; flex-direction: column; gap: var(--space-6); min-width: 0; }
 .title { font-size: var(--text-h2); }
 .description { font-size: var(--text-body); color: var(--color-ink-muted); line-height: var(--leading-relaxed); max-width: 50ch; }
 
@@ -10,6 +10,7 @@
 .statStrip {
   display: flex;
   gap: var(--space-8);
+  flex-wrap: wrap;
   padding-block: var(--space-6);
   border-top: 1px solid var(--color-border-light);
   border-bottom: 1px solid var(--color-border-light);
@@ -35,11 +36,12 @@
   color: var(--color-ink-muted);
 }
 
-.features { display: grid; grid-template-columns: 1fr; gap: var(--space-5); }
-@media (min-width: 640px) { .features { grid-template-columns: 1fr 1fr; } }
+.features { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); min-width: 0; }
+@media (min-width: 640px) { .features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 .feature {
   display: flex;
+  min-width: 0;
   gap: var(--space-3);
   align-items: flex-start;
   padding: var(--space-4);
@@ -64,4 +66,4 @@
 .feature:hover .featureIcon { background-color: var(--color-gold); color: #fff; }
 
 .featureTitle { font-family: var(--font-body); font-size: var(--text-body-sm); font-weight: var(--weight-semibold); color: var(--color-ink); margin-bottom: var(--space-1); }
-.featureText { font-size: var(--text-caption); color: var(--color-ink-muted); line-height: var(--leading-normal); max-width: none; margin-bottom: 0; }
+.featureText { font-size: var(--text-caption); color: var(--color-ink-muted); line-height: var(--leading-normal); max-width: none; margin-bottom: 0; min-width: 0; }

@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef } from 'react';
 
 /**
  * Cinematic scroll-reveal hook using IntersectionObserver.
@@ -26,6 +26,7 @@ export function useScrollReveal(
     el.querySelectorAll('.reveal').forEach((child) => targets.push(child));
 
     if (targets.length === 0) return;
+    targets.forEach(target=>target.classList.add('reveal-ready'));
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -41,7 +42,7 @@ export function useScrollReveal(
 
     targets.forEach((target) => observer.observe(target));
 
-    return () => observer.disconnect();
+    return () => {observer.disconnect();targets.forEach(target=>target.classList.remove('reveal-ready'));};
   }, [threshold, rootMargin]);
 
   return containerRef;

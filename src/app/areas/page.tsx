@@ -5,11 +5,12 @@ import { AREAS } from '@/data/areas';
 import styles from './Areas.module.css';
 
 export const metadata: Metadata = {
-  title: 'Melbourne Northern Suburbs Guide | Wollert, Epping, Craigieburn | Krish Real Estate',
+  alternates: {canonical: '/areas/'},
+  title: 'Melbourne Northern Suburbs Guide | Wollert, Epping, Craigieburn',
   description:
     'Deep street-level intelligence on Wollert, Epping, Craigieburn, and Donnybrook. Median prices, school zones, capital growth, and architectural character.',
   openGraph: {
-    title: 'Northern Suburbs Intelligence Guide | Krish Real Estate',
+    title: 'Northern Suburbs Intelligence Guide',
     description: 'Local insights, infrastructure timelines, and property intelligence across Melbourne\'s north.',
     images: ['/images/hero-property.jpg'],
   },
@@ -49,7 +50,7 @@ export default function AreasPage() {
                   <div className={styles.imageWrapper}>
                     <Image
                       src={area.image}
-                      alt={`${area.name} suburb lifestyle and properties`}
+                      alt={`Property represented by Krish Real Estate in ${area.name}`}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className={styles.image}
@@ -79,7 +80,7 @@ export default function AreasPage() {
                     </div>
 
                     <span className={styles.readGuideLink}>
-                      Explore Suburb Monograph →
+                      Explore Suburb Guide →
                     </span>
                   </div>
                 </Link>

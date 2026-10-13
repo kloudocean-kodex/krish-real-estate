@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { BUSINESS } from '@/data/team';
+import { EnquiryProtection } from '@/components/EnquiryProtection';
 import { submitEnquiry } from '@/lib/submitEnquiry';
 import styles from './Contact.module.css';
 
@@ -15,11 +16,17 @@ export function ContactClient() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const [error, setError] = useState('');
+  const [attempt, setAttempt] = useState(0);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const form = e.currentTarget as HTMLFormElement;
+    if (isSubmitting) return;
+    setError('');
     setIsSubmitting(true);
 
-    await submitEnquiry({
+    const result = await submitEnquiry({
       name: fullName,
       phone,
       email,
@@ -27,9 +34,11 @@ export function ContactClient() {
       enquiry_type: enquiryType,
       source: 'krishrealestate.com.au — Contact Form',
       subject: `New ${enquiryType} enquiry from ${fullName} — Krish Real Estate`,
-    });
+    }, form);
 
+    setAttempt(a => a + 1);
     setIsSubmitting(false);
+    if (!result.success) { setError(`${result.error || 'Unable to send. Please call 0479 092 216.'}${result.reference ? ` Reference: ${result.reference}` : ''}`); return; }
     setIsSubmitted(true);
   };
 
@@ -41,7 +50,7 @@ export function ContactClient() {
           <div className={styles.mastheadContent}>
             <div className={styles.prestigeOverline}>
               <span>◆</span>
-              <span>PRIVATE CLIENT CONCIERGE</span>
+              <span>YOUR LOCAL PROPERTY TEAM</span>
               <span>◆</span>
             </div>
             <h1 className={styles.title}>
@@ -63,7 +72,7 @@ export function ContactClient() {
             {/* Left: Office & Contact Info */}
             <div className={styles.infoCol}>
               <div className={styles.officeCard}>
-                <span className={styles.cardTag}>HEADQUARTERS</span>
+                <span className={styles.cardTag}>OUR WOLLERT OFFICE</span>
                 <h2 className={styles.officeTitle}>{BUSINESS.name}</h2>
                 <p className={styles.officeAddress}>
                   22 Wollemi Avenue<br />
@@ -84,20 +93,19 @@ export function ContactClient() {
                     <a href={`mailto:${BUSINESS.email}`} className={styles.methodValue}>
                       {BUSINESS.email}
                     </a>
+                    <a href="mailto:rental@krishrealestate.com.au" className={styles.methodValue}>rental@krishrealestate.com.au</a>
                   </div>
 
                   <div className={styles.methodItem}>
                     <span className={styles.methodLabel}>OFFICE HOURS</span>
                     <p className={styles.hoursText}>
-                      Monday – Friday: 9:00am – 6:00pm<br />
-                      Saturday: 9:00am – 5:00pm<br />
-                      Sunday: Private appointments by arrangement
+                      Meetings and inspections by appointment. Please call ahead to arrange a time.
                     </p>
                   </div>
                 </div>
 
                 <div className={styles.accreditationStrip}>
-                  <span className={styles.accreditationItem}>✦ REIV ACCREDITED FIRM</span>
+                  <span className={styles.accreditationItem}>✦ WOLLERT-BASED TEAM</span>
                   <span className={styles.accreditationItem}>✦ LICENSED ESTATE AGENT (VIC)</span>
                 </div>
               </div>
@@ -107,9 +115,9 @@ export function ContactClient() {
             <div className={styles.formCol}>
               {!isSubmitted ? (
                 <div className={styles.formCard}>
-                  <h2 className={styles.formHeading}>Confidential Consultation Request</h2>
+                  <h2 className={styles.formHeading}>How can we help?</h2>
                   <p className={styles.formSubheading}>
-                    Select your area of interest. We will connect you directly with the appropriate lead advisor.
+                    Choose your enquiry type and leave a message for our team.
                   </p>
 
                   <form onSubmit={handleSubmit} className={styles.form}>
@@ -117,8 +125,8 @@ export function ContactClient() {
                     <div className={styles.typeSelector}>
                       {[
                         { id: 'selling', label: 'Selling a Property' },
-                        { id: 'buying', label: 'Buying / Off-Market' },
-                        { id: 'leasing', label: 'Asset Management' },
+                        { id: 'buying', label: 'Buying a Property' },
+                        { id: 'leasing', label: 'Property Management' },
                         { id: 'general', label: 'General Enquiry' },
                       ].map((type) => (
                         <button
@@ -186,12 +194,14 @@ export function ContactClient() {
                       />
                     </div>
 
+                    <EnquiryProtection attempt={attempt} />
+                    {error && <p role="alert" className="form-error">{error}</p>}
                     <button type="submit" className={styles.submitBtn} disabled={isSubmitting}>
-                      {isSubmitting ? 'Sending…' : 'Send Confidential Message'}
+                      {isSubmitting ? 'Sending…' : 'Send Enquiry'}
                     </button>
 
                     <p className={styles.privacyNote}>
-                      Discretion assured. Your contact details remain strictly confidential.
+                      Your enquiry goes directly to our team.
                     </p>
                   </form>
                 </div>
@@ -201,7 +211,7 @@ export function ContactClient() {
                   <h2 className={styles.successTitle}>Thank you, {fullName}.</h2>
                   <p className={styles.successText}>
                     Your enquiry regarding <strong>{enquiryType}</strong> has been received by our Wollert office.
-                    A lead advisor will review your notes and contact you on <strong>{phone}</strong> shortly.
+                    Our team will review your message and contact you on <strong>{phone}</strong> shortly.
                   </p>
                   <Link href="/" className={styles.returnBtn}>
                     Return to Homepage

@@ -1,15 +1,16 @@
 import type { Metadata } from 'next';
-import { getSoldListings } from '@/data/mock-listings';
+import { getSoldListings } from '@/data/listings';
 import { PropertyCard } from '@/components/property/PropertyCard';
 import Link from 'next/link';
 import styles from './Sold.module.css';
 
 export const metadata: Metadata = {
-  title: 'Recent Results & Record Sales | Melbourne North | Krish Real Estate',
+  alternates: {canonical: '/sold/'},
+  title: 'Sales & Leasing History | Melbourne North',
   description:
-    'Explore recent sales results and record prices achieved by Krish Real Estate across Wollert, Epping, Craigieburn, and Donnybrook.',
+    'Explore published sales and leasing history by Krish Real Estate across Wollert, Epping, Craigieburn, and Donnybrook.',
   openGraph: {
-    title: 'Recent Results & Record Sales | Krish Real Estate',
+    title: 'Sales & Leasing History',
     description: 'Evidence of exceptional outcomes across Melbourne\'s northern corridor.',
     images: ['/images/hero-property.jpg'],
   },
@@ -30,8 +31,8 @@ export default function SoldPage() {
               <span>◆</span>
             </div>
             <h1 className={styles.title}>
-              Documented Results,<br />
-              <span className={styles.titleItalic}>Record Outcomes.</span>
+              Sales &amp; Leasing,<br />
+              <span className={styles.titleItalic}>Personal Service.</span>
             </h1>
             <p className={styles.subtitle}>
               In real estate, promises mean nothing without proof. Explore our recent sales and leasing results
@@ -46,19 +47,19 @@ export default function SoldPage() {
         <div className="container">
           <div className={styles.metricsGrid}>
             <div className={styles.metricItem}>
-              <span className={styles.metricValue}>98.4%</span>
-              <span className={styles.metricLabel}>AUCTION CLEARANCE RATE</span>
-              <p className={styles.metricSub}>Well above REIV Victoria benchmark</p>
+              <span className={styles.metricValue}>Personal</span>
+              <span className={styles.metricLabel}>LOCAL REPRESENTATION</span>
+              <p className={styles.metricSub}>Serving Melbourne’s northern suburbs</p>
             </div>
             <div className={styles.metricItem}>
-              <span className={styles.metricValue}>14 Days</span>
-              <span className={styles.metricLabel}>AVERAGE DAYS ON MARKET</span>
-              <p className={styles.metricSub}>Faster outcomes through hyper-targeted buyer matching</p>
+              <span className={styles.metricValue}>Direct</span>
+              <span className={styles.metricLabel}>AGENT CONTACT</span>
+              <p className={styles.metricSub}>Speak with the people handling your property</p>
             </div>
             <div className={styles.metricItem}>
-              <span className={styles.metricValue}>$180M+</span>
-              <span className={styles.metricLabel}>NORTHERN TRANSACTIONS</span>
-              <p className={styles.metricSub}>Decades of combined street-level expertise</p>
+              <span className={styles.metricValue}>Local</span>
+              <span className={styles.metricLabel}>MARKET KNOWLEDGE</span>
+              <p className={styles.metricSub}>Advice grounded in comparable properties</p>
             </div>
             <div className={styles.metricItem}>
               <span className={styles.metricValue}>5.0 ★</span>
@@ -73,7 +74,7 @@ export default function SoldPage() {
       <section className={styles.resultsSection}>
         <div className="container">
           <div className={styles.resultsHeader}>
-            <h2 className={styles.resultsTitle}>Recently Transacted Residences</h2>
+            <h2 className={styles.resultsTitle}>Sales & Leasing History</h2>
             <span className={styles.resultsCount}>
               Showing <strong>{soldListings.length}</strong> Results
             </span>
@@ -87,7 +88,7 @@ export default function SoldPage() {
         </div>
       </section>
 
-      {/* ── Valuation CTA ── */}
+      {/* ── Appraisal CTA ── */}
       <section className={styles.ctaSection}>
         <div className="container">
           <div className={styles.ctaBox}>

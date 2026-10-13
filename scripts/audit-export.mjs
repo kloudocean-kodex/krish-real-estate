@@ -1,0 +1,6 @@
+import {readdirSync,readFileSync,existsSync,statSync,writeFileSync,mkdirSync} from 'node:fs';
+import path from 'node:path';
+function walk(dir){return readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
+const files=walk('out'),pages=files.filter(f=>f.endsWith('.html')&&!f.includes('_next')&&!/404|_not-found|500/.test(f));
+const broken=[];for(const file of pages){const html=readFileSync(file,'utf8');for(const match of html.matchAll(/(?:href|src)="(\/(?!\/)[^"]*)"/g)){const url=decodeURIComponent(match[1].split(/[?#]/)[0]);let target=path.join('out',url);if(existsSync(target)&&statSync(target).isDirectory())target=path.join(target,'index.html');if(!existsSync(target))broken.push({file,url});}if((html.match(/<h1(?:\s|>)/g)||[]).length!==1)broken.push({file,error:'Expected exactly one h1'});if(!html.includes('rel="canonical"'))broken.push({file,error:'Missing canonical'});if(html.includes('info@krishrealestate.com.au'))broken.push({file,error:'Invalid email'});}
+const result={pages:pages.length,files:files.length,broken};mkdirSync('audit-private',{recursive:true});writeFileSync('audit-private/export-audit.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));if(broken.length)process.exit(1);

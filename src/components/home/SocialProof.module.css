@@ -115,7 +115,7 @@
   font-weight: var(--weight-medium);
 }
 
-.source { font-size: var(--text-caption); color: var(--color-ink-faint); }
+.source { font-size: var(--text-caption); color: var(--color-ink-muted); }
 
 /* Pagination dots */
 .pagination {
@@ -140,7 +140,7 @@
 }
 
 .dotActive {
-  background-color: var(--color-gold);
+  background-color: #805f28;
   width: 24px;
 }
 

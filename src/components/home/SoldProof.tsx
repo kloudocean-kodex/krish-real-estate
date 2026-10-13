@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getSoldListings } from '@/data/mock-listings';
+import { getSoldListings } from '@/data/listing-summaries';
 import styles from './SoldProof.module.css';
 
 export function SoldProof() {
@@ -18,12 +18,12 @@ export function SoldProof() {
       return allResults.filter((l) => l.status === 'sold').slice(0, 4);
     }
     if (filter === 'leased') {
-      return allResults.filter((l) => l.status === 'leased');
+      return allResults.filter((l) => l.status === 'leased').slice(0, 4);
     }
     // 'all': 2 sold + 2 leased for balanced variety, exactly 4 items
     const sold = allResults.filter((l) => l.status === 'sold').slice(0, 2);
     const leased = allResults.filter((l) => l.status === 'leased').slice(0, 2);
-    return [...sold, ...leased];
+    return [...sold, ...leased, ...allResults.filter(l=>![...sold,...leased].some(s=>s.listingId===l.listingId))].slice(0,4);
   }, [allResults, filter]);
 
   if (allResults.length === 0) return null;
@@ -41,11 +41,11 @@ export function SoldProof() {
               <span>◆</span>
             </div>
             <h2 className={styles.title}>
-              Documented Results,<br />
-              <span className={styles.titleItalic}>Record Outcomes.</span>
+              Sales &amp; Leasing,<br />
+              <span className={styles.titleItalic}>Personal Service.</span>
             </h2>
             <p className={styles.subtitle}>
-              In Melbourne’s northern corridor, proof speaks louder than promises. Explore recent benchmark sales and premium leasing achievements.
+              In Melbourne’s northern corridor, proof speaks louder than promises. Explore published sales and leasing history.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export function SoldProof() {
               className={`${styles.tabBtn} ${filter === 'all' ? styles.tabBtnActive : ''}`}
               onClick={() => setFilter('all')}
             >
-              All Results <span className={styles.tabBadge}>4</span>
+              All Results <span className={styles.tabBadge}>{allResults.length}</span>
             </button>
             <button
               role="tab"
@@ -65,7 +65,7 @@ export function SoldProof() {
               className={`${styles.tabBtn} ${filter === 'sold' ? styles.tabBtnActive : ''}`}
               onClick={() => setFilter('sold')}
             >
-              Recently Sold <span className={styles.tabBadge}>{soldCount}</span>
+              Sold <span className={styles.tabBadge}>{soldCount}</span>
             </button>
             <button
               role="tab"
@@ -73,7 +73,7 @@ export function SoldProof() {
               className={`${styles.tabBtn} ${filter === 'leased' ? styles.tabBtnActive : ''}`}
               onClick={() => setFilter('leased')}
             >
-              Recently Leased <span className={styles.tabBadge}>{leasedCount}</span>
+              Leased <span className={styles.tabBadge}>{leasedCount}</span>
             </button>
           </div>
         </div>
@@ -124,7 +124,7 @@ export function SoldProof() {
                     
                     <div className={styles.cardFooter}>
                       <span className={styles.viewDetailsText}>
-                        View Case Study
+                        View Property
                       </span>
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className={styles.arrowIcon}>
                         <path d="M5 12h14M12 5l7 7-7 7" />
@@ -140,27 +140,27 @@ export function SoldProof() {
         {/* ── Authority Proof Metrics Strip ── */}
         <div className={`${styles.metricsStrip} reveal`}>
           <div className={styles.metricItem}>
-            <span className={styles.metricNumber}>98.4%</span>
-            <span className={styles.metricLabel}>AUCTION CLEARANCE</span>
-            <span className={styles.metricSub}>Above REIV Northern Avg</span>
+            <span className={styles.metricNumber}>Personal</span>
+            <span className={styles.metricLabel}>LOCAL REPRESENTATION</span>
+            <span className={styles.metricSub}>Based in Wollert</span>
           </div>
           <div className={styles.metricDivider} />
           <div className={styles.metricItem}>
-            <span className={styles.metricNumber}>14 Days</span>
-            <span className={styles.metricLabel}>AVG ON MARKET</span>
-            <span className={styles.metricSub}>Targeted Buyer Network</span>
+            <span className={styles.metricNumber}>Direct</span>
+            <span className={styles.metricLabel}>AGENT CONTACT</span>
+            <span className={styles.metricSub}>Clear communication</span>
           </div>
           <div className={styles.metricDivider} />
           <div className={styles.metricItem}>
-            <span className={styles.metricNumber}>$180M+</span>
-            <span className={styles.metricLabel}>TOTAL TRANSACTED</span>
+            <span className={styles.metricNumber}>Local</span>
+            <span className={styles.metricLabel}>MARKET KNOWLEDGE</span>
             <span className={styles.metricSub}>Northern Growth Corridor</span>
           </div>
           <div className={styles.metricDivider} />
           <div className={styles.metricItem}>
             <span className={styles.metricNumber}>5.0 ★</span>
             <span className={styles.metricLabel}>VERIFIED REVIEWS</span>
-            <span className={styles.metricSub}>100% Client Endorsed</span>
+            <span className={styles.metricSub}>Chirag on realestate.com.au</span>
           </div>
         </div>
 

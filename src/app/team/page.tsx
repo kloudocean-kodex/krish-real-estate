@@ -1,15 +1,16 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { TEAM, BUSINESS } from '@/data/team';
+import { TEAM } from '@/data/team';
 import styles from './Team.module.css';
 
 export const metadata: Metadata = {
-  title: 'Our Team & Leadership | Melbourne North | Krish Real Estate',
+  alternates: {canonical: '/team/'},
+  title: 'Our Team & Leadership | Melbourne North',
   description:
     'Meet Chirag Yadav and the dedicated real estate advisory team at Krish Real Estate in Wollert. Independent, experienced, and personally invested in your outcome.',
   openGraph: {
-    title: 'Our Team & Leadership | Krish Real Estate',
+    title: 'Our Team & Leadership',
     description: 'Meet the people behind Melbourne\'s premier boutique northern real estate advisory.',
     images: ['/images/agent-chirag.jpg'],
   },

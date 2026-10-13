@@ -400,42 +400,8 @@
   to { opacity: 1; }
 }
 
-/* Image entrance */
-.image {
-  animation: heroImageReveal 2.4s var(--ease-silk) forwards;
-}
-
-/* Content entrance — staggered cascade */
-.prestigeBadge {
-  opacity: 0;
-  animation: heroFadeUp 800ms var(--ease-silk) 400ms forwards;
-}
-
-.heading {
-  opacity: 0;
-  animation: heroFadeUp 900ms var(--ease-silk) 600ms forwards;
-}
-
-.subheading {
-  opacity: 0;
-  animation: heroFadeUp 800ms var(--ease-silk) 850ms forwards;
-}
-
-.searchBarWrapper {
-  opacity: 0;
-  animation: heroFadeUp 800ms var(--ease-silk) 1050ms forwards;
-}
-
-.proofRibbon {
-  opacity: 0;
-  animation: heroFadeUp 700ms var(--ease-silk) 1250ms forwards;
-}
-
-/* Crosshair accents — fade in last */
-.crosshairTL, .crosshairTR {
-  opacity: 0;
-  animation: heroFadeUp 500ms var(--ease-silk) 1500ms forwards;
-}
+.image { animation: none; }
+.prestigeBadge,.heading,.subheading,.searchBarWrapper,.proofRibbon,.crosshairTL,.crosshairTR {opacity:1;animation:none;}
 
 /* ── Reduced Motion Override ── */
 @media (prefers-reduced-motion: reduce) {

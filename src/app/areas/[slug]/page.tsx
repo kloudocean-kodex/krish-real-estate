@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import { AREAS } from '@/data/areas';
-import { MOCK_LISTINGS } from '@/data/mock-listings';
+import { LISTINGS } from '@/data/listings';
 import { PropertyCard } from '@/components/property/PropertyCard';
 import styles from './AreaDetail.module.css';
 
@@ -22,11 +21,12 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
   const area = AREAS.find((a) => a.slug === slug);
 
   if (!area) {
-    return { title: 'Suburb Not Found | Krish Real Estate' };
+    return { title: 'Suburb Not Found' };
   }
 
   return {
-    title: `${area.name} VIC ${area.postcode} Property Guide & Market Insights | Krish Real Estate`,
+    alternates: {canonical: `/areas/${slug}/`},
+    title: `${area.name} VIC ${area.postcode} Property Guide & Market Insights`,
     description: `Deep market intelligence on ${area.name} VIC ${area.postcode}. Median prices, schools, lifestyle, and current residences for sale.`,
   };
 }
@@ -39,7 +39,7 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
     notFound();
   }
 
-  const areaListings = MOCK_LISTINGS.filter(
+  const areaListings = LISTINGS.filter(
     (l) => l.address.suburb.toLowerCase() === area.name.toLowerCase()
   );
 

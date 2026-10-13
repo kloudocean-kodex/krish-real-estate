@@ -10,11 +10,7 @@ const PM_FEATURES = [
   { title: 'Full Transparency', description: 'Itemised statements, real-time access, and honest advice on your investment.' },
 ];
 
-const PM_STATS = [
-  { value: '98', suffix: '%', label: 'Occupancy Rate' },
-  { value: '14', suffix: ' days', label: 'Avg. Let Time' },
-  { value: '5★', suffix: '', label: 'Landlord Rating' },
-];
+const PM_STATS = [{value:'Local',suffix:'',label:'Northern Melbourne'},{value:'Direct',suffix:'',label:'Team Communication'},{value:'Personal',suffix:'',label:'Property Care'}];
 
 export function PropertyManagement() {
   return (
@@ -31,7 +27,7 @@ export function PropertyManagement() {
             </p>
 
             {/* Stat Strip */}
-            <div className={styles.statStrip} aria-label="Property management performance metrics">
+            <div className={styles.statStrip} aria-label="Our management approach">
               {PM_STATS.map((stat) => (
                 <div key={stat.label} className={styles.stat}>
                   <span className={styles.statValue}>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { BUSINESS } from '@/data/team';
 import styles from './Footer.module.css';
 
@@ -32,8 +33,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className={styles.brand}>
             <Link href="/" className={styles.logo} aria-label="Krish Real Estate — Home">
-              <span className={styles.logoMark}>K</span>
-              <span className={styles.logoText}>KRISH<span className={styles.logoSub}>REAL ESTATE</span></span>
+              <Image src="/images/krish-logo-stacked.png" alt="Krish Real Estate" width={120} height={135} className={styles.logoImage} />
             </Link>
             <p className={styles.tagline}>{BUSINESS.tagline}</p>
             <address className={styles.address}>
@@ -48,6 +48,7 @@ export function Footer() {
                 <a href={`mailto:${BUSINESS.email}`} className={styles.contactLink}>
                   {BUSINESS.email}
                 </a>
+                <a href="mailto:rental@krishrealestate.com.au" className={styles.contactLink}>rental@krishrealestate.com.au</a>
               </p>
             </address>
 
@@ -111,17 +112,14 @@ export function Footer() {
         <div className={styles.bottom}>
           <div className={styles.legal}>
             <p>&copy; {currentYear} {BUSINESS.name}. All rights reserved.</p>
+            <a href="https://abr.business.gov.au/ABN/View?abn=65579483119" target="_blank" rel="noopener noreferrer" className={styles.legalLink}>ABN 65 579 483 119</a>
             <div className={styles.legalLinks}>
               <Link href="/privacy" className={styles.legalLink}>Privacy Policy</Link>
               <span className={styles.legalSeparator}>·</span>
               <Link href="/terms" className={styles.legalLink}>Terms of Use</Link>
             </div>
           </div>
-          <div className={styles.memberships}>
-            {BUSINESS.memberships.map((m) => (
-              <span key={m} className={styles.membership}>{m} Member</span>
-            ))}
-          </div>
+          <a href="https://proddyg.com/" target="_blank" rel="noopener noreferrer" className={styles.credit}>Crafted By <span>ProddyG</span><span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </footer>

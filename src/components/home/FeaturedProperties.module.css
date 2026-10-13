@@ -34,7 +34,7 @@
   font-weight: var(--weight-semibold);
   letter-spacing: var(--tracking-widest);
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: #805f28;
 }
 
 .title {
@@ -48,7 +48,7 @@
 
 .titleEm {
   font-style: italic;
-  color: var(--color-gold);
+  color: #805f28;
 }
 
 /* ── Minimalist Architectural Tabs ── */
@@ -90,7 +90,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background-color: var(--color-gold);
+  background-color: #805f28;
 }
 
 /* ── Grid ── */

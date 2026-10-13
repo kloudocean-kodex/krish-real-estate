@@ -51,10 +51,10 @@ export const metadata: Metadata = {
       'Independent real estate agency serving Melbourne\'s northern suburbs — Wollert, Epping, Craigieburn, Donnybrook.',
     images: [
       {
-        url: '/images/hero-property.jpg',
+        url: '/images/og-brand.jpg',
         width: 1200,
         height: 630,
-        alt: 'Modern home in Melbourne\'s northern suburbs — Krish Real Estate',
+        alt: 'Krish Real Estate — Melbourne northern suburbs',
       },
     ],
   },
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: 'Krish Real Estate — Property, Handled Personally',
     description:
       'Independent real estate agency serving Melbourne\'s northern suburbs.',
-    images: ['/images/hero-property.jpg'],
+    images: ['/images/og-brand.jpg'],
   },
   robots: {
     index: true,
@@ -102,7 +102,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         <Header />
-        <main id="main-content">{children}</main>
+        <div id="main-content">{children}</div>
         <Footer />
         <FloatingCta />
         <JsonLdOrganization />

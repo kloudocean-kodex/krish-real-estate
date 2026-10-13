@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "krish-real-estate",
+  "pages_build_output_dir": "./out",
+  "compatibility_date": "2026-10-13",
+  "kv_namespaces": [
+    {
+      "binding": "ENQUIRIES",
+      "id": "d5a02ed4d8b14eeb8befe18286b5544b"
+    }
+  ],
+  "vars": {
+    "NEXT_PUBLIC_TURNSTILE_SITE_KEY": "0x4AAAAAAFViOHMpJphDfjCL"
+  }
+}

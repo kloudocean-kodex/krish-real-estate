@@ -1,100 +1,47 @@
-/**
- * Unified form submission handler
- * ────────────────────────────────
- * Attempts submission in this priority order:
- *   1. Cloudflare Pages Function (/api/enquiry) — pushes to Web3Forms + Eagle CRM
- *   2. Web3Forms direct (fallback if CF Function unavailable)
- *   3. mailto: link (last-resort fallback)
- */
-
-interface FormPayload {
-  name: string;
-  phone: string;
-  email: string;
-  message?: string;
-  enquiry_type: string;
-  source: string;
-  address?: string;
-  property_type?: string;
-  bedrooms?: string;
-  bathrooms?: string;
-  timeline?: string;
-  notes?: string;
-  subject?: string;
-}
-
-interface SubmitResult {
-  success: boolean;
-  channel: 'api' | 'web3forms' | 'mailto';
-  crm?: 'synced' | 'skipped' | 'failed';
-}
-
-export async function submitEnquiry(payload: FormPayload): Promise<SubmitResult> {
-  // ── Attempt 1: Cloudflare Pages Function (handles both email + CRM) ──
+import type { EagleLead } from "./eagleCrm";
+export async function submitEnquiry(
+  payload: EagleLead,
+  form: HTMLFormElement,
+): Promise<{ success: boolean; error?: string; reference?: string }> {
+  const fields = new FormData(form),
+    requestId = form.dataset.requestId || crypto.randomUUID();
+  form.dataset.requestId = requestId;
+  const params = new URLSearchParams(window.location.search);
   try {
-    const res = await fetch('/api/enquiry', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
+    const response = await fetch("/api/enquiry", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...payload,
+        request_id: requestId,
+        page_url: window.location.origin + window.location.pathname,
+        referrer: document.referrer ? new URL(document.referrer).origin : "",
+        campaign: ["utm_source", "utm_medium", "utm_campaign"]
+          .map((k) => (params.has(k) ? `${k}=${params.get(k)}` : ""))
+          .filter(Boolean)
+          .join("&")
+          .slice(0, 500),
+        website: fields.get("website") || "",
+        "cf-turnstile-response": fields.get("cf-turnstile-response") || "",
+      }),
+      signal: AbortSignal.timeout(60000),
     });
-
-    if (res.ok) {
-      const data = await res.json();
-      return {
-        success: true,
-        channel: 'api',
-        crm: data.channels?.crm || 'skipped',
-      };
-    }
+    const data = (await response.json()) as {
+      success?: boolean;
+      error?: string;
+      reference?: string;
+    };
+    return {
+      success: response.ok && data.success === true,
+      error: data.error,
+      reference: data.reference,
+    };
   } catch {
-    // CF Function not available — fall through to Web3Forms
+    return {
+      success: false,
+      error:
+        "We could not confirm delivery. Please call 0479 092 216 or retry using the same form.",
+      reference: requestId,
+    };
   }
-
-  // ── Attempt 2: Web3Forms direct (client-side, email only) ──
-  try {
-    const web3Key = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
-    if (web3Key && web3Key !== 'YOUR_WEB3FORMS_KEY') {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          access_key: web3Key,
-          ...payload,
-          subject: payload.subject || `New ${payload.enquiry_type} enquiry from ${payload.name} — Krish Real Estate`,
-          from_name: 'Krish Real Estate Website',
-          to: 'chirag@krishrealestate.com.au',
-        }),
-      });
-
-      if (res.ok) {
-        return { success: true, channel: 'web3forms', crm: 'skipped' };
-      }
-    }
-  } catch {
-    // Web3Forms failed — fall through to mailto
-  }
-
-  // ── Attempt 3: mailto fallback (always works) ──
-  const subject = encodeURIComponent(
-    payload.subject || `New ${payload.enquiry_type} enquiry from ${payload.name}`
-  );
-  const bodyLines = [
-    `Name: ${payload.name}`,
-    `Phone: ${payload.phone}`,
-    `Email: ${payload.email}`,
-    `Type: ${payload.enquiry_type}`,
-    payload.address ? `Address: ${payload.address}` : '',
-    payload.property_type ? `Property Type: ${payload.property_type}` : '',
-    payload.bedrooms ? `Bedrooms: ${payload.bedrooms}` : '',
-    payload.bathrooms ? `Bathrooms: ${payload.bathrooms}` : '',
-    payload.timeline ? `Timeline: ${payload.timeline}` : '',
-    '',
-    payload.message ? `Message:\n${payload.message}` : '',
-    payload.notes ? `Notes:\n${payload.notes}` : '',
-  ].filter(Boolean).join('\n');
-
-  const body = encodeURIComponent(bodyLines);
-  window.open(`mailto:chirag@krishrealestate.com.au?subject=${subject}&body=${body}`, '_blank');
-
-  return { success: true, channel: 'mailto', crm: 'skipped' };
 }

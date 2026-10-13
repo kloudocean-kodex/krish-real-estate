@@ -53,8 +53,8 @@ export function ClosingCta() {
               0479 092 216
             </a>
             <span className={styles.separator}>·</span>
-            <a href="mailto:info@krishrealestate.com.au" className={styles.email}>
-              info@krishrealestate.com.au
+            <a href="mailto:chirag@krishrealestate.com.au" className={styles.email}>
+              chirag@krishrealestate.com.au
             </a>
           </div>
         </div>

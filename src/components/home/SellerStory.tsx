@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './SellerStory.module.css';
+import {getActiveListings} from '@/data/listing-summaries';
+const property=getActiveListings('sale').find(l=>l.propertyType==='House');
 
 export function SellerStory() {
   return (
@@ -9,8 +11,8 @@ export function SellerStory() {
         <div className={`${styles.imageCol} reveal reveal--left`}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/lifestyle-handshake.jpg"
-              alt="Krish Real Estate agent congratulating a homeowner on a successful sale"
+              src={property?.media[0]?.url || "/images/property-interior.jpg"}
+              alt={property?.media[0]?.alt || "Property presentation"}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className={styles.image}
@@ -31,9 +33,8 @@ export function SellerStory() {
               <span className={styles.titleItalic}>more than a template.</span>
             </h2>
             <p className={styles.description}>
-              Every home in Wollert, Epping, Craigieburn, and Donnybrook has a unique architectural soul.
-              We reject high-volume agency assembly lines. We curate bespoke campaign architectures designed
-              to ignite buyer emotion and secure record market prices.
+              Each property and seller has a different goal. Chirag and the Krish team bring local market
+              knowledge, considered presentation and direct communication to every campaign.
             </p>
           </div>
 
@@ -41,9 +42,9 @@ export function SellerStory() {
             <div className={styles.step}>
               <span className={styles.stepNumber}>01</span>
               <div className={styles.stepContent}>
-                <h3 className={styles.stepTitle}>Evidence-Backed Market Positioning</h3>
+                <h3 className={styles.stepTitle}>A grounded pricing conversation</h3>
                 <p className={styles.stepText}>
-                  We decode real buyer depth, street-by-street clearance records, and off-market comparable metrics. No inflated promises — only strategic truth.
+                  We discuss comparable local sales, current competition and your goals before recommending a guide and campaign approach.
                 </p>
               </div>
             </div>
@@ -51,9 +52,9 @@ export function SellerStory() {
             <div className={styles.step}>
               <span className={styles.stepNumber}>02</span>
               <div className={styles.stepContent}>
-                <h3 className={styles.stepTitle}>Editorial Architectural Production</h3>
+                <h3 className={styles.stepTitle}>Presentation that fits the home</h3>
                 <p className={styles.stepText}>
-                  Magazine-grade dusk photography, spatial floorplan analysis, and cinematic storytelling that positions your residence in a tier of its own.
+                  Photography, floorplans and listing copy are planned around what buyers need to understand about your property.
                 </p>
               </div>
             </div>
@@ -61,9 +62,9 @@ export function SellerStory() {
             <div className={styles.step}>
               <span className={styles.stepNumber}>03</span>
               <div className={styles.stepContent}>
-                <h3 className={styles.stepTitle}>Fierce, Uncompromising Negotiation</h3>
+                <h3 className={styles.stepTitle}>Clear advice through negotiation</h3>
                 <p className={styles.stepText}>
-                  We treat every vendor&apos;s equity with the protective stewardship we would demand for our own families. We never leave money on the table.
+                  We keep you informed as interest and offers develop, so you can make each decision with the relevant facts.
                 </p>
               </div>
             </div>
@@ -71,7 +72,7 @@ export function SellerStory() {
 
           <div className={styles.actions}>
             <Link href="/sell/property-appraisal" className={styles.ctaPrimary}>
-              <span>Request Private Valuation</span>
+              <span>Request Private Appraisal</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>

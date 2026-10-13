@@ -13,19 +13,20 @@
 /* ── Top Section ── */
 .top {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-10);
 }
 
 @media (min-width: 768px) {
   .top {
-    grid-template-columns: 1.5fr repeat(3, 1fr);
+    grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr));
     gap: var(--space-8);
   }
 }
 
 /* ── Brand Column ── */
 .brand {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
@@ -86,6 +87,8 @@
 }
 
 .contactLink {
+  display: block;
+  overflow-wrap: anywhere;
   color: var(--color-paper-warm);
   text-decoration: none;
   transition: color var(--duration-fast) var(--ease-out);
@@ -94,6 +97,11 @@
 .contactLink:hover {
   color: var(--color-accent);
 }
+
+.logoImage {height:auto;max-width:120px;background:var(--color-paper);padding:12px;box-sizing:content-box;border-radius:2px;}
+.credit {display:inline-flex;align-items:center;gap:7px;color:#c9c0b2;text-decoration:none;font-size:var(--text-caption);white-space:nowrap;}
+.credit span:first-child {color:var(--color-paper);font-weight:600;letter-spacing:.03em;}
+.credit:hover span {color:var(--color-gold);}
 
 .socialStrip {
   display: flex;
@@ -194,6 +202,7 @@
 }
 
 .legal {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   gap: var(--space-2);

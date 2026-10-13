@@ -1,22 +1,24 @@
 import type { Metadata } from 'next';
-import { MOCK_LISTINGS } from '@/data/mock-listings';
+import {Suspense} from 'react';
+import { LISTINGS } from '@/data/listings';
 import { RentClient } from './RentClient';
 
 export const metadata: Metadata = {
-  title: 'Executive Residences for Lease | Melbourne North | Krish Real Estate',
+  alternates: {canonical: '/rent/'},
+  title: 'Executive Residences for Lease | Melbourne North',
   description:
     'Browse our curated collection of executive family homes and modern residences for lease across Wollert, Epping, Craigieburn, and Donnybrook.',
   openGraph: {
-    title: 'Executive Residences for Lease | Krish Real Estate',
+    title: 'Executive Residences for Lease',
     description: 'Boutique property leasing and management across Melbourne\'s northern corridor.',
     images: ['/images/property-interior.jpg'],
   },
 };
 
 export default function RentPage() {
-  const rentListings = MOCK_LISTINGS.filter(
-    (listing) => listing.transactionType === 'rent'
+  const rentListings = LISTINGS.filter(
+    (listing) => listing.transactionType === 'rent' && ['active','under-offer'].includes(listing.status)
   );
 
-  return <RentClient initialListings={rentListings} />;
+  return <Suspense fallback={<div className="container" style={{paddingBlock:120}}>Loading properties…</div>}><RentClient initialListings={rentListings} /></Suspense>;
 }

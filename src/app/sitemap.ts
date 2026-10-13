@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { MOCK_LISTINGS } from '@/data/mock-listings';
+import { LISTINGS } from '@/data/listings';
 
 export const dynamic = 'force-static';
 
@@ -21,21 +21,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/terms',
   ].map((route) => ({
-    url: `${BASE_URL}${route}`,
+    url: `${BASE_URL}${route}/`,
     lastModified: new Date().toISOString(),
     changeFrequency: 'weekly' as const,
     priority: route === '' ? 1.0 : 0.8,
   }));
 
   const areaRoutes = ['wollert', 'epping', 'craigieburn', 'donnybrook'].map((slug) => ({
-    url: `${BASE_URL}/areas/${slug}`,
+    url: `${BASE_URL}/areas/${slug}/`,
     lastModified: new Date().toISOString(),
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));
 
-  const propertyRoutes = MOCK_LISTINGS.map((listing) => ({
-    url: `${BASE_URL}/property/${listing.slug}`,
+  const propertyRoutes = LISTINGS.map((listing) => ({
+    url: `${BASE_URL}/property/${listing.slug}/`,
     lastModified: listing.updatedAt || new Date().toISOString(),
     changeFrequency: 'daily' as const,
     priority: 0.9,

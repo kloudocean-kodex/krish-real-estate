@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './Sell.module.css';
 
 export const metadata: Metadata = {
+  alternates: {canonical: '/sell/'},
   title: 'Sell With Krish Real Estate | Melbourne North Advisory',
   description:
     'Discover why homeowners in Wollert, Epping, Craigieburn, and Donnybrook choose Krish Real Estate to represent their most valuable asset.',
   openGraph: {
     title: 'Selling with Krish Real Estate | Northern Melbourne Advisory',
-    description: 'Bespoke campaign architectures, architectural media, and record sales results.',
+    description: 'Bespoke campaign architectures, architectural media, and personal sales support.',
     images: ['/images/property-interior.jpg'],
   },
 };
@@ -31,12 +31,12 @@ export default function SellPage() {
               <span className={styles.titleItalic}>High standard.</span>
             </h1>
             <p className={styles.subtitle}>
-              We limit our active listing portfolio so every property receives executive-level attention.
+              We plan your campaign around your property and your goals.
               Bespoke architectural presentation, targeted buyer networks, and fierce price defense.
             </p>
             <div className={styles.mastheadActions}>
               <Link href="/sell/property-appraisal" className={styles.ctaPrimary}>
-                Request Confidential Valuation
+                Request Confidential Appraisal
               </Link>
               <a href="#comparison" className={styles.ctaSecondary}>
                 Compare Our Standard
@@ -67,7 +67,7 @@ export default function SellPage() {
               <span className={styles.pillarNumber}>02</span>
               <h3 className={styles.pillarTitle}>Private Buyer Database</h3>
               <p className={styles.pillarText}>
-                Over 3,800 active, pre-qualified buyers across Melbourne&apos;s north and interstate investors looking specifically in Wollert, Epping, and Craigieburn.
+                We match buyer requirements with suitable properties across Wollert, Epping, Craigieburn and surrounding suburbs.
               </p>
             </div>
 
@@ -98,55 +98,20 @@ export default function SellPage() {
             <h2 className={styles.sectionTitle}>The Standard You Deserve</h2>
           </div>
 
-          <div className={styles.tableWrapper}>
-            <table className={styles.table}>
-              <thead>
-                <tr>
-                  <th>Campaign Element</th>
-                  <th>Standard Agency</th>
-                  <th className={styles.highlightCol}>The Krish Standard</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Agent Workload</td>
-                  <td>15–30 listings per agent simultaneously</td>
-                  <td className={styles.highlightCol}>Capped at 5–8 active campaigns per lead advisor</td>
-                </tr>
-                <tr>
-                  <td>Visual Presentation</td>
-                  <td>Standard 15-minute quick photographer</td>
-                  <td className={styles.highlightCol}>Full architectural dusk shoot + editorial styling direction</td>
-                </tr>
-                <tr>
-                  <td>Buyer Communication</td>
-                  <td>Automated generic SMS blast</td>
-                  <td className={styles.highlightCol}>Personal telephone debrief with every qualified open attendee</td>
-                </tr>
-                <tr>
-                  <td>Vendor Feedback</td>
-                  <td>Weekly automated portal analytics link</td>
-                  <td className={styles.highlightCol}>Detailed written report &amp; voice debrief after every inspection</td>
-                </tr>
-                <tr>
-                  <td>Negotiation Philosophy</td>
-                  <td>Accept first reasonable offer to turn over volume</td>
-                  <td className={styles.highlightCol}>Structured multi-offer tension to maximize final price</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className={styles.pillarsGrid}>
+            {[['01 · Appraisal','Discuss comparable sales, your property and the likely buyer audience.'],['02 · Preparation','Agree on presentation, photography, pricing and a campaign budget.'],['03 · On the market','Coordinate inspections and review buyer feedback together.'],['04 · Offers & settlement','Work through offers, contract steps and the handover with your agent.']].map(([title,text])=><div key={title} className={styles.pillarCard}><h3 className={styles.pillarTitle}>{title}</h3><p className={styles.pillarText}>{text}</p></div>)}
           </div>
         </div>
       </section>
 
-      {/* ── Bottom Valuation Gateway ── */}
-      <section className={styles.valuationGateway}>
+      {/* ── Bottom Appraisal Gateway ── */}
+      <section className={styles.appraisalGateway}>
         <div className="container">
           <div className={styles.gatewayCard}>
             <span className={styles.gatewayTag}>STEP INTO THE CONVERSATION</span>
             <h2 className={styles.gatewayTitle}>Ready to discuss your property?</h2>
             <p className={styles.gatewaySubtitle}>
-              A private appraisal takes approximately 20 minutes and gives you total clarity on your home&apos;s true market value.
+              Share your address and timing. We will arrange a personal discussion about your property and comparable local sales.
             </p>
             <Link href="/sell/property-appraisal" className={styles.gatewayBtn}>
               Request an Appraisal

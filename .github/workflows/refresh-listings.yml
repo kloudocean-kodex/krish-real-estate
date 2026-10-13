@@ -1,0 +1,41 @@
+name: Refresh Eagle property catalogue
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: eagle-catalogue
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Read public marketing fields and prepare photography
+        run: node scripts/refresh-listings.mjs
+        env:
+          EAGLE_CRM_CLIENT_ID: ${{ secrets.EAGLE_CRM_CLIENT_ID }}
+          EAGLE_CRM_CLIENT_SECRET: ${{ secrets.EAGLE_CRM_CLIENT_SECRET }}
+          CF_PAGES: '1'
+      - name: Publish changed catalogue through Cloudflare Git integration
+        run: |
+          git add src/data/listings.json src/data/listing-summaries.json public/images/properties public/_redirects
+          if git diff --cached --quiet; then
+            echo "Catalogue unchanged"
+            exit 0
+          fi
+          git config user.name "Krish catalogue sync"
+          git config user.email "catalogue@users.noreply.github.com"
+          git commit -m "content: refresh public Eagle property catalogue"
+          git pull --rebase origin main
+          git push origin HEAD:main

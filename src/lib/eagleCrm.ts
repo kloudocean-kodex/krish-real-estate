@@ -1,163 +1,167 @@
-/**
- * Eagle CRM (Eagle Agent) Integration Library
- * ──────────────────────────────────────────────
- * Server-side utility for authenticating and pushing leads to Eagle CRM.
- * This runs inside Cloudflare Pages Functions — never exposed to the browser.
- *
- * Eagle API v3 — GraphQL over REST
- * Auth: POST /api/v3/token  → Bearer {client_id}:{client_secret}
- * Docs: Provided by Eagle Software after API registration
- */
-
-interface EagleTokenResponse {
-  token: string;
-  expiresIn: number;
+/** Server-only Eagle v3 transport; Pages supplies credentials at runtime. */
+export interface EagleConfig {
+  EAGLE_CRM_CLIENT_ID?: string;
+  EAGLE_CRM_CLIENT_SECRET?: string;
 }
-
-interface EagleLeadPayload {
-  firstName: string;
-  lastName: string;
-  phone: string;
+export interface EagleLead {
+  name: string;
   email: string;
-  enquiryType: 'selling' | 'buying' | 'leasing' | 'general' | 'appraisal';
+  phone: string;
+  enquiry_type: string;
+  source: string;
+  subject?: string;
   message?: string;
-  propertyAddress?: string;
-  source?: string;
+  address?: string;
+  property_type?: string;
+  bedrooms?: string;
+  bathrooms?: string;
+  timeline?: string;
+  notes?: string;
+  property_id?: string;
+  page_url?: string;
+  referrer?: string;
+  campaign?: string;
+  request_id?: string;
 }
-
-interface EagleConfig {
-  clientId: string;
-  clientSecret: string;
-  baseUrl: string;
+export interface EagleResult {
+  success: boolean;
+  contactId?: string;
+  enquiryId?: string;
+  stage: "configuration" | "auth" | "contact" | "enquiry" | "complete";
 }
-
-/**
- * Get a 24-hour session token from Eagle CRM API v3
- */
-async function getEagleToken(config: EagleConfig): Promise<string> {
-  const response = await fetch(`${config.baseUrl}/api/v3/token`, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${config.clientId}:${config.clientSecret}`,
-      'Content-Type': 'application/json',
-    },
-  });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`Eagle CRM auth failed (${response.status}): ${errorText}`);
-  }
-
-  const data = (await response.json()) as EagleTokenResponse;
-  return data.token;
-}
-
-/**
- * Push a new contact/enquiry to Eagle CRM via GraphQL mutation
- */
-async function createEagleContact(
-  config: EagleConfig,
-  token: string,
-  lead: EagleLeadPayload
-): Promise<{ success: boolean; contactId?: string; error?: string }> {
-  // Map enquiry type to Eagle CRM contact category
-  const categoryMap: Record<string, string> = {
-    selling: 'Vendor',
-    buying: 'Buyer',
-    leasing: 'Tenant',
-    general: 'Enquiry',
-    appraisal: 'Vendor',
+type GraphResult = {
+  errors?: { message: string }[];
+  data?: {
+    createContact?: { contact?: { id: string }; errors?: string[] };
+    createEnquiry?: { enquiry?: { id: string }; errors?: string[] };
   };
-
-  const mutation = `
-    mutation CreateContact($input: ContactInput!) {
-      createContact(input: $input) {
-        id
-        firstName
-        lastName
-        email
-      }
-    }
-  `;
-
-  const variables = {
-    input: {
-      firstName: lead.firstName,
-      lastName: lead.lastName,
-      phone: lead.phone,
-      email: lead.email,
-      category: categoryMap[lead.enquiryType] || 'Enquiry',
-      notes: [
-        `Source: ${lead.source || 'krishrealestate.com.au'}`,
-        `Enquiry Type: ${lead.enquiryType}`,
-        lead.propertyAddress ? `Property: ${lead.propertyAddress}` : '',
-        lead.message ? `Message: ${lead.message}` : '',
-      ]
-        .filter(Boolean)
-        .join('\n'),
-    },
-  };
-
-  try {
-    const response = await fetch(`${config.baseUrl}/api/v3/graphql`, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${token}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ query: mutation, variables }),
-    });
-
-    if (!response.ok) {
-      const errorText = await response.text();
-      return { success: false, error: `Eagle API error (${response.status}): ${errorText}` };
-    }
-
-    const result = await response.json();
-    if (result.errors) {
-      return { success: false, error: result.errors[0]?.message || 'GraphQL error' };
-    }
-
-    return {
-      success: true,
-      contactId: result.data?.createContact?.id,
-    };
-  } catch (err) {
-    return {
-      success: false,
-      error: err instanceof Error ? err.message : 'Unknown Eagle CRM error',
-    };
-  }
-}
-
-/**
- * Main entry: push a lead to Eagle CRM
- * Returns result without throwing — caller handles fallback
- */
+};
 export async function pushLeadToEagleCRM(
-  lead: EagleLeadPayload
-): Promise<{ success: boolean; contactId?: string; error?: string }> {
-  const config: EagleConfig = {
-    clientId: process.env.EAGLE_CRM_CLIENT_ID || '',
-    clientSecret: process.env.EAGLE_CRM_CLIENT_SECRET || '',
-    baseUrl: process.env.EAGLE_CRM_BASE_URL || 'https://www.eagleagent.com.au',
-  };
-
-  // If credentials aren't configured, skip silently
-  if (!config.clientId || !config.clientSecret) {
-    return {
-      success: false,
-      error: 'Eagle CRM credentials not configured — skipping CRM push',
-    };
-  }
-
+  env: EagleConfig,
+  lead: EagleLead,
+): Promise<EagleResult> {
+  if (!env.EAGLE_CRM_CLIENT_ID || !env.EAGLE_CRM_CLIENT_SECRET)
+    return { success: false, stage: "configuration" };
+  let stage: EagleResult["stage"] = "auth";
+  let contactId: string | undefined;
+  const base = "https://www.eagleagent.com.au";
   try {
-    const token = await getEagleToken(config);
-    return await createEagleContact(config, token, lead);
-  } catch (err) {
-    return {
-      success: false,
-      error: err instanceof Error ? err.message : 'Eagle CRM integration error',
+    const auth = await fetch(`${base}/api/v3/token`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.EAGLE_CRM_CLIENT_ID}:${env.EAGLE_CRM_CLIENT_SECRET}`,
+        "Content-Type": "application/json",
+      },
+      signal: AbortSignal.timeout(12000),
+    });
+    const data = (await auth.json()) as {
+      data?: { token?: { token?: string } };
     };
+    const token = data.data?.token?.token;
+    if (!auth.ok || !token) return { success: false, stage };
+    const gql = async (query: string, attributes: Record<string, unknown>) => {
+      const response = await fetch(`${base}/api/v3/graphql`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ query, variables: { input: { attributes } } }),
+        signal: AbortSignal.timeout(15000),
+      });
+      const result = (await response.json()) as GraphResult;
+      if (!response.ok || result.errors?.length)
+        throw new Error("Eagle rejected request");
+      return result;
+    };
+    const [firstName, ...last] = lead.name.trim().split(/\s+/);
+    const text = Object.entries(lead)
+      .filter(([, v]) => v)
+      .map(([k, v]) => `${k}: ${v}`)
+      .join("\n");
+    stage = "contact";
+    // Reuse a record only when both supplied email and phone match. Never
+    // overwrite an existing person's details or marketing permissions.
+    const lookup = await fetch(`${base}/api/v3/graphql`, {
+      method: "POST",
+      headers: {Authorization: `Bearer ${token}`, "Content-Type": "application/json"},
+      body: JSON.stringify({query: "query($email:String!){contacts(query:$email,first:50){nodes{id emails{email} phoneNumbers{phoneNumber}}}}",variables:{email:lead.email}}),
+      signal: AbortSignal.timeout(12000),
+    });
+    const matches = await lookup.json() as {errors?:unknown[];data?:{contacts?:{nodes?:{id:string;emails?:{email:string}[];phoneNumbers?:{phoneNumber:string}[]}[]}}};
+    if(!lookup.ok||matches.errors?.length||!Array.isArray(matches.data?.contacts?.nodes))throw new Error('Contact lookup unavailable');
+    const phoneKey=(phone:string)=>phone.replace(/\D/g,'').replace(/^61(?=\d{9}$)/,'0');
+    contactId=matches.data.contacts.nodes.find(c=>c.emails?.some(e=>e.email?.toLowerCase()===lead.email.toLowerCase())&&c.phoneNumbers?.some(p=>phoneKey(p.phoneNumber)===phoneKey(lead.phone)))?.id;
+    if(!contactId){
+    const contact = await gql(
+      "mutation($input:CreateContactInput!){createContact(input:$input){contact{id}}}",
+      {
+        firstName,
+        lastName: last.join(" "),
+        emails: [{ email: lead.email }],
+        phoneNumbers: [{ phoneNumber: lead.phone, numberType: "MOBILE" }],
+        backgroundInfo: text,
+        subscribedToEmail: false,
+        subscribedToSms: false,
+        subscribedToPropertyAlerts: false,
+      },
+    );
+    contactId = contact.data?.createContact?.contact?.id;
+    }
+    if (!contactId || !Number.isSafeInteger(Number(contactId)))
+      return { success: false, stage };
+    stage = "enquiry";
+    let enquiryId: string | undefined;
+    try {
+      // Eagle can return null for its non-nullable payload.errors field even after
+      // committing an enquiry. Select the actual record rather than that field.
+      const enquiry = await gql(
+        "mutation($input:CreateEnquiryInput!){createEnquiry(input:$input){enquiry{id}}}",
+        {
+          contactIds: [Number(contactId)],
+          ...(lead.property_id
+            ? { propertyIds: [Number(lead.property_id)] }
+            : {}),
+          text,
+          visibleToVendor: false,
+        },
+      );
+      enquiryId = enquiry.data?.createEnquiry?.enquiry?.id;
+    } catch {
+      /* Reconcile an ambiguous upstream response before allowing a retry. */
+    }
+    if (!enquiryId && lead.request_id) {
+      const readback = await fetch(`${base}/api/v3/graphql`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          query:
+            "query($ids:[ID!],$since:String){enquiries(contactId:$ids,enquiryAfter:$since,first:50){nodes{id text}}}",
+          variables: {
+            ids: [contactId],
+            since: new Date(Date.now() - 600000).toISOString(),
+          },
+        }),
+        signal: AbortSignal.timeout(12000),
+      });
+      const saved = (await readback.json()) as {
+        data?: { enquiries?: { nodes?: { id: string; text: string }[] } };
+      };
+      if (readback.ok)
+        enquiryId = saved.data?.enquiries?.nodes?.find((item) =>
+          item.text?.split("\n").includes(`request_id: ${lead.request_id}`),
+        )?.id;
+    }
+    return {
+      success: !!enquiryId,
+      contactId,
+      enquiryId,
+      stage: enquiryId ? "complete" : stage,
+    };
+  } catch {
+    return { success: false, contactId, stage };
   }
 }

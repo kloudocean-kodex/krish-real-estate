@@ -3,6 +3,7 @@ import { BUSINESS } from '@/data/team';
 import styles from '../privacy/Privacy.module.css';
 
 export const metadata: Metadata = {
+  alternates: {canonical: '/terms/'},
   title: `Terms of Use | ${BUSINESS.name}`,
   description: `Terms and conditions governing the use of the ${BUSINESS.name} website and property portals.`,
 };

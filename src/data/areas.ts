@@ -1,3 +1,5 @@
+import { SUMMARY_LISTINGS } from './listing-summaries';
+const localPhoto=(suburb:string)=>SUMMARY_LISTINGS.find(l=>l.address.suburb.toLowerCase()===suburb&&l.media[0])?.media[0].url || '/images/krish-logo-stacked.png';
 /* Area/suburb data — verified secondary sources */
 
 export interface Area {
@@ -18,19 +20,16 @@ export const AREAS: Area[] = [
     slug: 'wollert',
     name: 'Wollert',
     postcode: '3750',
-    description: 'A thriving growth corridor suburb 26km north of Melbourne CBD, Wollert has rapidly evolved into one of the most sought-after family suburbs in the north. With new schools, parks, and infrastructure continually being developed, Wollert offers modern living with room to grow.',
-    medianPrice: '$710,000 – $714,000',
-    priceNote: 'Approximate median house price — verify before publishing',
-    population: '37,000+',
+    description: 'A thriving growth corridor suburb in Melbourne’s north, Wollert has rapidly evolved into one of the most sought-after family suburbs in the north. With new schools, parks, and infrastructure continually being developed, Wollert offers modern living with room to grow.',
     character: 'Young families, new estates, growth corridor',
     keyFeatures: [
-      'Family-oriented community with median age ~30',
+      'Family-oriented community and new residential estates',
       'Modern schools: Wollert Primary, Edgars Creek, Wollert Secondary College',
       'Close to Epping and Craigieburn train stations',
       'Growing retail and community infrastructure',
       'New parks, playgrounds, and walking trails',
     ],
-    image: '/images/suburb-wollert.jpg',
+    image: localPhoto('wollert'),
   },
   {
     slug: 'epping',
@@ -45,7 +44,7 @@ export const AREAS: Area[] = [
       'Established schools and community facilities',
       'Strong rental demand',
     ],
-    image: '/images/suburb-epping.jpg',
+    image: localPhoto('epping'),
   },
   {
     slug: 'craigieburn',
@@ -60,21 +59,21 @@ export const AREAS: Area[] = [
       'Strong school network',
       'Easy access to Hume Freeway',
     ],
-    image: '/images/suburb-craigieburn.jpg',
+    image: localPhoto('craigieburn'),
   },
   {
     slug: 'donnybrook',
     name: 'Donnybrook',
     postcode: '3064',
-    description: 'An emerging suburb adjacent to Wollert, Donnybrook is part of Melbourne\'s northern growth frontier. With new estates, a planned town centre, and future rail infrastructure, Donnybrook represents opportunity.',
+    description: 'An emerging suburb adjacent to Wollert, Donnybrook is part of Melbourne\'s northern growth frontier. With new estates, a planned town centre, and rail connections, Donnybrook represents opportunity.',
     character: 'Emerging growth area, new estates, future potential',
     keyFeatures: [
       'Rapidly growing with new estate developments',
-      'Future Donnybrook-Woodstock train station planned',
+      'Donnybrook station on the Seymour line',
       'Close to Hume Freeway for city access',
       'New schools and community facilities',
       'Affordable entry point for northern Melbourne',
     ],
-    image: '/images/suburb-donnybrook.jpg',
+    image: localPhoto('donnybrook'),
   },
 ];

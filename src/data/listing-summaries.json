@@ -1,0 +1,4828 @@
+[
+  {
+    "listingId": "1855355",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "58 Hardwood Grove, Donnybrook VIC 3064",
+      "street": "58 Hardwood Grove",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "ESR: $695,000 to $735,000 Carlisle Build",
+      "from": 695000
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 400,
+    "description": "Quality Carlisle Homes Residence in the Popular Olivine Estate\r\n\r\nWelcome to 58 Hardwood Grove, Donnybrook a beautifully maintained family residence, quality-built by the well-know",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791156199381-frs35wjmlpw-7a5a225b97c929474d0e49eda5006abc%2FPropertyPriceStatement-58_HARDWOOD_GROVE-DONNYBROOK-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1855355-0-8d87326d.webp",
+        "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [
+      {
+        "date": "2026-10-15",
+        "startTime": "17:30",
+        "endTime": "18:00"
+      },
+      {
+        "date": "2026-10-17",
+        "startTime": "12:30",
+        "endTime": "13:00"
+      }
+    ],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "58-hardwood-grove-donnybrook-3064-1855355",
+    "updatedAt": "2026-10-10T18:19:18+11:00"
+  },
+  {
+    "listingId": "1864076",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "59 Pittsburgh Road, Kalkallo VIC 3064",
+      "street": "59 Pittsburgh Road",
+      "suburb": "Kalkallo",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "ESR: $729,000 to $759,000 Dennis Family Home",
+      "from": 729000
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 392,
+    "description": "Krish Real Estate proudly presents this Dennis Family home, combining a spacious family layout with an appealing Kalkallo location. \r\n\r\nSet on approximately 392 m² Land, this four-",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791425144568-muwil2qd46-94f3d310e73896bf4cda161d73750835%2FPropertyPriceStatement-59_PITTSBURGH_ROAD-KALKALLO-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1864076-0-c75b89da.webp",
+        "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://iguide.au/59_pittsburgh_rd_kalkallo_vic_au/"
+    ],
+    "inspections": [
+      {
+        "date": "2026-10-15",
+        "startTime": "18:30",
+        "endTime": "19:00"
+      },
+      {
+        "date": "2026-10-17",
+        "startTime": "11:30",
+        "endTime": "12:00"
+      }
+    ],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "59-pittsburgh-road-kalkallo-3064-1864076",
+    "updatedAt": "2026-10-10T18:18:35+11:00"
+  },
+  {
+    "listingId": "1848847",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "78 Huntington Drive, Craigieburn VIC 3064",
+      "street": "78 Huntington Drive",
+      "suburb": "Craigieburn",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "ESR: $595,000 to $640,000 Low-Maintenance Living",
+      "from": 595000
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 1,
+    "landSize": 294,
+    "description": "Welcome to 78 Huntington Drive, Craigieburn—a well-presented home offering comfortable, low-maintenance living for first-home buyers, young families and investors.\r\n\r\nThe practical",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791156663807-gv8o1go1ukq-4ca88535529423037c0e6e6b6248c0d1%2FPropertyPriceStatement-78_HUNTINGTON_DRIVE-CRAIGIEBURN-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1848847-0-42eff56d.webp",
+        "alt": "78 Huntington Drive, Craigieburn VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [
+      {
+        "date": "2026-10-14",
+        "startTime": "17:30",
+        "endTime": "18:00"
+      },
+      {
+        "date": "2026-10-17",
+        "startTime": "10:30",
+        "endTime": "11:00"
+      }
+    ],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "78-huntington-drive-craigieburn-3064-1848847",
+    "updatedAt": "2026-10-10T18:17:01+11:00"
+  },
+  {
+    "listingId": "1847091",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "158 Dwyer Street, Kalkallo VIC 3064",
+      "street": "158 Dwyer Street",
+      "suburb": "Kalkallo",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "ESR: $469,000 to $499,000 Prime Cloverton Location",
+      "from": 469000
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "landSize": 512,
+    "description": "Krish Real Estate proudly presents this premium parcel of land in the thriving and family-friendly Cloverton community.\r\n\r\nOffering approximately 512m² of land with an impressive 1",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791156869683-vnhf4jacri-f49107563699de492a0a431837831493%2FPropertyPriceStatement-158_DWYER_STREET-KALKALLO-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1847091-0-e2775b40.webp",
+        "alt": "158 Dwyer Street, Kalkallo VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "158-dwyer-street-kalkallo-3064-1847091",
+    "updatedAt": "2026-10-05T12:52:13+11:00"
+  },
+  {
+    "listingId": "1855513",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "1 Barn Avenue, Wollert VIC 3750",
+      "street": "1 Barn Avenue",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "description": "Welcome to 1 Barn Avenue, Wollert a spacious and practical family home offering generous accommodation in a convenient location.\r\n\r\nWith four bedrooms, three bathrooms and a double",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1855513-0-ad44c63a.webp",
+        "alt": "1 Barn Avenue, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "1-barn-avenue-wollert-3750-1855513",
+    "updatedAt": "2026-10-01T11:17:11+10:00"
+  },
+  {
+    "listingId": "1786542",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "Wollert VIC 3750",
+      "street": "Address available on request",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — price undisclosed"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "landSize": 389,
+    "description": "Stamp Duty saving opportunity \r\n\r\nKrish Real Estate Presenting a perfect starter, investment or upsizing option, this warm, welcoming family home is close to all the amenities and ",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1779853990008-nie9weso8jn-16800fbe921204460661e2cba3352789%2FStatementOfInformation-10_ANNELLO_WAY-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1786542-0-61e9dcd4.webp",
+        "alt": "Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "wollert-1786542",
+    "updatedAt": "2026-09-10T17:21:52+10:00"
+  },
+  {
+    "listingId": "1795181",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "Wollert VIC 3750",
+      "street": "Address available on request",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — price undisclosed"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "landSize": 389,
+    "description": "Krish Real Estate Presenting a perfect starter, investment or upsizing option, this warm, welcoming family home is close to all the amenities and easy access to freeway and shoppin",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1781228802023-cs7xtuf80c-40917855f4b18f1b256106824fa13b7f%2FStatementOfInformation-10_ANNELLO_WAY-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1795181-0-759e080f.webp",
+        "alt": "Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "wollert-1795181",
+    "updatedAt": "2026-09-10T17:20:54+10:00"
+  },
+  {
+    "listingId": "1813608",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "46 Majorelle Boulevard, Wollert VIC 3750",
+      "street": "46 Majorelle Boulevard",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate Presenting a perfect option for all prospective Tenants who are looking to lease the house in Wollert.\r\n\r\nAbundant in natural light this immediately move in home,",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1813608-0-285847b2.webp",
+        "alt": "46 Majorelle Boulevard, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "46-majorelle-boulevard-wollert-3750-1813608",
+    "updatedAt": "2026-08-13T19:54:57+10:00"
+  },
+  {
+    "listingId": "1795252",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "Donnybrook VIC 3064",
+      "street": "Address available on request",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — price undisclosed"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 375,
+    "description": "Krish Real Estate Presenting a perfect starter, investment or upsizing option, this warm, welcoming family home is close to all the amenities and easy access to freeway and shoppin",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1783319691032-wo79p83i83-47bc634946a7501bb6ffbbfb80c0fbd5%2FStatementOfInformation-26_BRINDABELLA_CRESCENT-DONNYBROOK-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1795252-0-826774c3.webp",
+        "alt": "Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "donnybrook-1795252",
+    "updatedAt": "2026-08-13T09:34:05+10:00"
+  },
+  {
+    "listingId": "1813620",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "23 Overnewton Way, Wollert VIC 3750",
+      "street": "23 Overnewton Way",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Wollert. \r\n\r\nBe a part of a fantastic neighbourhood as it ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1813620-0-76463584.webp",
+        "alt": "23 Overnewton Way, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "23-overnewton-way-wollert-3750-1813620",
+    "updatedAt": "2026-07-20T09:56:16+10:00"
+  },
+  {
+    "listingId": "1814419",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "12 Catisfield Circuit, Donnybrook VIC 3064",
+      "street": "12 Catisfield Circuit",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Leased By Krish Real Estate 0479092216",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1814419-0-633ba495.webp",
+        "alt": "12 Catisfield Circuit, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "BHAGYASHREE ",
+        "phone": "0405834332",
+        "email": "rental@krishrealestate.com.au"
+      }
+    ],
+    "slug": "12-catisfield-circuit-donnybrook-3064-1814419",
+    "updatedAt": "2026-07-16T18:10:34+10:00"
+  },
+  {
+    "listingId": "1814425",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "Donnybrook VIC 3064",
+      "street": "Address available on request",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Leased By Krish Real Estate 0479092216",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1814425-0-a8a6c0cb.webp",
+        "alt": "Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "BHAGYASHREE ",
+        "phone": "0405834332",
+        "email": "rental@krishrealestate.com.au"
+      }
+    ],
+    "slug": "donnybrook-1814425",
+    "updatedAt": "2026-07-16T18:01:21+10:00"
+  },
+  {
+    "listingId": "1814415",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "14 Peanut Avenue, Mickleham VIC 3064",
+      "street": "14 Peanut Avenue",
+      "suburb": "Mickleham",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Leased By Krish Real Estate 0479092216",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1814415-0-88d3b10c.webp",
+        "alt": "14 Peanut Avenue, Mickleham VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "BHAGYASHREE ",
+        "phone": "0405834332",
+        "email": "rental@krishrealestate.com.au"
+      }
+    ],
+    "slug": "14-peanut-avenue-mickleham-3064-1814415",
+    "updatedAt": "2026-07-16T17:49:18+10:00"
+  },
+  {
+    "listingId": "1814403",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "6 Claude Street, Kalkallo VIC 3064",
+      "street": "6 Claude Street",
+      "suburb": "Kalkallo",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "description": "Leased By Krish Real Estate 0479092216",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1814403-0-f635ea4d.webp",
+        "alt": "6 Claude Street, Kalkallo VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "6-claude-street-kalkallo-3064-1814403",
+    "updatedAt": "2026-07-16T17:28:12+10:00"
+  },
+  {
+    "listingId": "1814398",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "78 Huntington Drive, Craigieburn VIC 3064",
+      "street": "78 Huntington Drive",
+      "suburb": "Craigieburn",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 0,
+    "description": "Leased By Krish Real Estate 0479092216",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1814398-0-c9385026.webp",
+        "alt": "78 Huntington Drive, Craigieburn VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "78-huntington-drive-craigieburn-3064-1814398",
+    "updatedAt": "2026-07-16T17:22:00+10:00"
+  },
+  {
+    "listingId": "1649302",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "3 Marigold Way, Wallan VIC 3756",
+      "street": "3 Marigold Way",
+      "suburb": "Wallan",
+      "state": "VIC",
+      "postcode": "3756"
+    },
+    "price": {
+      "display": "Sold — 305,000.00"
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "landSize": 448,
+    "description": "Krish Real Estate Proudly presents this great opportunity to buy this rare blocks of land to build your dream home in Wallan.\r\n\r\nMeasuring a total of 448m2 with 16M frontage blocks",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1760904265185-sgpbhxb8hp-e8d81c78832166754415f71d3d49484d%2FStatementOfInformation-3_MARIGOLD_WAY-WALLAN-VIC_3756+%281%29.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1649302-0-2bed3c3b.webp",
+        "alt": "3 Marigold Way, Wallan VIC 3756 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "3-marigold-way-wallan-3756-1649302",
+    "updatedAt": "2026-06-29T14:25:26+10:00"
+  },
+  {
+    "listingId": "1786076",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "7 Davis Circuit, Wollert VIC 3750",
+      "street": "7 Davis Circuit",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 1,
+    "description": "Krish Real Estate Presenting a perfect option for all prospective Tenants who are looking to lease this beautiful house in Wollert.\r\n\r\nAbundant in natural light this immediately mo",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1786076-0-b638f3d0.webp",
+        "alt": "7 Davis Circuit, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "7-davis-circuit-wollert-3750-1786076",
+    "updatedAt": "2026-06-01T14:17:46+10:00"
+  },
+  {
+    "listingId": "1752088",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "49  ELEVATION BOULEVARD, Craigieburn VIC 3064",
+      "street": "49  ELEVATION BOULEVARD",
+      "suburb": "Craigieburn",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — 670,000.00"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 1,
+    "description": "Sold By Krish Real Estate: 0479092216\r\n\r\nWelcome to 49 Elevation Boulevard, Craigieburn – a beautifully presented home offering the perfect blend of comfort, convenience, and moder",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1774998544329-4sigupmyj8y-6b3a615a3381052b2cefdd597d02ba20%2FStatementOfInformation-49_ELEVATION_BOULEVARD-CRAIGIEBURN-VIC_3064+%281%29.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1752088-0-64ba1491.webp",
+        "alt": "49  ELEVATION BOULEVARD, Craigieburn VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "49-elevation-boulevard-craigieburn-3064-1752088",
+    "updatedAt": "2026-05-22T12:37:53+10:00"
+  },
+  {
+    "listingId": "1752137",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "19 CUTLEAF CRESCENT, Tarneit VIC 3029",
+      "street": "19 CUTLEAF CRESCENT",
+      "suburb": "Tarneit",
+      "state": "VIC",
+      "postcode": "3029"
+    },
+    "price": {
+      "display": "Sold — 590,000.00"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 301,
+    "description": "Proudly presented by Krish Real Estate, 19 Cutleaf Crescent, Tarneit offers the perfect combination of modern comfort, functional design, and a highly convenient location. Ideal fo",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1775002975689-z010wkzrsj-027d2aa32baf1da15adc8c3c856c67f6%2FStatementOfInformation-19_CUTLEAF_CRESCENT-TARNEIT-VIC_3029.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1752137-0-d8c7a863.webp",
+        "alt": "19 CUTLEAF CRESCENT, Tarneit VIC 3029 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "19-cutleaf-crescent-tarneit-3029-1752137",
+    "updatedAt": "2026-05-22T12:36:48+10:00"
+  },
+  {
+    "listingId": "1755442",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "Donnybrook VIC 3064",
+      "street": "Address available on request",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "ESR: $395,000 to $415,000",
+      "from": 395000
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "landSize": 388,
+    "description": "Krish Real Estate proudly presents this fantastic opportunity to secure a premium block of land in the rapidly growing suburb of Donnybrook.\r\n\r\nPositioned in a sought-after pocket,",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1777708220264-5pvwacnim8b-ade52452ac1eb3c52921225ab289d301%2FStatementOfInformation-22_TARA_CIRCUIT-DONNYBROOK-VIC_3064_removed.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1755442-0-8b2ca34b.webp",
+        "alt": "Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "donnybrook-1755442",
+    "updatedAt": "2026-05-02T17:50:20+10:00"
+  },
+  {
+    "listingId": "1460287",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "84 Eastside Boulevard, Donnybrook VIC 3064",
+      "street": "84 Eastside Boulevard",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "\"Price to Sell\" ESR: $720,000 to $750,000",
+      "from": 720000
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 392,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this beautiful house in rapidly growing suburb – Donnybrook. Situated in the highly popular Peppercorn Hill E",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1726914439784-xb5tjtxm2ih-19c9d040cddb75a8fc8671fabe7cc959%2FStatementOfInformation-84_EASTSIDE_BOULEVARD-DONNYBROOK-VIC_3064+%282%29.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1460287-0-309e6e8e.webp",
+        "alt": "84 Eastside Boulevard, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "84-eastside-boulevard-donnybrook-3064-1460287",
+    "updatedAt": "2026-04-08T20:40:42+10:00"
+  },
+  {
+    "listingId": "1742284",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "Townhouse",
+    "address": {
+      "display": "28 BANK STREET, Wollert VIC 3750",
+      "street": "28 BANK STREET",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Wollert. \r\n\r\nBe a part of a fantastic neighbourhood as it ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1742284-0-dde51a86.webp",
+        "alt": "28 BANK STREET, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "28-bank-street-wollert-3750-1742284",
+    "updatedAt": "2026-04-01T15:50:43+11:00"
+  },
+  {
+    "listingId": "1418614",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "Donnybrook VIC 3064",
+      "street": "Address available on request",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Contact for price"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 448,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this beautiful house in rapidly growing suburb – Donnybrook. Situated in the highly popular Olivine Estate an",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1763341373513-y2lsrrcdsch-89decc742e68204ba5d3fb80d7dc85be%2FStatementOfInformation-60_HARDWOOD_GROVE-DONNYBROOK-VIC_3064+%282%29.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1418614-0-4b2d92ac.webp",
+        "alt": "Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://youtu.be/ez6E7EWS8GE"
+    ],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "donnybrook-1418614",
+    "updatedAt": "2026-04-01T15:41:52+11:00"
+  },
+  {
+    "listingId": "1742240",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "19 Wombargo Crescent , Wollert VIC 3750",
+      "street": "19 Wombargo Crescent ",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this nearly new house in rapidly growing suburb – Wollert. \r\n\r\nBe a part of a fantastic neighbourhood as it",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1742240-0-20180c1f.webp",
+        "alt": "19 Wombargo Crescent , Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "19-wombargo-crescent-wollert-3750-1742240",
+    "updatedAt": "2026-03-26T13:59:40+11:00"
+  },
+  {
+    "listingId": "1724600",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "Townhouse",
+    "address": {
+      "display": "13 Thorold Street, Doreen VIC 3754",
+      "street": "13 Thorold Street",
+      "suburb": "Doreen",
+      "state": "VIC",
+      "postcode": "3754"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to lease this Beautiful 4-bedroom Town house in Doreen, situated in a very good location with all Amenities close by",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1724600-0-13dae705.webp",
+        "alt": "13 Thorold Street, Doreen VIC 3754 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "13-thorold-street-doreen-3754-1724600",
+    "updatedAt": "2026-03-15T06:56:22+11:00"
+  },
+  {
+    "listingId": "1716276",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "21 Platypus Chase, Beveridge VIC 3753",
+      "street": "21 Platypus Chase",
+      "suburb": "Beveridge",
+      "state": "VIC",
+      "postcode": "3753"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to rent out this Beautiful house in Beveridge. \r\n\r\nBe part of A Fentastic neighbourhood as it evolves into a vibrant",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1716276-0-5f70b64d.webp",
+        "alt": "21 Platypus Chase, Beveridge VIC 3753 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "21-platypus-chase-beveridge-3753-1716276",
+    "updatedAt": "2026-03-13T12:50:01+11:00"
+  },
+  {
+    "listingId": "1735034",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "7 Cerulean Street, Wollert VIC 3750",
+      "street": "7 Cerulean Street",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate Presenting a perfect option for all prospective Tenants who are looking to lease the house in Wollert.\r\n\r\nAbundant in natural light this immediately move in home,",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1735034-0-494fa657.webp",
+        "alt": "7 Cerulean Street, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "7-cerulean-street-wollert-3750-1735034",
+    "updatedAt": "2026-03-09T11:08:49+11:00"
+  },
+  {
+    "listingId": "1701925",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "3 Tender Street, Donnybrook VIC 3064",
+      "street": "3 Tender Street",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — 725,000.00"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Own this beautiful house in rapidly growing suburb – Donnybrook. \r\n\r\nBe a part of a fantastic neighbourhood as it",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1768885592395-dxi5ej3480p-edbfce71cc0fb1d00040c5c2398c8e80%2FStatementOfInformation-3_TENDER_STREET-DONNYBROOK-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1701925-0-d515bd4f.webp",
+        "alt": "3 Tender Street, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://youtube.com/shorts/M_9xTtkBiYw?feature=share"
+    ],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "3-tender-street-donnybrook-3064-1701925",
+    "updatedAt": "2026-03-05T12:12:55+11:00"
+  },
+  {
+    "listingId": "1729195",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "50 Woodman Circuit, Wollert VIC 3750",
+      "street": "50 Woodman Circuit",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 1,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Wollert. \r\n\r\nBe a part of a fantastic neighbourhood as it ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1729195-0-59bbef7e.webp",
+        "alt": "50 Woodman Circuit, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "50-woodman-circuit-wollert-3750-1729195",
+    "updatedAt": "2026-02-22T16:37:18+11:00"
+  },
+  {
+    "listingId": "1693577",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "3 Tender Street, Donnybrook VIC 3064",
+      "street": "3 Tender Street",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Donnybrook. \r\n\r\nBe a part of a fantastic neighbourhood as ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1693577-0-d57c1e95.webp",
+        "alt": "3 Tender Street, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "3-tender-street-donnybrook-3064-1693577",
+    "updatedAt": "2026-02-20T13:53:07+11:00"
+  },
+  {
+    "listingId": "1724599",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "78 Lacombe Blvd, Doreen VIC 3754",
+      "street": "78 Lacombe Blvd",
+      "suburb": "Doreen",
+      "state": "VIC",
+      "postcode": "3754"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in established suburb – Doreen. \r\n\r\nBe a part of a fantastic neighbourhood as it evolv",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1724599-0-f93cb105.webp",
+        "alt": "78 Lacombe Blvd, Doreen VIC 3754 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "78-lacombe-blvd-doreen-3754-1724599",
+    "updatedAt": "2026-02-11T10:22:04+11:00"
+  },
+  {
+    "listingId": "1720677",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "12 Gallop Court , Kilmore VIC 3764",
+      "street": "12 Gallop Court ",
+      "suburb": "Kilmore",
+      "state": "VIC",
+      "postcode": "3764"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 648,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this brand-new house in rapidly growing suburb – Kilmore. \r\n\r\nBe a part of a fantastic neighbourhood as it ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1720677-0-77c37734.webp",
+        "alt": "12 Gallop Court , Kilmore VIC 3764 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      },
+      {
+        "name": "BHAGYASHREE ",
+        "phone": "0405834332",
+        "email": "rental@krishrealestate.com.au"
+      }
+    ],
+    "slug": "12-gallop-court-kilmore-3764-1720677",
+    "updatedAt": "2026-02-04T19:54:39+11:00"
+  },
+  {
+    "listingId": "1699732",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "7 Cerulean Street, Wollert VIC 3750",
+      "street": "7 Cerulean Street",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 665,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate Presenting a perfect starter option for all prospective Buyers who are looking to invest in real estate.\r\n\r\nAbundant in natural light this immediately move in hom",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1766437595729-0ks6dztinshm-06443ee2c58a709ee38bc3a6025fe19d%2F02+StatementOfInformation-7_CERULEAN_STREET-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1699732-0-4f6bcc67.webp",
+        "alt": "7 Cerulean Street, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://youtube.com/shorts/QuCdSH7zZaQ"
+    ],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "7-cerulean-street-wollert-3750-1699732",
+    "updatedAt": "2026-01-30T11:08:15+11:00"
+  },
+  {
+    "listingId": "1708212",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "13 Melville Avenue, Wallan VIC 3756",
+      "street": "13 Melville Avenue",
+      "suburb": "Wallan",
+      "state": "VIC",
+      "postcode": "3756"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Wallan. \r\n\r\nBe a part of a fantastic neighbourhood as it e",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1708212-0-d1b5dad7.webp",
+        "alt": "13 Melville Avenue, Wallan VIC 3756 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "13-melville-avenue-wallan-3756-1708212",
+    "updatedAt": "2026-01-14T20:20:36+11:00"
+  },
+  {
+    "listingId": "1711153",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "Townhouse",
+    "address": {
+      "display": "181 Vearings Road, Wollert VIC 3750",
+      "street": "181 Vearings Road",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 0,
+    "description": "Spacious 4-Bedroom Townhouse in the Heart of Wollert",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1711153-0-373102e9.webp",
+        "alt": "181 Vearings Road, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "181-vearings-road-wollert-3750-1711153",
+    "updatedAt": "2025-12-22T16:47:29+11:00"
+  },
+  {
+    "listingId": "1697165",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "5 Monaco Circuit, Wollert VIC 3750",
+      "street": "5 Monaco Circuit",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Wollert.\r\n \r\nBe a part of a fantastic neighbourhood as it ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1697165-0-33efb2a2.webp",
+        "alt": "5 Monaco Circuit, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "5-monaco-circuit-wollert-3750-1697165",
+    "updatedAt": "2025-12-13T15:37:54+11:00"
+  },
+  {
+    "listingId": "1703188",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "16 Gallop Court, Kilmore VIC 3764",
+      "street": "16 Gallop Court",
+      "suburb": "Kilmore",
+      "state": "VIC",
+      "postcode": "3764"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "landSize": 647,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this brand-new house in rapidly growing suburb – Kilmore. \r\n\r\nBe a part of a fantastic neighbourhood as it ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1703188-0-3074152f.webp",
+        "alt": "16 Gallop Court, Kilmore VIC 3764 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "16-gallop-court-kilmore-3764-1703188",
+    "updatedAt": "2025-12-08T16:36:26+11:00"
+  },
+  {
+    "listingId": "1689142",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "10 Jeffrey Court, Epping VIC 3076",
+      "street": "10 Jeffrey Court",
+      "suburb": "Epping",
+      "state": "VIC",
+      "postcode": "3076"
+    },
+    "price": {
+      "display": "Sold — 1,087,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Quality Home at the best location and fantastic neighbourhood\r\n\r\nKrish Real Estate Proudly Presenting a perfect double story family home, that has been lovingly owned and maintaine",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1761968275123-29m6hdudtrd-1e0a016edacb1ef7acbd01bb12fd9d24%2FStatementOfInformation-10_JEFFREY_COURT-EPPING-VIC_3076.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1689142-0-9408b02d.webp",
+        "alt": "10 Jeffrey Court, Epping VIC 3076 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://youtu.be/ZR4X_bxBrn4"
+    ],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "10-jeffrey-court-epping-3076-1689142",
+    "updatedAt": "2025-12-06T15:51:51+11:00"
+  },
+  {
+    "listingId": "1700907",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "4 Byron Street, Donnybrook VIC 3064",
+      "street": "4 Byron Street",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 448,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Donnybrook. Situated in the highly popular peppercorn hill",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1700907-0-ae1f2447.webp",
+        "alt": "4 Byron Street, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "4-byron-street-donnybrook-3064-1700907",
+    "updatedAt": "2025-11-27T09:58:22+11:00"
+  },
+  {
+    "listingId": "1664431",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "15 Aldergrove Parade, Mickleham VIC 3064",
+      "street": "15 Aldergrove Parade",
+      "suburb": "Mickleham",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 350,
+    "description": "Krish Real Estate proudly presents this beautifully designed 4-bedroom family home in the heart of Mickleham.\r\n\r\nOffering the perfect balance of comfort, style, and convenience, th",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1664431-0-a9307ae5.webp",
+        "alt": "15 Aldergrove Parade, Mickleham VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "15-aldergrove-parade-mickleham-3064-1664431",
+    "updatedAt": "2025-10-31T13:56:42+11:00"
+  },
+  {
+    "listingId": "1688887",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "29 Bunurong Avenue, Wollert VIC 3750",
+      "street": "29 Bunurong Avenue",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "One of the best property in Wollert",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1688887-0-d4008c51.webp",
+        "alt": "29 Bunurong Avenue, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "29-bunurong-avenue-wollert-3750-1688887",
+    "updatedAt": "2025-10-31T13:54:08+11:00"
+  },
+  {
+    "listingId": "1684160",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "78 Lacombe Boulevard, Doreen VIC 3754",
+      "street": "78 Lacombe Boulevard",
+      "suburb": "Doreen",
+      "state": "VIC",
+      "postcode": "3754"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "One of the best property in Doreen",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1684160-0-ba192289.webp",
+        "alt": "78 Lacombe Boulevard, Doreen VIC 3754 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "BHAGYASHREE ",
+        "phone": "0405834332",
+        "email": "rental@krishrealestate.com.au"
+      }
+    ],
+    "slug": "78-lacombe-boulevard-doreen-3754-1684160",
+    "updatedAt": "2025-10-22T08:11:38+11:00"
+  },
+  {
+    "listingId": "1624826",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "4 Byron Street, Donnybrook VIC 3064",
+      "street": "4 Byron Street",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — 755,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this beautiful house in rapidly growing suburb – Donnybrook. \r\n\r\nSituated in the highly popular peppercorn hi",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1624826-0-4acc157f.webp",
+        "alt": "4 Byron Street, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://youtu.be/jmnAjF-l8nY"
+    ],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "4-byron-street-donnybrook-3064-1624826",
+    "updatedAt": "2025-10-20T07:05:56+11:00"
+  },
+  {
+    "listingId": "1682491",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "78 Lacombe Boulevard, Doreen VIC 3754",
+      "street": "78 Lacombe Boulevard",
+      "suburb": "Doreen",
+      "state": "VIC",
+      "postcode": "3754"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "One of the Best property in Doreen",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1682491-0-fd7d0a45.webp",
+        "alt": "78 Lacombe Boulevard, Doreen VIC 3754 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "BHAGYASHREE ",
+        "phone": "0405834332",
+        "email": "rental@krishrealestate.com.au"
+      }
+    ],
+    "slug": "78-lacombe-boulevard-doreen-3754-1682491",
+    "updatedAt": "2025-10-17T13:45:24+11:00"
+  },
+  {
+    "listingId": "1659562",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "Unit",
+    "address": {
+      "display": "12/148 Waterloo Road, Oak Park VIC 3046",
+      "street": "12/148 Waterloo Road",
+      "suburb": "Oak Park",
+      "state": "VIC",
+      "postcode": "3046"
+    },
+    "price": {
+      "display": "Sold — 550,000.00"
+    },
+    "beds": 2,
+    "baths": 2,
+    "cars": 1,
+    "description": "Krish Real Estate proudly presents this beautiful home which is perfect for first home buyers or savvy investors, located in the rapidly growing suburb of Oak Park.\r\n\r\nBe part of a",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1757748632546-db2l0u4x9e-f4603aa4cad1791f4ca32464227bc0f4%2FStatementOfInformation-12-148_WATERLOO_ROAD-OAK_PARK-VIC_3046.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1659562-0-f1890dc8.webp",
+        "alt": "12/148 Waterloo Road, Oak Park VIC 3046 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "12-148-waterloo-road-oak-park-3046-1659562",
+    "updatedAt": "2025-10-04T13:45:19+10:00"
+  },
+  {
+    "listingId": "1646227",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "3 Flame Road, Kalkallo VIC 3064",
+      "street": "3 Flame Road",
+      "suburb": "Kalkallo",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 529,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Kalkallo. \r\n\r\nBe a part of a fantastic neighbourhood as it",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1646227-0-b98516c1.webp",
+        "alt": "3 Flame Road, Kalkallo VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "3-flame-road-kalkallo-3064-1646227",
+    "updatedAt": "2025-09-30T14:00:30+10:00"
+  },
+  {
+    "listingId": "1664427",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "53 Ramornie Loop, Wollert VIC 3750",
+      "street": "53 Ramornie Loop",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 448,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to lease a beautiful family home in the rapidly growing suburb of Wollert. \r\n\r\nThis 4-bedroom, 2-bathroom home combi",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1664427-0-b12eae78.webp",
+        "alt": "53 Ramornie Loop, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "53-ramornie-loop-wollert-3750-1664427",
+    "updatedAt": "2025-09-30T08:57:24+10:00"
+  },
+  {
+    "listingId": "1647235",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "Townhouse",
+    "address": {
+      "display": "1 Barn Avenue, Wollert VIC 3750",
+      "street": "1 Barn Avenue",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Wollert.\r\n\r\nBe a part of a fantastic neighbourhood as it e",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1647235-0-2d1f2d9f.webp",
+        "alt": "1 Barn Avenue, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "1-barn-avenue-wollert-3750-1647235",
+    "updatedAt": "2025-09-29T20:31:23+10:00"
+  },
+  {
+    "listingId": "1663594",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "23 Belvedere Circuit, Donnybrook VIC 3064",
+      "street": "23 Belvedere Circuit",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — price undisclosed"
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "landSize": 406,
+    "description": "Sold By Krish Real Estate: 0479092216",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1663594-0-b1a8af80.webp",
+        "alt": "23 Belvedere Circuit, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "23-belvedere-circuit-donnybrook-3064-1663594",
+    "updatedAt": "2025-09-25T21:40:45+10:00"
+  },
+  {
+    "listingId": "1659561",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "1A Ealing Close, Epping VIC 3076",
+      "street": "1A Ealing Close",
+      "suburb": "Epping",
+      "state": "VIC",
+      "postcode": "3076"
+    },
+    "price": {
+      "display": "Sold — 580,000.00"
+    },
+    "beds": 2,
+    "baths": 1,
+    "cars": 1,
+    "description": "Krish Real Estate Presenting a perfect starter for first home buyers and investors to Buy this beautiful house in Epping.\r\n\r\nBe a part of a fantastic neighbourhood as it evolves in",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1757747189485-qdbakvrt4is-05195ebb65887c705b5ca9b8c0d2e13a%2FStatementOfInformation-1A_EALING_CLOSE-EPPING-VIC_3076.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1659561-0-e2d2dec0.webp",
+        "alt": "1A Ealing Close, Epping VIC 3076 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "1a-ealing-close-epping-3076-1659561",
+    "updatedAt": "2025-09-24T10:36:51+10:00"
+  },
+  {
+    "listingId": "1583110",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "Wallan VIC 3756",
+      "street": "Address available on request",
+      "suburb": "Wallan",
+      "state": "VIC",
+      "postcode": "3756"
+    },
+    "price": {
+      "display": "Taking Offers Now"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 415,
+    "description": "Krish Real Estate Presenting a perfect starter for first home buyers and investors to Buy this brand-new house in rapidly growing suburb – Wallan. \r\n\r\nBe a part of a fantastic neig",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1746870039795-xkofv95578i-45c3e7d659008a77dbaa131d681d37b8%2FStatementOfInformation-9_HERNE_STREET-WALLAN-VIC_3756.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1583110-0-a90ec270.webp",
+        "alt": "Wallan VIC 3756 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://youtu.be/Xgyyj8jjAYk"
+    ],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "wallan-1583110",
+    "updatedAt": "2025-09-24T10:14:46+10:00"
+  },
+  {
+    "listingId": "1607542",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "34 Tungsten Drive, Kalkallo VIC 3064",
+      "street": "34 Tungsten Drive",
+      "suburb": "Kalkallo",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — 600,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this beautiful house in rapidly growing suburb – Kalkallo. Situated in the highly popular Cloverton Estate.\r\n",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1756360227118-mk48hzb10gp-3e49b24d9f203b09a8c5a77417a9782a%2FStatementOfInformation-34_TUNGSTEN_DRIVE-KALKALLO-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1607542-0-d5cd224e.webp",
+        "alt": "34 Tungsten Drive, Kalkallo VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://youtu.be/elZcKNV0Am4"
+    ],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "JAGTAR SINGH",
+        "phone": "0481990573",
+        "email": "jagtar@krishrealestate.com.au",
+        "photo": "/images/team-jagtar.webp"
+      }
+    ],
+    "slug": "34-tungsten-drive-kalkallo-3064-1607542",
+    "updatedAt": "2025-09-24T10:13:39+10:00"
+  },
+  {
+    "listingId": "1642985",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "8 Cowes Street, Craigieburn VIC 3064",
+      "street": "8 Cowes Street",
+      "suburb": "Craigieburn",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Craigieburn. \r\n\r\nBe a part of a fantastic neighbourhood as",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1642985-0-c19cc6a6.webp",
+        "alt": "8 Cowes Street, Craigieburn VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "8-cowes-street-craigieburn-3064-1642985",
+    "updatedAt": "2025-09-24T10:06:53+10:00"
+  },
+  {
+    "listingId": "1639233",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "58 Hardwood Grove, Donnybrook VIC 3064",
+      "street": "58 Hardwood Grove",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 448,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Donnybrook. \r\n\r\nBe a part of a fantastic neighbourhood as ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1639233-0-3f3eb484.webp",
+        "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "58-hardwood-grove-donnybrook-3064-1639233",
+    "updatedAt": "2025-09-22T19:54:23+10:00"
+  },
+  {
+    "listingId": "1646746",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "11 Kingfisher Way, Wallan VIC 3756",
+      "street": "11 Kingfisher Way",
+      "suburb": "Wallan",
+      "state": "VIC",
+      "postcode": "3756"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 504,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Wallan. \r\n\r\nBe a part of a fantastic neighbourhood as it e",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1646746-0-49f86999.webp",
+        "alt": "11 Kingfisher Way, Wallan VIC 3756 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "11-kingfisher-way-wallan-3756-1646746",
+    "updatedAt": "2025-09-02T09:27:22+10:00"
+  },
+  {
+    "listingId": "1646217",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "49 Elevation Boulevard, Craigieburn VIC 3064",
+      "street": "49 Elevation Boulevard",
+      "suburb": "Craigieburn",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 1,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Craigieburn. \r\n\r\nBe a part of a fantastic neighbourhood as",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1646217-0-e04c635e.webp",
+        "alt": "49 Elevation Boulevard, Craigieburn VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "49-elevation-boulevard-craigieburn-3064-1646217",
+    "updatedAt": "2025-08-23T12:40:10+10:00"
+  },
+  {
+    "listingId": "1413486",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "Sunbury VIC 3429",
+      "street": "Address available on request",
+      "suburb": "Sunbury",
+      "state": "VIC",
+      "postcode": "3429"
+    },
+    "price": {
+      "display": "ON HOLD"
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "landSize": 402,
+    "description": "Krish Real Estate Proudly presents this great opportunity to buy this rare block of land to build your dream home in Sunbury.\r\n\r\nMeasuring a total of 402m2 with 12.5M frontage bloc",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1715058455198-hlgvssrr73t-f35129fffe7477947613714776f9a518%2FStatementOfInformation-32_VANGEL_ROAD-SUNBURY-VIC_3429+%281%29.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1413486-0-81ab58c1.webp",
+        "alt": "Sunbury VIC 3429 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "sunbury-1413486",
+    "updatedAt": "2025-08-20T15:05:36+10:00"
+  },
+  {
+    "listingId": "1630779",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "Townhouse",
+    "address": {
+      "display": "1 Barn Avenue, Wollert VIC 3750",
+      "street": "1 Barn Avenue",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 615,000.00"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "landSize": 198,
+    "description": "A perfect starter, investment or downsizing option, this warm, welcoming family home is close to all the amenities in popular Aurora estate, easy access to freeway and shopping cen",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1752796529583-ikddjv3swpi-baddf6887f2fbaf61c4d9428ecd65538%2FStatementOfInformation-1_BARN_AVENUE-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1630779-0-afabd666.webp",
+        "alt": "1 Barn Avenue, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://youtube.com/shorts/FPCUvKz_bBs?feature=share"
+    ],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "1-barn-avenue-wollert-3750-1630779",
+    "updatedAt": "2025-08-12T10:13:06+10:00"
+  },
+  {
+    "listingId": "1642121",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "11 Teagreen Street, Wollert VIC 3750",
+      "street": "11 Teagreen Street",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1642121-0-02a7ded4.webp",
+        "alt": "11 Teagreen Street, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "11-teagreen-street-wollert-3750-1642121",
+    "updatedAt": "2025-08-11T07:22:09+10:00"
+  },
+  {
+    "listingId": "1642126",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "Townhouse",
+    "address": {
+      "display": "13 Thorold Street, Doreen VIC 3754",
+      "street": "13 Thorold Street",
+      "suburb": "Doreen",
+      "state": "VIC",
+      "postcode": "3754"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1642126-0-566537e3.webp",
+        "alt": "13 Thorold Street, Doreen VIC 3754 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "13-thorold-street-doreen-3754-1642126",
+    "updatedAt": "2025-08-11T07:21:28+10:00"
+  },
+  {
+    "listingId": "1642134",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "Townhouse",
+    "address": {
+      "display": "28 Bank Street, Wollert VIC 3750",
+      "street": "28 Bank Street",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 2,
+    "description": "QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1642134-0-1100bf4a.webp",
+        "alt": "28 Bank Street, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "28-bank-street-wollert-3750-1642134",
+    "updatedAt": "2025-08-11T07:20:17+10:00"
+  },
+  {
+    "listingId": "1401838",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "Wollert VIC 3750",
+      "street": "Address available on request",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "ON HOLD"
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "landSize": 564,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this perfectly positioned 564 sqm (Approx.) Titled Block of land.\r\n\r\nSituated in Highly Popular Aurora Estate",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1718256282551-jv1juqowkg9-632c666cae2237d395ec907388dd3aab%2FStatement.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1401838-0-f350a4e6.webp",
+        "alt": "Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "wollert-1401838",
+    "updatedAt": "2025-07-22T15:07:55+10:00"
+  },
+  {
+    "listingId": "1603234",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "9 Herne Street, Wallan VIC 3756",
+      "street": "9 Herne Street",
+      "suburb": "Wallan",
+      "state": "VIC",
+      "postcode": "3756"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this brand-new house in rapidly growing suburb – Wallan. \r\n\r\nBe a part of a fantastic neighbourhood as it e",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1603234-0-355999f5.webp",
+        "alt": "9 Herne Street, Wallan VIC 3756 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "9-herne-street-wallan-3756-1603234",
+    "updatedAt": "2025-07-17T11:37:31+10:00"
+  },
+  {
+    "listingId": "1609677",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "8 Cygnet Way, Mickleham VIC 3064",
+      "street": "8 Cygnet Way",
+      "suburb": "Mickleham",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "landSize": 448,
+    "description": "{QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD}\r\n\r\nKrish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Mickleham. ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1609677-0-fdcb5e1a.webp",
+        "alt": "8 Cygnet Way, Mickleham VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "8-cygnet-way-mickleham-3064-1609677",
+    "updatedAt": "2025-07-16T09:49:39+10:00"
+  },
+  {
+    "listingId": "1624930",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "3 Caladoc Road, Wollert VIC 3750",
+      "street": "3 Caladoc Road",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to rent out this Beautiful \r\nhouse in Wollert.",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1624930-0-3ed95977.webp",
+        "alt": "3 Caladoc Road, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "3-caladoc-road-wollert-3750-1624930",
+    "updatedAt": "2025-07-10T20:18:01+10:00"
+  },
+  {
+    "listingId": "1610005",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "36 Canary View, Beveridge VIC 3753",
+      "street": "36 Canary View",
+      "suburb": "Beveridge",
+      "state": "VIC",
+      "postcode": "3753"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 3,
+    "cars": 1,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to rent out this Beautiful house in Beveridge. \r\n\r\nWelcome to 36 Canary Vw, Beveridge. This exceptional ROBUST wheel",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1610005-0-24617228.webp",
+        "alt": "36 Canary View, Beveridge VIC 3753 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "36-canary-view-beveridge-3753-1610005",
+    "updatedAt": "2025-07-02T10:04:20+10:00"
+  },
+  {
+    "listingId": "1590590",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "82 Gypsum Drive, Wollert VIC 3750",
+      "street": "82 Gypsum Drive",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 860,000.00"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "landSize": 283,
+    "description": "Krish Real Estate Presenting a perfect starter option, this warm, welcoming family home is close to all the amenities and easy access to freeway and shopping centre.\r\n\r\nAbundant in",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1749349561295-7uxh7z8nqui-a1c3b4505a4c10c34a9d2fc76b35b36a%2FStatementOfInformation-82_GYPSUM_DRIVE-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1590590-0-8e0f0dc0.webp",
+        "alt": "82 Gypsum Drive, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [
+      "https://youtu.be/Kl-bnjSD19s"
+    ],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "82-gypsum-drive-wollert-3750-1590590",
+    "updatedAt": "2025-06-27T12:21:03+10:00"
+  },
+  {
+    "listingId": "1590420",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "125 Arrowsmith Street, Beveridge VIC 3753",
+      "street": "125 Arrowsmith Street",
+      "suburb": "Beveridge",
+      "state": "VIC",
+      "postcode": "3753"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 448,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to rent out this Beautiful \r\nhouse in Minton Place Beveridge. \r\n\r\nBe part of A Fentastic neighbourhood as it evolves",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1590420-0-1f2efcff.webp",
+        "alt": "125 Arrowsmith Street, Beveridge VIC 3753 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "125-arrowsmith-street-beveridge-3753-1590420",
+    "updatedAt": "2025-06-19T09:04:52+10:00"
+  },
+  {
+    "listingId": "1591053",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "8 Davis Circuit, Wollert VIC 3750",
+      "street": "8 Davis Circuit",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 331,000.00"
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "landSize": 313,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this perfectly positioned 313 sqm (Approx.) Block of land.\r\n\r\nSituated in Highly Popular Wollert Rise Estate ",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1746759638484-5ie8s94x5jv-e2d79fd5e64d8a9d4fa992f8f99042fe%2FStatementOfInformation-8_DAVIS_CIRCUIT-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1591053-0-e49d7aa6.webp",
+        "alt": "8 Davis Circuit, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "8-davis-circuit-wollert-3750-1591053",
+    "updatedAt": "2025-06-03T12:17:52+10:00"
+  },
+  {
+    "listingId": "1599251",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "Wollert VIC 3750",
+      "street": "Address available on request",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 3,
+    "baths": 2,
+    "cars": 1,
+    "description": "Leased By Krish Real Estate Pty Ltd",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1599251-0-edf3dc33.webp",
+        "alt": "Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "wollert-1599251",
+    "updatedAt": "2025-05-22T14:56:32+10:00"
+  },
+  {
+    "listingId": "1582665",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "4 Topiary Way, Donnybrook VIC 3064",
+      "street": "4 Topiary Way",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Donnybrook. \r\n\r\nBe a part of a fantastic neighbourhood as ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1582665-0-d8cbb2f6.webp",
+        "alt": "4 Topiary Way, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "4-topiary-way-donnybrook-3064-1582665",
+    "updatedAt": "2025-04-30T14:09:41+10:00"
+  },
+  {
+    "listingId": "1547836",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "19 Valais Street, Wollert VIC 3750",
+      "street": "19 Valais Street",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 625,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 200,
+    "description": "Krish Real Estate Presenting a perfect starter for investment or downsizing option, this warm, welcoming family home is close to all the amenities and easy access to freeway and sh",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1743634558229-r0kk82m8fy-5aef417fab78ab2f453f42f9e7cec1c9%2FStatementOfInformation-19_VALAIS_STREET-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1547836-0-09ab2791.webp",
+        "alt": "19 Valais Street, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "19-valais-street-wollert-3750-1547836",
+    "updatedAt": "2025-04-25T08:50:25+10:00"
+  },
+  {
+    "listingId": "1583192",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "19 Wombargo Crescent, Wollert VIC 3750",
+      "street": "19 Wombargo Crescent",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this nearly new house in rapidly growing suburb – Wollert. \r\n\r\nBe a part of a fantastic neighbourhood as it",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1583192-0-884086ad.webp",
+        "alt": "19 Wombargo Crescent, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "19-wombargo-crescent-wollert-3750-1583192",
+    "updatedAt": "2025-04-25T08:47:54+10:00"
+  },
+  {
+    "listingId": "1576577",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "13 Melville Avenue, Wallan VIC 3756",
+      "street": "13 Melville Avenue",
+      "suburb": "Wallan",
+      "state": "VIC",
+      "postcode": "3756"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "{QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD}\r\n\r\nKrish Real Estate proudly presents this sensational opportunity to Lease this brand-new house in rapidly growing suburb – Wallan. \r\n\r",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1576577-0-a4125947.webp",
+        "alt": "13 Melville Avenue, Wallan VIC 3756 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "13-melville-avenue-wallan-3756-1576577",
+    "updatedAt": "2025-04-19T15:43:15+10:00"
+  },
+  {
+    "listingId": "1570135",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "17 Vintage Avenue, Wollert VIC 3750",
+      "street": "17 Vintage Avenue",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 727,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate Presenting a perfect starter for first home buyers and investors, this welcoming family home is close to all the amenities and easy access to freeway and shopping",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1742253714893-1x0vql53kij-f374edb3d9bdff3bd9e2aa65f8510170%2FStatementOfInformation-17_VINTAGE_AVENUE-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1570135-0-02c9165c.webp",
+        "alt": "17 Vintage Avenue, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "17-vintage-avenue-wollert-3750-1570135",
+    "updatedAt": "2025-04-15T07:03:38+10:00"
+  },
+  {
+    "listingId": "1555239",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "50 Lynwood Drive, Thornhill Park VIC 3335",
+      "street": "50 Lynwood Drive",
+      "suburb": "Thornhill Park",
+      "state": "VIC",
+      "postcode": "3335"
+    },
+    "price": {
+      "display": "Sold — price undisclosed"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Own this beautiful house in rapidly growing suburb Thornhill Park.\r\n\r\nBe a part of a fantastic neighbourhood as i",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1742630556813-u5lfqy7rugj-8c2c2754390e8396c8a9be7cb52ca70b%2FStatementOfInformation-50_LYNWOOD_DRIVE-THORNHILL_PARK-VIC_3335.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1555239-0-e929410c.webp",
+        "alt": "50 Lynwood Drive, Thornhill Park VIC 3335 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "50-lynwood-drive-thornhill-park-3335-1555239",
+    "updatedAt": "2025-04-12T09:24:04+10:00"
+  },
+  {
+    "listingId": "1462244",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "6 Sim Street, Wallan VIC 3756",
+      "street": "6 Sim Street",
+      "suburb": "Wallan",
+      "state": "VIC",
+      "postcode": "3756"
+    },
+    "price": {
+      "display": "Sold — 680,000.00"
+    },
+    "beds": 4,
+    "baths": 3,
+    "cars": 2,
+    "description": "“One Of the Best Property Creation in Wallan”\r\n\r\nKrish Real Estate proudly presents this sensational opportunity to own this Luxury house in Wallan\r\n\r\nBe part of a fantastic neighb",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1727524626690-yhxikebwa2b-dbe73ece00250dfd7531a471d59a64de%2FStatementOfInformation-6_SIM_STREET-WALLAN-VIC_3756+%281%29.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1462244-0-eab6f679.webp",
+        "alt": "6 Sim Street, Wallan VIC 3756 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "6-sim-street-wallan-3756-1462244",
+    "updatedAt": "2025-04-10T15:59:27+10:00"
+  },
+  {
+    "listingId": "1571071",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "9 Tooronga Drive, Mickleham VIC 3064",
+      "street": "9 Tooronga Drive",
+      "suburb": "Mickleham",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 448,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Mickleham. Situated in the highly popular Merrifield Estat",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1571071-0-9f1bc351.webp",
+        "alt": "9 Tooronga Drive, Mickleham VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "9-tooronga-drive-mickleham-3064-1571071",
+    "updatedAt": "2025-03-27T07:58:16+11:00"
+  },
+  {
+    "listingId": "1557886",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "7 Melville Avenue, Wallan VIC 3756",
+      "street": "7 Melville Avenue",
+      "suburb": "Wallan",
+      "state": "VIC",
+      "postcode": "3756"
+    },
+    "price": {
+      "display": "Sold — 710,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Own this beautiful house in rapidly growing suburb – Wallan. \r\n\r\nBe a part of a fantastic neighbourhood as it evo",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1740101531071-m8virmd33t-4d6ad497b4e14fe68a6829394fa363bd%2FStatementOfInformation-7_MELVILLE_AVENUE-WALLAN-VIC_3756.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1557886-0-fb81e3e6.webp",
+        "alt": "7 Melville Avenue, Wallan VIC 3756 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "7-melville-avenue-wallan-3756-1557886",
+    "updatedAt": "2025-03-24T18:32:43+11:00"
+  },
+  {
+    "listingId": "1564137",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "19 Spafield Road, Beveridge VIC 3753",
+      "street": "19 Spafield Road",
+      "suburb": "Beveridge",
+      "state": "VIC",
+      "postcode": "3753"
+    },
+    "price": {
+      "display": "Sold — price undisclosed"
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "landSize": 350,
+    "description": "Build your dream home in the prestigious Lyra Estate, Beveridge! This 350 sqm parcel of land offers the perfect canvas to create a modern masterpiece while enjoying breath taking m",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1564137-0-55e37255.webp",
+        "alt": "19 Spafield Road, Beveridge VIC 3753 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "19-spafield-road-beveridge-3753-1564137",
+    "updatedAt": "2025-03-04T18:58:54+11:00"
+  },
+  {
+    "listingId": "1561893",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "17 Punchbowl Road, Kalkallo VIC 3064",
+      "street": "17 Punchbowl Road",
+      "suburb": "Kalkallo",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — price undisclosed"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 263,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this beautiful house in rapidly growing suburb – Kalkallo. \r\n\r\nThis flexible, family friendly home is ideally",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1561893-0-2d030dd2.webp",
+        "alt": "17 Punchbowl Road, Kalkallo VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "17-punchbowl-road-kalkallo-3064-1561893",
+    "updatedAt": "2025-03-03T12:09:27+11:00"
+  },
+  {
+    "listingId": "1552673",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "Townhouse",
+    "address": {
+      "display": "15 Innes Street, Wollert VIC 3750",
+      "street": "15 Innes Street",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 450,000.00"
+    },
+    "beds": 2,
+    "baths": 2,
+    "cars": 1,
+    "landSize": 115,
+    "description": "Krish Real Estate Presenting a perfect starter, investment or downsizing option, this warm, welcoming family home is close to all the amenities Like primary school, secondary colle",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1739043309942-pliydozlldb-46a6df6a65b58e54bc159c35fce2470d%2FStatementOfInformation-15_INNES_STREET-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1552673-0-24517594.webp",
+        "alt": "15 Innes Street, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "15-innes-street-wollert-3750-1552673",
+    "updatedAt": "2025-02-26T11:42:47+11:00"
+  },
+  {
+    "listingId": "1495121",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "10 Bentons Way, Mickleham VIC 3064",
+      "street": "10 Bentons Way",
+      "suburb": "Mickleham",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — 360,000.00"
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "landSize": 346,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this perfectly positioned 346 sqm (Approx.) Block of land.\r\n\r\nSituated in Highly Popular Merrifield Estate, C",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1729544558797-slbmgbvcblf-20e54407c0ef126c99e7f955c27d5472%2FStatementOfInformation-10_BENTONS_WAY-MICKLEHAM-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1495121-0-0825b7cd.webp",
+        "alt": "10 Bentons Way, Mickleham VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "10-bentons-way-mickleham-3064-1495121",
+    "updatedAt": "2025-01-02T14:26:44+11:00"
+  },
+  {
+    "listingId": "1524986",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "11 Werribee Crescent, Wollert VIC 3750",
+      "street": "11 Werribee Crescent",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Wollert. \r\n\r\nBe a part of a fantastic neighbourhood as it ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1524986-0-f3bedba4.webp",
+        "alt": "11 Werribee Crescent, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "11-werribee-crescent-wollert-3750-1524986",
+    "updatedAt": "2024-12-09T18:46:35+11:00"
+  },
+  {
+    "listingId": "1484214",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "53 Boomerang Road, Donnybrook VIC 3064",
+      "street": "53 Boomerang Road",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — 670,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this beautiful house in rapidly growing suburb – Donnybrook. Situated in the highly popular Peppercorn Hill E",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1728446485423-c80q7esu0g7-f000c8648f88cd269311f384158f6d30%2FStatementOfInformation-53_BOOMERANG_ROAD-DONNYBROOK-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1484214-0-57f5404a.webp",
+        "alt": "53 Boomerang Road, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "53-boomerang-road-donnybrook-3064-1484214",
+    "updatedAt": "2024-12-02T07:58:16+11:00"
+  },
+  {
+    "listingId": "1510503",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "9 Tooronga Drive, Mickleham VIC 3064",
+      "street": "9 Tooronga Drive",
+      "suburb": "Mickleham",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Mickleham. Situated in the highly popular Merrifield Estat",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1510503-0-f6677704.webp",
+        "alt": "9 Tooronga Drive, Mickleham VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "9-tooronga-drive-mickleham-3064-1510503",
+    "updatedAt": "2024-12-02T05:45:13+11:00"
+  },
+  {
+    "listingId": "1512934",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "5 Monaco Circuit, Wollert VIC 3750",
+      "street": "5 Monaco Circuit",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Wollert. \r\n\r\nBe a part of a fantastic neighbourhood as it ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1512934-0-33b8852a.webp",
+        "alt": "5 Monaco Circuit, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "5-monaco-circuit-wollert-3750-1512934",
+    "updatedAt": "2024-11-21T07:01:33+11:00"
+  },
+  {
+    "listingId": "1491635",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "15 Wollemi Avenue, Wollert VIC 3750",
+      "street": "15 Wollemi Avenue",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 750,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 400,
+    "description": "Krish Real Estate Presenting a perfect starter, investment or downsizing option, this warm, welcoming family home is close to all the amenities and easy access to freeway and shopp",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1729467600717-dxpyvzzhiu-2f2821797024f275419166aff02d42b1%2FStatementOfInformation-15_WOLLEMI_AVENUE-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1491635-0-abf58fa3.webp",
+        "alt": "15 Wollemi Avenue, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "15-wollemi-avenue-wollert-3750-1491635",
+    "updatedAt": "2024-11-16T20:09:00+11:00"
+  },
+  {
+    "listingId": "1491719",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "84 Eastside Boulevard, Donnybrook VIC 3064",
+      "street": "84 Eastside Boulevard",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 392,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease out this beautiful house in rapidly growing suburb – Donnybrook.\r\nSituated in the highly popular Peppercorn",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1491719-0-77dc5c8e.webp",
+        "alt": "84 Eastside Boulevard, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "84-eastside-boulevard-donnybrook-3064-1491719",
+    "updatedAt": "2024-11-14T17:01:22+11:00"
+  },
+  {
+    "listingId": "1505339",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "Unit",
+    "address": {
+      "display": "1A Ealing Close, Epping VIC 3076",
+      "street": "1A Ealing Close",
+      "suburb": "Epping",
+      "state": "VIC",
+      "postcode": "3076"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 2,
+    "baths": 1,
+    "cars": 1,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this Beautiful house in rapidly growing suburb – Epping. \r\n\r\nBe a part of a fantastic neighbourhood as it e",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1505339-0-d5a2fbb5.webp",
+        "alt": "1A Ealing Close, Epping VIC 3076 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "1a-ealing-close-epping-3076-1505339",
+    "updatedAt": "2024-11-11T16:15:02+11:00"
+  },
+  {
+    "listingId": "1469909",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "Land",
+    "address": {
+      "display": "131 Brightvale Boulevard, Wyndham Vale VIC 3024",
+      "street": "131 Brightvale Boulevard",
+      "suburb": "Wyndham Vale",
+      "state": "VIC",
+      "postcode": "3024"
+    },
+    "price": {
+      "display": "Sold — 325,000.00"
+    },
+    "beds": 0,
+    "baths": 0,
+    "cars": 0,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this perfectly positioned 392 sqm (Approx.) Block of land.\r\n\r\nSituated in Highly Popular Savana Estate, this ",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1728860746363-er5x5lquys-267f386a26ff74c0aefc082b0ce60582%2FStatementOfInformation-131_BRIGHTVALE_BOULEVARD-WYNDHAM_VALE-VIC_3024.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1469909-0-1708b8db.webp",
+        "alt": "131 Brightvale Boulevard, Wyndham Vale VIC 3024 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "131-brightvale-boulevard-wyndham-vale-3024-1469909",
+    "updatedAt": "2024-11-04T17:49:57+11:00"
+  },
+  {
+    "listingId": "1492163",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "71 Innovation Avenue, Rockbank VIC 3335",
+      "street": "71 Innovation Avenue",
+      "suburb": "Rockbank",
+      "state": "VIC",
+      "postcode": "3335"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 350,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb Rockbank.\r\n\r\nBe a part of a fantastic neighbourhood as it ev",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1492163-0-5e91ad34.webp",
+        "alt": "71 Innovation Avenue, Rockbank VIC 3335 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "71-innovation-avenue-rockbank-3335-1492163",
+    "updatedAt": "2024-10-30T10:14:32+11:00"
+  },
+  {
+    "listingId": "1425995",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "88 Gypsum Drive, Wollert VIC 3750",
+      "street": "88 Gypsum Drive",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 650,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 263,
+    "description": "Krish Real Estate Presenting a perfect starter, investment or downsizing option, this warm, welcoming family home is close to all the amenities and easy access to freeway and shopp",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1726463085212-5eeie4xmrto-459c8608bd4c203388a341b99c700068%2FStatementOfInformation-88_GYPSUM_DRIVE-WOLLERT-VIC_3750+%281%29.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1425995-0-05d4b4df.webp",
+        "alt": "88 Gypsum Drive, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "88-gypsum-drive-wollert-3750-1425995",
+    "updatedAt": "2024-10-15T16:52:23+11:00"
+  },
+  {
+    "listingId": "1485655",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "17 Holman Road, Kilmore VIC 3764",
+      "street": "17 Holman Road",
+      "suburb": "Kilmore",
+      "state": "VIC",
+      "postcode": "3764"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "{QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD}\r\n\r\nKrish Real Estate proudly presents this sensational opportunity to Lease this brand-new house in rapidly growing suburb – Kilmore. \r\n",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1485655-0-53f9be6e.webp",
+        "alt": "17 Holman Road, Kilmore VIC 3764 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "17-holman-road-kilmore-3764-1485655",
+    "updatedAt": "2024-10-09T20:21:57+11:00"
+  },
+  {
+    "listingId": "1485660",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "18 Dysart Road, Donnybrook VIC 3064",
+      "street": "18 Dysart Road",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "“PERFECT BRAND-NEW TURNKEY HOUSE”\r\n\r\n{QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD}\r\n\r\nKrish Real Estate proudly presents this sensational opportunity to Lease this brand-new house in",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1485660-0-05d0fd2a.webp",
+        "alt": "18 Dysart Road, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      },
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "18-dysart-road-donnybrook-3064-1485660",
+    "updatedAt": "2024-09-30T16:50:25+10:00"
+  },
+  {
+    "listingId": "1472212",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "37 Eastside Boulevard, Donnybrook VIC 3064",
+      "street": "37 Eastside Boulevard",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Donnybrook. \r\n\r\nBe a part of a fantastic neighbourhood as ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1472212-0-fed03818.webp",
+        "alt": "37 Eastside Boulevard, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "37-eastside-boulevard-donnybrook-3064-1472212",
+    "updatedAt": "2024-09-08T16:22:22+10:00"
+  },
+  {
+    "listingId": "1453745",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "50 Lynwood Drive, Thornhill Park VIC 3335",
+      "street": "50 Lynwood Drive",
+      "suburb": "Thornhill Park",
+      "state": "VIC",
+      "postcode": "3335"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb Thornhill Park.\r\n\r\nBe a part of a fantastic neighbourhood as",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1453745-0-b0dbc11f.webp",
+        "alt": "50 Lynwood Drive, Thornhill Park VIC 3335 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "50-lynwood-drive-thornhill-park-3335-1453745",
+    "updatedAt": "2024-08-29T19:49:17+10:00"
+  },
+  {
+    "listingId": "1414639",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "2 Myall Street, Kalkallo VIC 3064",
+      "street": "2 Myall Street",
+      "suburb": "Kalkallo",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — 585,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 1,
+    "landSize": 283,
+    "description": "{QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD}\r\n\r\nKrish Real Estate proudly presents this sensational opportunity to own this beautiful house in rapidly growing suburb – Kalkallo.\r\n\r\n",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1718256016069-s8gk99toud-4581bee20aa8e660b001854a4ac034f4%2FStatementOfInformation-2_MYALL_STREET-KALKALLO-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1414639-0-a39e8369.webp",
+        "alt": "2 Myall Street, Kalkallo VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "2-myall-street-kalkallo-3064-1414639",
+    "updatedAt": "2024-08-10T07:05:26+10:00"
+  },
+  {
+    "listingId": "1426978",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "9 Patch Road, Donnybrook VIC 3064",
+      "street": "9 Patch Road",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Sold — 651,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 313,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to own this beautiful house in rapidly growing suburb – Donnybrook.\r\n\r\nSituated in the highly popular Olivine Estate",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1719645972314-am8ts3p3co-79f327936411f18db14703a9494570d2%2FStatementOfInformation-9_PATCH_ROAD-DONNYBROOK-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1426978-0-4557a06c.webp",
+        "alt": "9 Patch Road, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "9-patch-road-donnybrook-3064-1426978",
+    "updatedAt": "2024-08-08T11:34:32+10:00"
+  },
+  {
+    "listingId": "1445306",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "58 Hardwood Grove, Donnybrook VIC 3064",
+      "street": "58 Hardwood Grove",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Donnybrook. \r\n\r\nBe a part of a fantastic neighbourhood as ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1445306-0-0e1e7e3c.webp",
+        "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "58-hardwood-grove-donnybrook-3064-1445306",
+    "updatedAt": "2024-08-05T14:15:03+10:00"
+  },
+  {
+    "listingId": "1423080",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "9 Melville Avenue, Wallan VIC 3756",
+      "street": "9 Melville Avenue",
+      "suburb": "Wallan",
+      "state": "VIC",
+      "postcode": "3756"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 512,
+    "description": "{QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD}\r\n\r\nKrish Real Estate proudly presents this sensational opportunity to Lease this brand-new house in rapidly growing suburb – Wallan. \r\n\r",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1423080-0-963baea8.webp",
+        "alt": "9 Melville Avenue, Wallan VIC 3756 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "ROHAN RANA",
+        "phone": "0497093332",
+        "email": "rohan@krishrealestate.com.au",
+        "photo": "/images/team-rohan.webp"
+      }
+    ],
+    "slug": "9-melville-avenue-wallan-3756-1423080",
+    "updatedAt": "2024-07-10T15:24:52+10:00"
+  },
+  {
+    "listingId": "1427121",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "125 Arrowsmith Street, Beveridge VIC 3753",
+      "street": "125 Arrowsmith Street",
+      "suburb": "Beveridge",
+      "state": "VIC",
+      "postcode": "3753"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 448,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to lease this brand-new, house in Minton Place Beveridge.\r\n\r\nBe part of A Fentastic neighbourhood as it evolves into",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1427121-0-ffa23811.webp",
+        "alt": "125 Arrowsmith Street, Beveridge VIC 3753 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "125-arrowsmith-street-beveridge-3753-1427121",
+    "updatedAt": "2024-07-01T22:11:32+10:00"
+  },
+  {
+    "listingId": "1430483",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "3 Decumbens Way, Donnybrook VIC 3064",
+      "street": "3 Decumbens Way",
+      "suburb": "Donnybrook",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Krish Real Estate proudly presents this sensational opportunity to Lease this beautiful house in rapidly growing suburb – Donnybrook. \r\n\r\nBe a part of a fantastic neighbourhood as ",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1430483-0-91151686.webp",
+        "alt": "3 Decumbens Way, Donnybrook VIC 3064 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "3-decumbens-way-donnybrook-3064-1430483",
+    "updatedAt": "2024-07-01T22:10:55+10:00"
+  },
+  {
+    "listingId": "1414971",
+    "status": "sold",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "18 Andromeda Loop, Wollert VIC 3750",
+      "street": "18 Andromeda Loop",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Sold — 655,000.00"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 192,
+    "description": "A perfect starter, investment or downsizing option, this warm, welcoming family home is close to all the amenities in popular Aurora estate, easy access to freeway and shopping cen",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1715331480904-m4wl4cvo7zr-604d25873bd52ed34cf5b41b61e8caa5%2FStatementOfInformation-18_ANDROMEDA_LOOP-WOLLERT-VIC_3750.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1414971-0-11e48334.webp",
+        "alt": "18 Andromeda Loop, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "18-andromeda-loop-wollert-3750-1414971",
+    "updatedAt": "2024-06-06T09:41:43+10:00"
+  },
+  {
+    "listingId": "1404590",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "23 Overnewton Way, Wollert VIC 3750",
+      "street": "23 Overnewton Way",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "Close to All amenities",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1404590-0-da4bb4ef.webp",
+        "alt": "23 Overnewton Way, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "23-overnewton-way-wollert-3750-1404590",
+    "updatedAt": "2024-05-12T16:24:45+10:00"
+  },
+  {
+    "listingId": "1402307",
+    "status": "leased",
+    "transactionType": "rent",
+    "propertyType": "House",
+    "address": {
+      "display": "19 Wombargo Crescent, Wollert VIC 3750",
+      "street": "19 Wombargo Crescent",
+      "suburb": "Wollert",
+      "state": "VIC",
+      "postcode": "3750"
+    },
+    "price": {
+      "display": "Leased"
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "description": "{QUALITY HOME WITH FANTASTIC NEIGHBOURHOOD}\r\n\r\nKrish Real Estate proudly presents this sensational opportunity to Lease this brand-new house in rapidly growing suburb – Wollert. \r\n",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1402307-0-6d31b2ed.webp",
+        "alt": "19 Wombargo Crescent, Wollert VIC 3750 — property photograph 1",
+        "type": "image"
+      }
+    ],
+    "tours": [],
+    "inspections": [],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      }
+    ],
+    "slug": "19-wombargo-crescent-wollert-3750-1402307",
+    "updatedAt": "2024-05-06T20:22:16+10:00"
+  }
+]

@@ -6,6 +6,8 @@ export function JsonLdOrganization() {
     '@type': 'RealEstateAgent',
     name: BUSINESS.name,
     legalName: BUSINESS.legalName,
+    taxID: BUSINESS.abn,
+    logo: `${BUSINESS.website}/images/krish-logo-stacked.png`,
     description: BUSINESS.description,
     url: BUSINESS.website,
     telephone: BUSINESS.phone,
@@ -80,14 +82,7 @@ export function JsonLdWebSite() {
     '@type': 'WebSite',
     name: BUSINESS.name,
     url: BUSINESS.website,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${BUSINESS.website}/buy?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
+
   };
 
   return (

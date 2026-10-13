@@ -139,7 +139,7 @@ a:not([class]):hover {
 
 /* ── Cinematic Scroll Reveal System ── */
 .reveal {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(32px) scale(0.985);
   transition: opacity var(--duration-reveal) var(--ease-silk),
               transform var(--duration-reveal) var(--ease-silk);
@@ -163,7 +163,7 @@ a:not([class]):hover {
 
 /* Reveal from left */
 .reveal--left {
-  opacity: 0;
+  opacity: 1;
   transform: translateX(-40px);
   transition: opacity var(--duration-reveal) var(--ease-silk),
               transform var(--duration-reveal) var(--ease-silk);
@@ -172,7 +172,7 @@ a:not([class]):hover {
 
 /* Reveal from right */
 .reveal--right {
-  opacity: 0;
+  opacity: 1;
   transform: translateX(40px);
   transition: opacity var(--duration-reveal) var(--ease-silk),
               transform var(--duration-reveal) var(--ease-silk);
@@ -181,7 +181,7 @@ a:not([class]):hover {
 
 /* Reveal scale — for images */
 .reveal--scale {
-  opacity: 0;
+  opacity: 1;
   transform: scale(0.92);
   transition: opacity 900ms var(--ease-silk),
               transform 900ms var(--ease-silk);
@@ -418,3 +418,15 @@ a:not([class]):hover {
   background-color: var(--color-accent-light);
   color: var(--color-ink);
 }
+
+/* Form delivery and accessible mobile refinements */
+.form-trap {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+.form-error {border-left:3px solid #9c3d2f;padding:12px 16px;background:#fff2ed;color:#792d22;font-size:14px;overflow-wrap:anywhere;}
+.form-privacy {font-size:13px;color:#59554e;margin-top:12px;line-height:1.6;}
+.form-privacy a {text-decoration:underline;text-underline-offset:3px;}
+.security-check {min-width:0;max-width:100%;margin-block:12px;}
+:focus-visible {outline:2px solid #8c661e;outline-offset:4px;}
+@media(max-width:767px){input,select,textarea{font-size:16px !important;}button,a{touch-action:manipulation;}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}.reveal{opacity:1!important;transform:none!important;}}
+
+.reveal-ready:not(.revealed){opacity:0;}
