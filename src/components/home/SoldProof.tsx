@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { NormalizedListing } from '@/data/listings';
+import { PropertyFeatures } from '@/components/property/PropertyFeatures';
 import styles from './SoldProof.module.css';
 
 export function SoldProof({ allResults, counts }: {
@@ -108,11 +109,7 @@ export function SoldProof({ allResults, counts }: {
 
                     {/* Quick Specs Pill */}
                     <div className={styles.quickSpecs}>
-                      <span>{listing.beds} Bed</span>
-                      <span>·</span>
-                      <span>{listing.baths} Bath</span>
-                      <span>·</span>
-                      <span>{listing.cars} Car</span>
+                      <PropertyFeatures listing={listing} variant="overlay" />
                     </div>
                   </div>
 

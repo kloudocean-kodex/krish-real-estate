@@ -266,6 +266,7 @@
   position: absolute;
   bottom: var(--space-3);
   left: var(--space-3);
+  right: var(--space-3);
   display: flex;
   align-items: center;
   gap: var(--space-2);

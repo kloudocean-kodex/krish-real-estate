@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { LISTINGS } from '@/data/listings';
 import { PropertyGallery } from '@/components/property/PropertyGallery';
+import { PropertyFeatures } from '@/components/property/PropertyFeatures';
+import { Icon } from '@/components/ui/Icon';
 import { PropertyInspectionForm } from './PropertyInspectionForm';
 import styles from './PropertyDetail.module.css';
 
@@ -51,7 +53,6 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
   }
 
   const isAvailable=['active','under-offer'].includes(listing.status);
-  const isLand = listing.propertyType.toLowerCase().includes('land');
   const agent = listing.agents[0] || {name:'Chirag Yadav',phone:'0479 092 216',email:'chirag@krishrealestate.com.au',photo:'/images/team-chirag.webp'};
 
   return (
@@ -106,28 +107,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
           <div className={styles.detailsCol}>
             {/* Key Specifications Grid */}
             <div className={styles.specsCard}>
-              {!isLand && <div className={styles.specItem}>
-                <span className={styles.specIcon}>BEDROOMS</span>
-                <strong className={styles.specValue}>{listing.beds}</strong>
-                <span className={styles.specSub}>Bedrooms</span>
-              </div>}
-              {!isLand && <div className={styles.specItem}>
-                <span className={styles.specIcon}>BATHROOMS</span>
-                <strong className={styles.specValue}>{listing.baths}</strong>
-                <span className={styles.specSub}>Bathrooms</span>
-              </div>}
-              {!isLand && <div className={styles.specItem}>
-                <span className={styles.specIcon}>GARAGING</span>
-                <strong className={styles.specValue}>{listing.cars}</strong>
-                <span className={styles.specSub}>Car spaces</span>
-              </div>}
-              {listing.landSize && (
-                <div className={styles.specItem}>
-                  <span className={styles.specIcon}>ALLOTMENT</span>
-                  <strong className={styles.specValue}>{listing.landSize}m²</strong>
-                  <span className={styles.specSub}>Land area</span>
-                </div>
-              )}
+              <PropertyFeatures listing={listing} variant="detail" />
             </div>
 
             {/* Architectural Narrative */}
@@ -155,7 +135,7 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
                   {listing.inspections.map((insp, idx) => (
                     <div key={idx} className={styles.inspectionRow}>
                       <div className={styles.inspectionDateInfo}>
-                        <span className={styles.inspectionCalendarIcon}>📅</span>
+                        <Icon name="calendar" size={20} className={styles.inspectionCalendarIcon} />
                         <strong>{new Date(insp.date).toLocaleDateString('en-AU', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</strong>
                       </div>
                       <span className={styles.inspectionTime}>
@@ -198,13 +178,11 @@ export default async function PropertyDetailPage({ params }: PropertyPageProps) 
 
               <div className={styles.agentContacts}>
                 <a href={`tel:${agent.phone}`} className={styles.contactActionBtn}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                  </svg>
+                  <Icon name="phone" size={17} />
                   <span>{agent.phone}</span>
                 </a>
                 <a href={`mailto:${agent?.email || 'chirag@krishrealestate.com.au'}`} className={styles.contactSecondaryActionBtn}>
-                  Email Agent
+                  <Icon name="mail" size={17} /> Email Agent
                 </a>
               </div>
 

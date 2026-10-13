@@ -4,17 +4,19 @@ import styles from './SellerStory.module.css';
 
 export function SellerStory() {
   return (
-    <section className={`${styles.section} section`} aria-label="The Krish Selling Standard">
+    <section className={styles.section} aria-label="The Krish Selling Standard">
       <div className={styles.container}>
-        <div className={`${styles.imageCol} reveal reveal--left`}>
+        <div className={styles.imageCol}>
           <figure className={styles.imageWrapper}>
             <picture>
+              <source media="(min-width: 1200px)" srcSet="/images/brand/seller-panorama-v2.avif" type="image/avif" />
+              <source media="(min-width: 1200px)" srcSet="/images/brand/seller-panorama-v2.webp" type="image/webp" />
               <source srcSet="/images/brand/seller-presentation.avif" type="image/avif" />
               <Image
                 src="/images/brand/seller-presentation.webp"
                 alt="Conceptual living room with warm linen, natural oak and soft garden light"
                 fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                sizes="(min-width: 1600px) 1600px, 100vw"
                 className={styles.image}
               />
             </picture>

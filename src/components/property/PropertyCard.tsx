@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { NormalizedListing } from '@/data/listings';
 import { formatDate, formatTime } from '@/lib/utils';
+import { PropertyFeatures } from './PropertyFeatures';
+import { Icon } from '@/components/ui/Icon';
 import styles from './PropertyCard.module.css';
 
 interface PropertyCardProps {
@@ -68,31 +70,13 @@ export function PropertyCard({ listing, priority = false }: PropertyCardProps) {
 
           {/* Architectural Specs Ribbon */}
           <div className={styles.specsRibbon}>
-            <span className={styles.specItem}>
-              <strong>{listing.beds}</strong> Bed
-            </span>
-            <span className={styles.specDot}>·</span>
-            <span className={styles.specItem}>
-              <strong>{listing.baths}</strong> Bath
-            </span>
-            <span className={styles.specDot}>·</span>
-            <span className={styles.specItem}>
-              <strong>{listing.cars}</strong> Car
-            </span>
-            {listing.landSize && (
-              <>
-                <span className={styles.specDot}>·</span>
-                <span className={styles.specItem}>
-                  <strong>{listing.landSize}</strong> m²
-                </span>
-              </>
-            )}
+            <PropertyFeatures listing={listing} />
           </div>
 
           {/* Upcoming Inspection Tag */}
           {nextInspection && listing.status === 'active' && (
             <div className={styles.inspection}>
-              <span className={styles.inspectionPulse} />
+              <Icon name="calendar" size={16} />
               <span>Inspection: {formatInspectionBrief(nextInspection)}</span>
             </div>
           )}
