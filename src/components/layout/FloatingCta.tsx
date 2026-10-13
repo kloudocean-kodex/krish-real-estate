@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import styles from './FloatingCta.module.css';
 
 /**
@@ -9,8 +10,10 @@ import styles from './FloatingCta.module.css';
  * Proven conversion tactic used by Ray White, McGrath, and Harcourts.
  */
 export function FloatingCta() {
+  const pathname = usePathname();
   const [visible, setVisible] = useState(false);
   const [expanded, setExpanded] = useState(false);
+  const [formVisible, setFormVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,17 +24,33 @@ export function FloatingCta() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const visibleForms = new Set<Element>();
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) visibleForms.add(entry.target);
+        else visibleForms.delete(entry.target);
+      }
+      setFormVisible(visibleForms.size > 0);
+    });
+    document.querySelectorAll('main form').forEach((form) => observer.observe(form));
+    return () => observer.disconnect();
+  }, [pathname]);
+
   const phone = '0479092216';
   const displayPhone = '0479 092 216';
   const whatsAppMsg = encodeURIComponent(
     "Hi Chirag, I'd like to discuss a property. Can we connect?"
   );
   const whatsAppUrl = `https://wa.me/61${phone.replace(/^0/, '')}?text=${whatsAppMsg}`;
+  const shouldShow = visible && !formVisible;
 
   return (
     <div
-      className={`${styles.wrapper} ${visible ? styles.wrapperVisible : ''}`}
+      className={`${styles.wrapper} ${shouldShow ? styles.wrapperVisible : ''}`}
       aria-label="Quick contact options"
+      aria-hidden={!shouldShow}
+      inert={!shouldShow}
     >
       {/* Expandable options */}
       {expanded && (
