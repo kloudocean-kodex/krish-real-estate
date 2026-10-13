@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { BUSINESS } from '@/data/team';
 import styles from './ClosingCta.module.css';
 
 export function ClosingCta() {
@@ -21,6 +22,7 @@ export function ClosingCta() {
       <div className={styles.container}>
         <div className={`${styles.content} reveal`}>
           <p className={styles.eyebrow}>◆ Ready to Start?</p>
+          <p className={styles.mottoLine}>{BUSINESS.motto}</p>
 
           <h2 className={styles.title}>
             Let&apos;s have a conversation<br />

@@ -112,7 +112,7 @@ export function SocialProof() {
 
         <div className={styles.viewAll}>
           <a
-            href="https://www.realestate.com.au/agency/krish-real-estate-wollert-ZPVXDP"
+            href="https://www.realestate.com.au/agency/krish-real-estate-wollert-YXQTHO"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--ghost"
@@ -120,7 +120,7 @@ export function SocialProof() {
             View Agency on realestate.com.au &rarr;
           </a>
           <a
-            href="https://www.realestate.com.au/agent/chirag-yadav-3604086"
+            href="https://www.realestate.com.au/agent/chirag-yadav-3440092"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--secondary"

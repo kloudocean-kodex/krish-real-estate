@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { submitEnquiry } from '@/lib/submitEnquiry';
 import styles from './Appraisal.module.css';
 
 export function AppraisalForm() {
@@ -25,7 +26,7 @@ export function AppraisalForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const payload = {
+    await submitEnquiry({
       name: fullName,
       phone,
       email,
@@ -35,30 +36,10 @@ export function AppraisalForm() {
       bathrooms: baths,
       timeline,
       notes,
+      enquiry_type: 'appraisal',
       source: 'krishrealestate.com.au — Property Appraisal Request',
-    };
-
-    try {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_KEY',
-          ...payload,
-          subject: `New Property Appraisal Request: ${address}, ${suburb} from ${fullName}`,
-          from_name: 'Krish Real Estate Valuation Suite',
-          to: 'chirag@krishrealestate.com.au',
-        }),
-      });
-
-      if (!res.ok) throw new Error('Form API failed');
-    } catch {
-      const subject = encodeURIComponent(`Property Appraisal Request: ${address}, ${suburb} — ${fullName}`);
-      const body = encodeURIComponent(
-        `Name: ${fullName}\nPhone: ${phone}\nEmail: ${email}\nAddress: ${address}, ${suburb}\nProperty: ${beds} bed, ${baths} bath ${propertyType}\nTimeline: ${timeline}\n\nNotes:\n${notes}`
-      );
-      window.open(`mailto:chirag@krishrealestate.com.au?subject=${subject}&body=${body}`, '_blank');
-    }
+      subject: `New Property Appraisal Request: ${address}, ${suburb} from ${fullName}`,
+    });
 
     setIsSubmitting(false);
     setIsSubmitted(true);

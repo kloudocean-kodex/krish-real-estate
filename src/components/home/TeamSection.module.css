@@ -9,6 +9,25 @@
   max-width: 52ch;
   margin-inline: auto;
 }
+.motto {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: var(--text-overline);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-4);
+  padding-block: var(--space-2);
+  position: relative;
+}
+.motto::before,
+.motto::after {
+  content: '◆';
+  margin-inline: var(--space-3);
+  font-size: 0.65em;
+  vertical-align: middle;
+  opacity: 0.6;
+}
 
 /* 2-col mobile, 4-col desktop */
 .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }

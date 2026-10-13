@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { BUSINESS } from '@/data/team';
+import { submitEnquiry } from '@/lib/submitEnquiry';
 import styles from './Contact.module.css';
 
 export function ContactClient() {
@@ -18,39 +19,15 @@ export function ContactClient() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Build the enquiry payload
-    const payload = {
+    await submitEnquiry({
       name: fullName,
       phone,
       email,
       message,
       enquiry_type: enquiryType,
       source: 'krishrealestate.com.au — Contact Form',
-    };
-
-    try {
-      // Attempt Web3Forms API (free tier — 250 emails/month)
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_KEY',
-          ...payload,
-          subject: `New ${enquiryType} enquiry from ${fullName} — Krish Real Estate`,
-          from_name: 'Krish Real Estate Website',
-          to: 'chirag@krishrealestate.com.au',
-        }),
-      });
-
-      if (!res.ok) throw new Error('Form API failed');
-    } catch {
-      // Fallback: open mailto with pre-filled data
-      const subject = encodeURIComponent(`New ${enquiryType} enquiry from ${fullName}`);
-      const body = encodeURIComponent(
-        `Name: ${fullName}\nPhone: ${phone}\nEmail: ${email}\nType: ${enquiryType}\n\nMessage:\n${message}`
-      );
-      window.open(`mailto:chirag@krishrealestate.com.au?subject=${subject}&body=${body}`, '_blank');
-    }
+      subject: `New ${enquiryType} enquiry from ${fullName} — Krish Real Estate`,
+    });
 
     setIsSubmitting(false);
     setIsSubmitted(true);

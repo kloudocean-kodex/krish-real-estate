@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { TEAM } from '@/data/team';
+import { TEAM, BUSINESS } from '@/data/team';
 import styles from './TeamSection.module.css';
 
 export function TeamSection() {
@@ -12,6 +12,7 @@ export function TeamSection() {
         <div className={`${styles.header} reveal`}>
           <p className="overline">The Team</p>
           <h2 className={styles.title}>Real people, real accountability.</h2>
+          <p className={styles.motto}>{BUSINESS.motto}</p>
           <p className={styles.subtitle}>
             When you work with Krish, you know exactly who is handling your property.
             No call centres, no faceless teams — direct access to the people doing the work.

@@ -63,6 +63,17 @@
   color: var(--color-gold);
 }
 
+.mottoLine {
+  font-family: var(--font-body-loaded, var(--font-body));
+  font-size: clamp(0.75rem, 1.2vw + 0.4rem, 1rem);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: rgba(248, 245, 238, 0.55);
+  margin: 0;
+  padding-bottom: var(--space-2);
+}
+
 .title {
   font-size: clamp(2rem, 4vw + 0.5rem, 3.5rem);
   color: #fff;
