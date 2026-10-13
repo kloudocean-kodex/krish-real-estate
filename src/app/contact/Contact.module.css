@@ -372,3 +372,15 @@
   background-color: var(--color-gold);
   color: var(--color-ink);
 }
+
+@media (max-width: 359px) {
+  .officeCard,
+  .formCard,
+  .successCard {
+    padding-inline: var(--space-5);
+  }
+
+  .methodValue {
+    font-size: 0.875rem;
+  }
+}
