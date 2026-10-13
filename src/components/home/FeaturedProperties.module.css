@@ -98,15 +98,6 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-8);
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity var(--duration-reveal) var(--ease-silk),
-              transform var(--duration-reveal) var(--ease-silk);
-}
-
-.gridRevealed {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 @media (min-width: 640px) {

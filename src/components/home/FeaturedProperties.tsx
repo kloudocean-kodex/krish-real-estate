@@ -1,23 +1,23 @@
 'use client';
 
 import { useState } from 'react';
-import { getActiveListings } from '@/data/listing-summaries';
+import type { NormalizedListing } from '@/data/listings';
 import { PropertyCard } from '@/components/property/PropertyCard';
-import { useScrollReveal } from '@/lib/hooks/useScrollReveal';
 import Link from 'next/link';
 import styles from './FeaturedProperties.module.css';
 
-export function FeaturedProperties() {
+export function FeaturedProperties({ previews, counts }: {
+  previews: Record<'sale' | 'rent', NormalizedListing[]>;
+  counts: Record<'sale' | 'rent', number>;
+}) {
   const [activeTab, setActiveTab] = useState<'sale' | 'rent'>('sale');
-  const { ref, isRevealed } = useScrollReveal();
 
-  const listings = getActiveListings(activeTab);
+  const listings = previews[activeTab];
 
   return (
     <section
       className={styles.section}
       aria-label="Current properties"
-      ref={ref as React.RefObject<HTMLElement>}
     >
       <div className="container">
         <div className={styles.header}>
@@ -27,28 +27,28 @@ export function FeaturedProperties() {
               Currently on the <span className={styles.titleEm}>Market.</span>
             </h2>
           </div>
-          <div className={styles.tabs} role="tablist" aria-label="Filter by transaction type">
+          <div className={styles.tabs} role="group" aria-label="Filter by transaction type">
             <button
-              role="tab"
-              aria-selected={activeTab === 'sale'}
+              type="button"
+              aria-pressed={activeTab === 'sale'}
               className={`${styles.tab} ${activeTab === 'sale' ? styles.tabActive : ''}`}
               onClick={() => setActiveTab('sale')}
             >
-              For Sale ({getActiveListings('sale').length})
+              For Sale ({counts.sale})
             </button>
             <button
-              role="tab"
-              aria-selected={activeTab === 'rent'}
+              type="button"
+              aria-pressed={activeTab === 'rent'}
               className={`${styles.tab} ${activeTab === 'rent' ? styles.tabActive : ''}`}
               onClick={() => setActiveTab('rent')}
             >
-              For Lease ({getActiveListings('rent').length})
+              For Lease ({counts.rent})
             </button>
           </div>
         </div>
 
         {listings.length > 0 ? (
-          <div className={`${styles.grid} ${isRevealed ? styles.gridRevealed : ''}`}>
+          <div className={`${styles.grid} reveal`}>
             {listings.slice(0,3).map((listing) => (
               <PropertyCard key={listing.listingId} listing={listing} />
             ))}

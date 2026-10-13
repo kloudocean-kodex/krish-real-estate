@@ -103,6 +103,7 @@ export function Header() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
+                      prefetch={false}
                       className={`${styles.navLink} ${isActive ? styles.navLinkActive : ""}`}
                       aria-current={isActive ? "page" : undefined}
                     >
@@ -137,7 +138,7 @@ export function Header() {
               <span className={styles.phoneLinkText}>0479 092 216</span>
             </a>
 
-            <Link href="/sell/property-appraisal" className={styles.ctaButton}>
+            <Link href="/sell/property-appraisal" prefetch={false} className={styles.ctaButton}>
               Free Appraisal
             </Link>
 

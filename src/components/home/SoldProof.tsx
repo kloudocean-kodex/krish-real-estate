@@ -3,15 +3,14 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getSoldListings } from '@/data/listing-summaries';
+import type { NormalizedListing } from '@/data/listings';
 import styles from './SoldProof.module.css';
 
-export function SoldProof() {
+export function SoldProof({ allResults, counts }: {
+  allResults: NormalizedListing[];
+  counts: Record<'all' | 'sold' | 'leased', number>;
+}) {
   const [filter, setFilter] = useState<'all' | 'sold' | 'leased'>('all');
-  const allResults = getSoldListings();
-
-  const soldCount = useMemo(() => allResults.filter((l) => l.status === 'sold').length, [allResults]);
-  const leasedCount = useMemo(() => allResults.filter((l) => l.status === 'leased').length, [allResults]);
 
   const displayedListings = useMemo(() => {
     if (filter === 'sold') {
@@ -50,30 +49,30 @@ export function SoldProof() {
           </div>
 
           {/* ── Segmented Filter Tabs ── */}
-          <div className={styles.tabGroup} role="tablist" aria-label="Filter recent results">
+          <div className={styles.tabGroup} role="group" aria-label="Filter recent results">
             <button
-              role="tab"
-              aria-selected={filter === 'all'}
+              type="button"
+              aria-pressed={filter === 'all'}
               className={`${styles.tabBtn} ${filter === 'all' ? styles.tabBtnActive : ''}`}
               onClick={() => setFilter('all')}
             >
-              All Results <span className={styles.tabBadge}>{allResults.length}</span>
+              All Results <span className={styles.tabBadge}>{counts.all}</span>
             </button>
             <button
-              role="tab"
-              aria-selected={filter === 'sold'}
+              type="button"
+              aria-pressed={filter === 'sold'}
               className={`${styles.tabBtn} ${filter === 'sold' ? styles.tabBtnActive : ''}`}
               onClick={() => setFilter('sold')}
             >
-              Sold <span className={styles.tabBadge}>{soldCount}</span>
+              Sold <span className={styles.tabBadge}>{counts.sold}</span>
             </button>
             <button
-              role="tab"
-              aria-selected={filter === 'leased'}
+              type="button"
+              aria-pressed={filter === 'leased'}
               className={`${styles.tabBtn} ${filter === 'leased' ? styles.tabBtnActive : ''}`}
               onClick={() => setFilter('leased')}
             >
-              Leased <span className={styles.tabBadge}>{leasedCount}</span>
+              Leased <span className={styles.tabBadge}>{counts.leased}</span>
             </button>
           </div>
         </div>
