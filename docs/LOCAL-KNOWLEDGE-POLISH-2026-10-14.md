@@ -17,4 +17,24 @@ Build (127 generated routes), lint and export audit passed: 122 public pages, 1,
 
 Calculated contrast on the ivory card background: bronze postcode/arrow 5.38:1, description 5.37:1. A screenshot-tool pixel-scale mismatch was resolved with a read-only viewport capture; it was not a site layout defect. The tablet proof is saved in `audit-private/evidence/local-knowledge-tablet-preview-2026-10-14.png`.
 
-The fresh public-domain PageSpeed result is recorded after deployment.
+Code release: `2eec500`, deployed to Cloudflare Pages at [5d7e1e2f.krish-real-estate.pages.dev](https://5d7e1e2f.krish-real-estate.pages.dev) and verified on the public apex domain. [GitHub quality checks](https://github.com/kloudocean-kodex/krish-real-estate/actions/runs/38473553602) passed. Additional 1024px browser inspection confirmed four cards fit without clipped footer text. Live desktop and phone screenshots are saved in `audit-private/evidence/live-local-knowledge-desktop-2026-10-14.png` and `live-local-knowledge-phone-2026-10-14.png`.
+
+## Fresh PageSpeed measurement
+
+One fresh analysis was run after deployment, at **14 October 2026, 03:25 IST**. [Open the report](https://pagespeed.web.dev/analysis/https-krishrealestate-com-au/tejby815bg?form_factor=mobile).
+
+| Metric | Mobile | Desktop |
+| --- | --- | --- |
+| Performance | 83 | 100 |
+| Accessibility | 100 | 100 |
+| Best Practices | 100 | 100 |
+| SEO | 100 | 100 |
+| First Contentful Paint | 2.2 s | 0.5 s |
+| Largest Contentful Paint | 3.9 s | 0.8 s |
+| Total Blocking Time | 30 ms | 30 ms |
+| Cumulative Layout Shift | 0 | 0 |
+| Speed Index | 4.6 s | 0.5 s |
+
+This is Lighthouse 13.5.0 lab data. Mobile used an emulated Moto G Power on slow 4G; desktop used custom throttling. No CrUX real-user data was available. Desktop is excellent; mobile remains in the needs-improvement band, principally with a 3.9-second LCP. Reported mobile opportunities include 310 ms estimated render-blocking savings and 116 KiB estimated image-delivery savings. These estimates are not additive promises of score improvement. This scoped card refinement does not claim to resolve every homepage performance opportunity.
+
+Both report DOM readbacks and screenshots are archived as `pagespeed-local-polish-mobile-2026-10-14.*` and `pagespeed-local-polish-desktop-2026-10-14.*` in `audit-private/evidence/`.
