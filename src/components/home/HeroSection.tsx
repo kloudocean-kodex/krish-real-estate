@@ -36,18 +36,18 @@ export function HeroSection() {
       <div className={styles.content}>
         <div className={styles.headerBlock}>
           <div className={styles.prestigeBadge}>
-            <span className={styles.badgeDiamond}>◆</span>
+            <span className={styles.badgeRule} aria-hidden="true" />
             <span className={styles.badgeText}>MELBOURNE’S NORTH · YOUR LOCAL PROPERTY TEAM</span>
-            <span className={styles.badgeDiamond}>◆</span>
           </div>
 
           <h1 className={styles.heading}>
-            Working together{' '}<br />
+            <span className={styles.headingOpening}>Working together</span>{' '}
             <span className={styles.headingItalic}>means winning together.</span>
           </h1>
 
           <p className={styles.subheading}>
-            Buying, selling or managing a property in Melbourne’s north? Work directly with a local team that puts your goals at the centre.
+            <span>Buying, selling or managing a property in Melbourne’s north?</span>{' '}
+            <span>Work directly with a local team that puts your goals at the centre.</span>
           </p>
         </div>
 
