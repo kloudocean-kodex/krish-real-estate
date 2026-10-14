@@ -22,4 +22,26 @@ Pre-release checks passed: 127 generated routes, lint, diff whitespace check, an
 
 Browser checks covered 320px and 390px phones, a 768px tablet and 1440px desktop. There is no horizontal overflow in the checked gallery and guide views. The Areas-index Wollert link opens the matching guide and artwork. Exported current-property URLs exactly match the active/under-offer feed for all four areas: Wollert 1, Epping 0, Craigieburn 1 and Donnybrook 4. Epping shows an honest empty state and search-brief action.
 
-Deployment, live screenshots and the fresh PageSpeed measurement are recorded after publication.
+Release `2c8c067` is deployed at [c9aaf25e.krish-real-estate.pages.dev](https://c9aaf25e.krish-real-estate.pages.dev) and the public domain. [GitHub quality checks](https://github.com/kloudocean-kodex/krish-real-estate/actions/runs/38512469760) passed. Live browser checks confirmed the warm stone background, four matching images, Areas-index navigation and Wollert's matching guide/current-property count. Desktop, phone and guide screenshots are archived as `live-suburb-gallery-desktop-2026-10-14.png`, `live-suburb-gallery-phone-2026-10-14.png` and `live-suburb-guide-desktop-2026-10-14.png` in `audit-private/evidence/`.
+
+## Fresh performance result
+
+One new [PageSpeed analysis](https://pagespeed.web.dev/analysis/https-krishrealestate-com-au/oezuz2frv7?form_factor=mobile) was run after publication, **14 October 2026 at 10:13 IST**.
+
+| Metric | Mobile | Desktop |
+| --- | --- | --- |
+| Performance | 84 | 100 |
+| Accessibility | 100 | 100 |
+| Best Practices | 100 | 100 |
+| SEO | 100 | 100 |
+| First Contentful Paint | 2.1 s | 0.5 s |
+| Largest Contentful Paint | 3.8 s | 0.7 s |
+| Total Blocking Time | 20 ms | 10 ms |
+| Cumulative Layout Shift | 0 | 0 |
+| Speed Index | 4.5 s | 0.8 s |
+
+The mobile image-delivery opportunity fell from 116 KiB to 4 KiB; the three oversized property-card images are no longer flagged in the summary. Their 1080px files total 185,448 bytes, while the existing 720px files total 92,270 bytes. The width hints now permit the appropriate smaller sources. This is a measurable transfer-size improvement; the score change from 83 to 84 is modest and can fall within run-to-run lab variation.
+
+Headline rendering and render-blocking CSS remain the larger mobile opportunities. No experimental CSS pipeline, new typeface, degraded hero artwork or extra third-party script was introduced to chase the score. No CrUX field data was available. This is a single Lighthouse 13.5.0 lab run with slow-4G mobile throttling, not a guarantee for every visit.
+
+Report DOM readbacks and screenshots are archived as `pagespeed-suburb-gallery-mobile-2026-10-14.*` and `pagespeed-suburb-gallery-desktop-2026-10-14.*` in `audit-private/evidence/`.
