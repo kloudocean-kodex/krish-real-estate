@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import { AreaImage } from '@/components/areas/AreaImage';
 import { AREAS } from '@/data/areas';
 import styles from './LocalKnowledge.module.css';
 
 export function LocalKnowledge() {
   return (
-    <section className={`${styles.section} section section--surface`} aria-label="Areas we serve">
+    <section className={`${styles.section} section`} aria-label="Areas we serve">
       <div className="container">
         <div className={`${styles.header} reveal`}>
           <div className={styles.headingBlock}>
@@ -28,8 +28,8 @@ export function LocalKnowledge() {
             <Link key={area.slug} href={`/areas/${area.slug}`} className={`${styles.card} reveal`}
               aria-label={`Explore ${area.name} suburb guide`}>
               <div className={styles.imageWrapper}>
-                <Image src={area.image} alt={`Property represented by Krish Real Estate in ${area.name}`} fill
-                  sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) 50vw, 25vw"
+                <AreaImage area={area}
+                  sizes="(max-width: 639px) calc(100vw - 64px), (max-width: 1023px) calc(50vw - 64px), (max-width: 1319px) calc(25vw - 60px), 270px"
                   className={styles.image} />
               </div>
               <div className={styles.cardContent}>
@@ -48,6 +48,7 @@ export function LocalKnowledge() {
             </Link>
           ))}
         </div>
+        <p className={styles.imageryNote}>Illustrative suburb imagery.</p>
       </div>
     </section>
   );

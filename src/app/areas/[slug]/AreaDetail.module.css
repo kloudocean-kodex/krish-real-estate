@@ -11,9 +11,15 @@
 .masthead {
   padding-top: var(--space-12);
   padding-bottom: var(--space-10);
-  background-color: var(--color-paper-cool);
+  background: linear-gradient(135deg, #f7f2e9, var(--color-paper-stone));
   border-bottom: 1px solid var(--color-border-light);
 }
+.mastheadGrid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px; align-items: center; }
+.areaFigure { margin: 0; padding: 10px; min-width: 0; background: var(--color-surface-warm); border: 1px solid rgba(128, 95, 40, 0.24); box-shadow: 0 16px 40px rgba(64, 49, 28, 0.055); }
+.areaImageWrapper { position: relative; aspect-ratio: 75 / 56; }
+.areaImage { object-fit: contain; }
+.imageryNote { font-size: 0.6875rem; color: var(--color-ink-muted); padding: 10px 4px 0; text-align: right; }
+@media (min-width: 1024px) { .mastheadGrid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 48px; } }
 
 .mastheadContent {
   max-width: 820px;
@@ -31,11 +37,11 @@
   font-weight: var(--weight-semibold);
   letter-spacing: var(--tracking-widest);
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: #805f28;
 }
 
 .backLink {
-  color: var(--color-gold);
+  color: #805f28;
   text-decoration: none;
 }
 
@@ -50,7 +56,7 @@
 
 .titleItalic {
   font-style: italic;
-  color: var(--color-gold);
+  color: #805f28;
 }
 
 .subtitle {
@@ -77,7 +83,7 @@
 
 @media (min-width: 768px) {
   .dataGrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: var(--space-8);
   }
 }

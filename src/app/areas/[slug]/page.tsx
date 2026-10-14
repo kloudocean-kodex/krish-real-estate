@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { AREAS } from '@/data/areas';
 import { LISTINGS } from '@/data/listings';
 import { PropertyCard } from '@/components/property/PropertyCard';
+import { AreaImage } from '@/components/areas/AreaImage';
 import styles from './AreaDetail.module.css';
 
 interface AreaPageProps {
@@ -27,7 +28,8 @@ export async function generateMetadata({ params }: AreaPageProps): Promise<Metad
   return {
     alternates: {canonical: `/areas/${slug}/`},
     title: `${area.name} VIC ${area.postcode} Property Guide & Market Insights`,
-    description: `Deep market intelligence on ${area.name} VIC ${area.postcode}. Median prices, schools, lifestyle, and current residences for sale.`,
+    description: `Explore ${area.name} VIC ${area.postcode}. Local character, amenities, current properties and personal property advice from Krish Real Estate.`,
+    openGraph: { images: [{ url: area.image, alt: `Illustrative neighbourhood artwork for ${area.name}` }] },
   };
 }
 
@@ -40,14 +42,14 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
   }
 
   const areaListings = LISTINGS.filter(
-    (l) => l.address.suburb.toLowerCase() === area.name.toLowerCase()
+    (l) => l.address.suburb.toLowerCase() === area.name.toLowerCase() && ['active', 'under-offer'].includes(l.status)
   );
 
   return (
     <main className={styles.page}>
       {/* ── Masthead ── */}
       <section className={styles.masthead}>
-        <div className="container">
+        <div className={`container ${styles.mastheadGrid}`}>
           <div className={styles.mastheadContent}>
             <div className={styles.prestigeOverline}>
               <Link href="/areas" className={styles.backLink}>← All Northern Suburbs</Link>
@@ -56,10 +58,16 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
             </div>
             <h1 className={styles.title}>
               {area.name},<br />
-              <span className={styles.titleItalic}>Living &amp; Investment Guide.</span>
+              <span className={styles.titleItalic}>Your local guide.</span>
             </h1>
             <p className={styles.subtitle}>{area.description}</p>
           </div>
+          <figure className={styles.areaFigure}>
+            <div className={styles.areaImageWrapper}>
+              <AreaImage area={area} eager sizes="(max-width: 1023px) calc(100vw - 64px), 570px" className={styles.areaImage} />
+            </div>
+            <figcaption className={styles.imageryNote}>Illustrative suburb imagery.</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -71,18 +79,17 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
               <div className={styles.dataItem}>
                 <span className={styles.dataLabel}>INDICATIVE MEDIAN HOUSE</span>
                 <strong className={styles.dataValue}>{area.medianPrice}</strong>
-                <span className={styles.dataNote}>Strong 5-year capital appreciation</span>
+                {area.priceNote && <span className={styles.dataNote}>{area.priceNote}</span>}
               </div>
             )}
             <div className={styles.dataItem}>
-              <span className={styles.dataLabel}>DEMOGRAPHIC CHARACTER</span>
+              <span className={styles.dataLabel}>LOCAL CHARACTER</span>
               <strong className={styles.dataValue}>{area.character}</strong>
-              <span className={styles.dataNote}>High proportion of owner-occupiers</span>
             </div>
             <div className={styles.dataItem}>
-              <span className={styles.dataLabel}>DISTANCE TO MELBOURNE CBD</span>
-              <strong className={styles.dataValue}>24–28 km</strong>
-              <span className={styles.dataNote}>Direct rail from Epping / Craigieburn</span>
+              <span className={styles.dataLabel}>PERSONAL PROPERTY ADVICE</span>
+              <strong className={styles.dataValue}>Speak with Krish</strong>
+              <span className={styles.dataNote}>Buying, selling or leasing in {area.name}</span>
             </div>
           </div>
         </div>
@@ -111,9 +118,9 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
       <section className={styles.listingsSection}>
         <div className="container">
           <div className={styles.listingsHeader}>
-            <h2 className={styles.listingsTitle}>Current Residences in {area.name}</h2>
+            <h2 className={styles.listingsTitle}>Current Properties in {area.name}</h2>
             <span className={styles.listingsCount}>
-              Showing <strong>{areaListings.length}</strong> {areaListings.length === 1 ? 'Residence' : 'Residences'}
+              Showing <strong>{areaListings.length}</strong> {areaListings.length === 1 ? 'Property' : 'Properties'}
             </span>
           </div>
 
@@ -125,7 +132,7 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
             </div>
           ) : (
             <div className={styles.emptyNotice}>
-              <p>We are currently curating new properties in {area.name}.</p>
+              <p>No properties are currently published in {area.name}. Tell us what you are looking for.</p>
               <Link href="/contact" className={styles.contactBtn}>
                 Register Your {area.name} Search Brief
               </Link>
@@ -141,8 +148,8 @@ export default async function AreaDetailPage({ params }: AreaPageProps) {
             <span className={styles.ctaTag}>LOCAL VALUATION EXPERTISE</span>
             <h2 className={styles.ctaTitle}>Own a home in {area.name}?</h2>
             <p className={styles.ctaDesc}>
-              Our team has transacted extensively across {area.name}&apos;s key estates.
-              Request a discreet, evidence-backed appraisal of your home&apos;s current market standing.
+              Discuss your property, timing and goals with Chirag and the Krish team.
+              Request a personal appraisal informed by current local market evidence.
             </p>
             <Link href="/sell/property-appraisal" className={styles.ctaBtn}>
               Request {area.name} Market Appraisal

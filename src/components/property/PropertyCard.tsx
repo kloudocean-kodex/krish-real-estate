@@ -11,6 +11,9 @@ interface PropertyCardProps {
   priority?: boolean;
 }
 
+// Match the card's gutters and grid; 100vw over-fetched 1080px images on phones.
+const cardImageSizes = '(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc(50vw - 48px), (max-width: 1319px) calc(33.333vw - 48px), 400px';
+
 export function PropertyCard({ listing, priority = false }: PropertyCardProps) {
   const mainImage = listing.media[0];
   const nextInspection = listing.inspections[0];
@@ -23,14 +26,14 @@ export function PropertyCard({ listing, priority = false }: PropertyCardProps) {
           {mainImage && (
             <picture>
               {mainImage.srcSet && <source srcSet={mainImage.srcSet}
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" type="image/webp" />}
+                sizes={cardImageSizes} type="image/webp" />}
               <Image
               src={mainImage.url}
               alt={mainImage.alt}
               fill
               loading={priority ? 'eager' : 'lazy'}
               fetchPriority={priority ? 'high' : 'auto'}
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              sizes={cardImageSizes}
               className={styles.image}
             />
             </picture>

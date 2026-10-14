@@ -4,14 +4,14 @@
 
 .page {
   padding-top: var(--header-height);
-  background-color: var(--color-paper);
+  background-color: var(--color-paper-stone);
   min-height: 100vh;
 }
 
 .masthead {
   padding-top: var(--space-12);
   padding-bottom: var(--space-10);
-  background-color: var(--color-paper-cool);
+  background: linear-gradient(135deg, #f7f2e9, var(--color-paper-stone));
   border-bottom: 1px solid var(--color-border-light);
 }
 
@@ -31,7 +31,7 @@
   font-weight: var(--weight-semibold);
   letter-spacing: var(--tracking-widest);
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: #805f28;
 }
 
 .title {
@@ -45,7 +45,7 @@
 
 .titleItalic {
   font-style: italic;
-  color: var(--color-gold);
+  color: #805f28;
 }
 
 .subtitle {
@@ -63,29 +63,28 @@
 
 .suburbsGrid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-10);
 }
 
 @media (min-width: 768px) {
   .suburbsGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 .areaCard {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border-light);
+  background-color: var(--color-surface-warm);
+  border: 1px solid rgba(128, 95, 40, 0.24);
   border-radius: var(--radius-xs);
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(26, 24, 20, 0.04);
-  transition: transform var(--duration-normal) var(--ease-silk),
-              border-color var(--duration-normal) var(--ease-silk),
+  min-width: 0;
+  padding: 10px 10px 0;
+  box-shadow: 0 12px 28px rgba(64, 49, 28, 0.045);
+  transition: border-color var(--duration-normal) var(--ease-silk),
               box-shadow var(--duration-normal) var(--ease-silk);
 }
 
 .areaCard:hover {
-  transform: translateY(-5px);
   border-color: var(--color-gold);
   box-shadow: 0 20px 48px -12px rgba(26, 24, 20, 0.12);
 }
@@ -97,50 +96,21 @@
   text-decoration: none;
   color: inherit;
 }
+.cardLink:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 6px; }
 
 .imageWrapper {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 75 / 56;
   background-color: var(--color-paper-warm);
   overflow: hidden;
 }
 
 .image {
-  object-fit: cover;
-  transition: transform var(--duration-hero) var(--ease-silk);
-}
-
-.areaCard:hover .image {
-  transform: scale(1.05);
-}
-
-.imageOverlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(22, 20, 18, 0.5) 0%,
-    rgba(22, 20, 18, 0) 50%
-  );
-}
-
-.postcodeBadge {
-  position: absolute;
-  top: var(--space-3);
-  left: var(--space-3);
-  background: rgba(22, 20, 18, 0.75);
-  backdrop-filter: blur(8px);
-  color: var(--color-surface);
-  font-family: var(--font-body-loaded, var(--font-body));
-  font-size: 0.625rem;
-  font-weight: var(--weight-semibold);
-  letter-spacing: var(--tracking-widest);
-  padding: 4px 10px;
-  border-radius: var(--radius-xs);
+  object-fit: contain;
 }
 
 .cardContent {
-  padding: var(--space-6);
+  padding: 28px 14px;
   display: flex;
   flex-direction: column;
   gap: var(--space-3);
@@ -156,7 +126,7 @@
 
 .areaName {
   font-family: var(--font-display-loaded, var(--font-display));
-  font-size: 1.75rem;
+  font-size: clamp(2.125rem, 3vw, 2.75rem);
   font-weight: var(--weight-medium);
   color: var(--color-ink);
 }
@@ -199,7 +169,7 @@
   font-size: 0.625rem;
   font-weight: var(--weight-bold);
   letter-spacing: var(--tracking-widest);
-  color: var(--color-ink-faint);
+  color: var(--color-ink-muted);
 }
 
 .highlightList {
@@ -220,7 +190,10 @@
   font-family: var(--font-body-loaded, var(--font-body));
   font-size: 0.8125rem;
   font-weight: var(--weight-semibold);
-  color: var(--color-gold);
+  color: #805f28;
   margin-top: auto;
   padding-top: var(--space-4);
 }
+.postcode { margin: 0; font-size: 0.6875rem; letter-spacing: 0.14em; font-weight: 600; color: #805f28; }
+.imageryNote { margin: 24px 0 0; font-size: 0.6875rem; color: var(--color-ink-muted); text-align: right; }
+@media (min-width: 1024px) { .cardContent { padding: 32px 26px; } }

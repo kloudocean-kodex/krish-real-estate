@@ -18,6 +18,8 @@
   --color-paper:          #F8F5EE;   /* warm ivory — like aged gallery wall */
   --color-paper-warm:     #F0EBE0;   /* deeper warm — linen */
   --color-paper-cool:     #F9F8F6;   /* near white — clean light */
+  --color-paper-stone:    #EEE8DC;   /* warm stone gallery ground */
+  --color-surface-warm:   #FDFBF7;   /* ivory gallery cards */
   --color-surface:        #FEFDFB;   /* pure near-white surface */
   --color-surface-elevated: #FFFFFF; /* cards and modals */
 

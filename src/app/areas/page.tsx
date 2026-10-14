@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
+import { AreaImage } from '@/components/areas/AreaImage';
 import { AREAS } from '@/data/areas';
 import styles from './Areas.module.css';
 
@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   alternates: {canonical: '/areas/'},
   title: 'Melbourne Northern Suburbs Guide | Wollert, Epping, Craigieburn',
   description:
-    'Deep street-level intelligence on Wollert, Epping, Craigieburn, and Donnybrook. Median prices, school zones, capital growth, and architectural character.',
+    'Explore Wollert, Epping, Craigieburn and Donnybrook with Krish Real Estate. Local character, amenities, current properties and personal property advice.',
   openGraph: {
     title: 'Northern Suburbs Intelligence Guide',
-    description: 'Local insights, infrastructure timelines, and property intelligence across Melbourne\'s north.',
-    images: ['/images/hero-property.jpg'],
+    description: 'Explore local character, amenities and property opportunities across Melbourne\'s north.',
+    images: ['/images/areas/wollert-1200.webp'],
   },
 };
 
@@ -25,7 +25,7 @@ export default function AreasPage() {
           <div className={styles.mastheadContent}>
             <div className={styles.prestigeOverline}>
               <span>◆</span>
-              <span>LOCAL AUTHORITY INTELLIGENCE</span>
+              <span>LOCAL KNOWLEDGE</span>
               <span>◆</span>
             </div>
             <h1 className={styles.title}>
@@ -33,8 +33,8 @@ export default function AreasPage() {
               <span className={styles.titleItalic}>street by street.</span>
             </h1>
             <p className={styles.subtitle}>
-              Understanding Melbourne&apos;s northern corridor requires more than generic portal data.
-              Explore our comprehensive suburb monographs for Wollert, Epping, Craigieburn, and Donnybrook.
+              Get to know the places we live and work. Explore local character, everyday amenities
+              and property opportunities across Wollert, Epping, Craigieburn and Donnybrook.
             </p>
           </div>
         </div>
@@ -46,20 +46,17 @@ export default function AreasPage() {
           <div className={styles.suburbsGrid}>
             {AREAS.map((area) => (
               <article key={area.slug} className={styles.areaCard}>
-                <Link href={`/areas/${area.slug}`} className={styles.cardLink}>
+                <Link href={`/areas/${area.slug}`} className={styles.cardLink} aria-label={`Explore ${area.name} suburb guide`}>
                   <div className={styles.imageWrapper}>
-                    <Image
-                      src={area.image}
-                      alt={`Property represented by Krish Real Estate in ${area.name}`}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                    <AreaImage
+                      area={area}
+                      sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1319px) calc(50vw - 68px), 580px"
                       className={styles.image}
                     />
-                    <div className={styles.imageOverlay} />
-                    <span className={styles.postcodeBadge}>VIC {area.postcode}</span>
                   </div>
 
                   <div className={styles.cardContent}>
+                    <p className={styles.postcode}>VIC · {area.postcode}</p>
                     <div className={styles.cardHeader}>
                       <h2 className={styles.areaName}>{area.name}</h2>
                       {area.medianPrice && (
@@ -71,7 +68,7 @@ export default function AreasPage() {
                     <p className={styles.areaDesc}>{area.description}</p>
 
                     <div className={styles.keyHighlights}>
-                      <span className={styles.highlightTitle}>NOTABLE ATTRIBUTES:</span>
+                      <span className={styles.highlightTitle}>LOCAL HIGHLIGHTS</span>
                       <ul className={styles.highlightList}>
                         {area.keyFeatures.slice(0, 3).map((feat, idx) => (
                           <li key={idx}>✦ {feat}</li>
@@ -80,13 +77,14 @@ export default function AreasPage() {
                     </div>
 
                     <span className={styles.readGuideLink}>
-                      Explore Suburb Guide →
+                      Explore {area.name} <span aria-hidden="true">↗</span>
                     </span>
                   </div>
                 </Link>
               </article>
             ))}
           </div>
+          <p className={styles.imageryNote}>Illustrative suburb imagery.</p>
         </div>
       </section>
     </main>

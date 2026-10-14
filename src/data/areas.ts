@@ -1,5 +1,3 @@
-import { SUMMARY_LISTINGS } from './listing-summaries';
-const localPhoto=(suburb:string)=>SUMMARY_LISTINGS.find(l=>l.address.suburb.toLowerCase()===suburb&&l.media[0])?.media[0].url || '/images/krish-logo-stacked.png';
 /* Area/suburb data — verified secondary sources */
 
 export interface Area {
@@ -29,7 +27,7 @@ export const AREAS: Area[] = [
       'Growing retail and community infrastructure',
       'New parks, playgrounds, and walking trails',
     ],
-    image: localPhoto('wollert'),
+    image: '/images/areas/wollert-1200.webp',
   },
   {
     slug: 'epping',
@@ -44,7 +42,7 @@ export const AREAS: Area[] = [
       'Established schools and community facilities',
       'Strong rental demand',
     ],
-    image: localPhoto('epping'),
+    image: '/images/areas/epping-1200.webp',
   },
   {
     slug: 'craigieburn',
@@ -59,7 +57,7 @@ export const AREAS: Area[] = [
       'Strong school network',
       'Easy access to Hume Freeway',
     ],
-    image: localPhoto('craigieburn'),
+    image: '/images/areas/craigieburn-1200.webp',
   },
   {
     slug: 'donnybrook',
@@ -74,6 +72,6 @@ export const AREAS: Area[] = [
       'New schools and community facilities',
       'Affordable entry point for northern Melbourne',
     ],
-    image: localPhoto('donnybrook'),
+    image: '/images/areas/donnybrook-1200.webp',
   },
 ];
