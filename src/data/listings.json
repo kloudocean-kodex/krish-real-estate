@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-13T20:03:20.932Z",
+  "syncedAt": "2026-10-14T10:18:15.781Z",
   "listings": [
     {
       "listingId": "1855355",
@@ -462,11 +462,6 @@
       ],
       "tours": [],
       "inspections": [
-        {
-          "date": "2026-10-14",
-          "startTime": "17:30",
-          "endTime": "18:00"
-        },
         {
           "date": "2026-10-17",
           "startTime": "10:30",
