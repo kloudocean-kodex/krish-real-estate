@@ -33,11 +33,6 @@
     "tours": [],
     "inspections": [
       {
-        "date": "2026-10-15",
-        "startTime": "17:30",
-        "endTime": "18:00"
-      },
-      {
         "date": "2026-10-17",
         "startTime": "12:30",
         "endTime": "13:00"
@@ -89,11 +84,6 @@
       "https://iguide.au/59_pittsburgh_rd_kalkallo_vic_au/"
     ],
     "inspections": [
-      {
-        "date": "2026-10-15",
-        "startTime": "18:30",
-        "endTime": "19:00"
-      },
       {
         "date": "2026-10-17",
         "startTime": "11:30",
