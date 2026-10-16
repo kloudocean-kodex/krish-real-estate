@@ -1,5 +1,64 @@
 [
   {
+    "listingId": "1864076",
+    "status": "active",
+    "transactionType": "sale",
+    "propertyType": "House",
+    "address": {
+      "display": "59 Pittsburgh Road, Kalkallo VIC 3064",
+      "street": "59 Pittsburgh Road",
+      "suburb": "Kalkallo",
+      "state": "VIC",
+      "postcode": "3064"
+    },
+    "price": {
+      "display": "ESR: $729,000 to $759,000 Dennis Family Home",
+      "from": 729000
+    },
+    "beds": 4,
+    "baths": 2,
+    "cars": 2,
+    "landSize": 392,
+    "description": "Krish Real Estate proudly presents this Dennis Family home, combining a spacious family layout with an appealing Kalkallo location. \r\n\r\nSet on approximately 392 m² Land, this four-",
+    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791425144568-muwil2qd46-94f3d310e73896bf4cda161d73750835%2FPropertyPriceStatement-59_PITTSBURGH_ROAD-KALKALLO-VIC_3064.pdf",
+    "features": [],
+    "media": [
+      {
+        "url": "/images/properties/1864076-0-c75b89da.webp",
+        "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 1",
+        "type": "image",
+        "srcSet": "/images/properties/1864076-0-c75b89da-360.webp 360w, /images/properties/1864076-0-c75b89da-720.webp 720w, /images/properties/1864076-0-c75b89da-1080.webp 1080w"
+      }
+    ],
+    "tours": [
+      "https://iguide.au/59_pittsburgh_rd_kalkallo_vic_au/",
+      "https://youtu.be/vuFlC5Uoo5I"
+    ],
+    "inspections": [
+      {
+        "date": "2026-10-17",
+        "startTime": "11:30",
+        "endTime": "12:00"
+      }
+    ],
+    "agents": [
+      {
+        "name": "CHIRAG YADAV",
+        "phone": "0479092216",
+        "email": "chirag@krishrealestate.com.au",
+        "photo": "/images/team-chirag.webp"
+      },
+      {
+        "name": "MEENU BHAGTANA",
+        "phone": "0476308203",
+        "email": "meenu@krishrealestate.com.au",
+        "photo": "/images/team-meenu.webp"
+      }
+    ],
+    "slug": "59-pittsburgh-road-kalkallo-3064-1864076",
+    "updatedAt": "2026-10-16T10:31:40+11:00"
+  },
+  {
     "listingId": "1855355",
     "status": "active",
     "transactionType": "sale",
@@ -48,64 +107,6 @@
     ],
     "slug": "58-hardwood-grove-donnybrook-3064-1855355",
     "updatedAt": "2026-10-10T18:19:18+11:00"
-  },
-  {
-    "listingId": "1864076",
-    "status": "active",
-    "transactionType": "sale",
-    "propertyType": "House",
-    "address": {
-      "display": "59 Pittsburgh Road, Kalkallo VIC 3064",
-      "street": "59 Pittsburgh Road",
-      "suburb": "Kalkallo",
-      "state": "VIC",
-      "postcode": "3064"
-    },
-    "price": {
-      "display": "ESR: $729,000 to $759,000 Dennis Family Home",
-      "from": 729000
-    },
-    "beds": 4,
-    "baths": 2,
-    "cars": 2,
-    "landSize": 392,
-    "description": "Krish Real Estate proudly presents this Dennis Family home, combining a spacious family layout with an appealing Kalkallo location. \r\n\r\nSet on approximately 392 m² Land, this four-",
-    "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791425144568-muwil2qd46-94f3d310e73896bf4cda161d73750835%2FPropertyPriceStatement-59_PITTSBURGH_ROAD-KALKALLO-VIC_3064.pdf",
-    "features": [],
-    "media": [
-      {
-        "url": "/images/properties/1864076-0-c75b89da.webp",
-        "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 1",
-        "type": "image",
-        "srcSet": "/images/properties/1864076-0-c75b89da-360.webp 360w, /images/properties/1864076-0-c75b89da-720.webp 720w, /images/properties/1864076-0-c75b89da-1080.webp 1080w"
-      }
-    ],
-    "tours": [
-      "https://iguide.au/59_pittsburgh_rd_kalkallo_vic_au/"
-    ],
-    "inspections": [
-      {
-        "date": "2026-10-17",
-        "startTime": "11:30",
-        "endTime": "12:00"
-      }
-    ],
-    "agents": [
-      {
-        "name": "CHIRAG YADAV",
-        "phone": "0479092216",
-        "email": "chirag@krishrealestate.com.au",
-        "photo": "/images/team-chirag.webp"
-      },
-      {
-        "name": "MEENU BHAGTANA",
-        "phone": "0476308203",
-        "email": "meenu@krishrealestate.com.au",
-        "photo": "/images/team-meenu.webp"
-      }
-    ],
-    "slug": "59-pittsburgh-road-kalkallo-3064-1864076",
-    "updatedAt": "2026-10-10T18:18:35+11:00"
   },
   {
     "listingId": "1848847",

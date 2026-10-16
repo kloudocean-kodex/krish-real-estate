@@ -1,6 +1,165 @@
 {
-  "syncedAt": "2026-10-15T10:01:01.227Z",
+  "syncedAt": "2026-10-16T01:26:41.633Z",
   "listings": [
+    {
+      "listingId": "1864076",
+      "status": "active",
+      "transactionType": "sale",
+      "propertyType": "House",
+      "address": {
+        "display": "59 Pittsburgh Road, Kalkallo VIC 3064",
+        "street": "59 Pittsburgh Road",
+        "suburb": "Kalkallo",
+        "state": "VIC",
+        "postcode": "3064"
+      },
+      "price": {
+        "display": "ESR: $729,000 to $759,000 Dennis Family Home",
+        "from": 729000
+      },
+      "beds": 4,
+      "baths": 2,
+      "cars": 2,
+      "landSize": 392,
+      "description": "Krish Real Estate proudly presents this Dennis Family home, combining a spacious family layout with an appealing Kalkallo location. \r\n\r\nSet on approximately 392 m² Land, this four-bedroom residence offers three living zones and an alfresco area, giving everyone room to relax, entertain and enjoy everyday life.\r\n\r\nA separate front lounge welcomes you inside, providing a peaceful retreat away from the main entertaining area. At the heart of the home, the kitchen features an island bench and walk-in pantry, overlooking the open-plan meals and family area. Sliding doors connect this space to the alfresco, making indoor and outdoor gatherings easy.\r\n\r\nA dedicated games room adds flexibility for a children’s retreat, media space or an additional lounge.\r\n\r\nThe generously sized master bedroom features a walk-in robe, additional built-in robe and private ensuite. Three further bedrooms include built-in robes and are serviced by a central bathroom with a bathtub and separate toilet. \r\n\r\nA separate laundry and double garage with internal access complete the practical layout.\r\n\r\nProperty highlights:\r\n\r\nBuilt by Dennis Family Homes and less than one year old\r\n\r\nApproximately 392 m² of land\r\n\r\nFour bedrooms, two bathrooms and a double garage\r\n\r\nThree living zones: front lounge, open-plan family/meals and games room\r\n\r\nMaster bedroom with ensuite, walk-in robe and additional built-in robe\r\n\r\nBuilt-in robes to all remaining bedrooms\r\n\r\nKitchen with island bench and walk-in pantry\r\n\r\nAlfresco area for outdoor dining and entertaining\r\n\r\nCentral bathroom with bathtub and separate toilet\r\n\r\nSeparate laundry\r\n\r\nInternal access from the double garage\r\n\r\nA Location for Family Convenience\r\n\r\nEnjoy access to a range of schools and everyday amenities across Kalkallo and neighbouring Donnybrook. Local education options include Banum Warrik Primary School, Gilgai Plains Primary School, Hume Anglican Grammar’s Kalkallo campus and Ngayuk College.\r\n\r\nKallo Town Centre, local childcare facilities including Green Leaves Early Learning Cloverton, and Kalkallo North Community Centre add everyday convenience. Nearby recreation options include Mode Park, Roscoe Avenue Playground and Kalkallo Recreation Reserve, while Donnybrook railway station, Donnybrook Road and the Hume Highway provide connections beyond the neighbourhood.\r\n\r\nWith its nearly new appeal, multiple living spaces and family-focused layout, this home is an opportunity to make your next move with confidence.\r\n\r\nFor further information or to arrange an inspection, please contact:\r\n\r\nChirag Yadav\r\nDirector – Licensed Estate Agent\r\nKrish Real Estate\r\nPhone: 0479 092 216\r\n\r\nDisclaimer:\r\nAll information contained in this advertisement has been provided to Krish Real Estate by the property owner or other sources considered reliable. While every effort has been made to ensure its accuracy, no representation or warranty is given. Photographs, floor plans, measurements, boundaries, distances and descriptions are indicative and provided for illustrative purposes only. They may not be to scale and may contain items that are not included with the property. Interested parties should make their own enquiries, conduct independent inspections and obtain appropriate professional advice before making any decision.",
+      "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791425144568-muwil2qd46-94f3d310e73896bf4cda161d73750835%2FPropertyPriceStatement-59_PITTSBURGH_ROAD-KALKALLO-VIC_3064.pdf",
+      "features": [],
+      "media": [
+        {
+          "url": "/images/properties/1864076-0-c75b89da.webp",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 1",
+          "type": "image",
+          "srcSet": "/images/properties/1864076-0-c75b89da-360.webp 360w, /images/properties/1864076-0-c75b89da-720.webp 720w, /images/properties/1864076-0-c75b89da-1080.webp 1080w"
+        },
+        {
+          "url": "/images/properties/1864076-1-f31e9754.webp",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 2",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424565751-3aug6rvh5mj-801da3178efa74a1fdb8f69aba35f746%2FPhoto+07-10-26%2C+21+02+18+%282%29+%281%29.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 3",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424565753-uuxb4h4h8h-801da3178efa74a1fdb8f69aba35f746%2FPhoto+07-10-26%2C+21+02+18+%282%29.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 4",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424565749-0koqbiqbw5ph-801da3178efa74a1fdb8f69aba35f746%2FPhoto+07-10-26%2C+21+02+18+%281%29.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 5",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424565756-4237179rg5u-801da3178efa74a1fdb8f69aba35f746%2FPhoto+07-10-26%2C+21+02+18.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 6",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549435-b8slphzklki-801da3178efa74a1fdb8f69aba35f746%2F002A0004.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 7",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549452-1rn2b8nosnn-801da3178efa74a1fdb8f69aba35f746%2F002A0038.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 8",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549463-b0uws3o9ber-801da3178efa74a1fdb8f69aba35f746%2F002A0065.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 9",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549455-xtbtn02pd1g-801da3178efa74a1fdb8f69aba35f746%2F002A0044.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 10",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549446-6pfa85fv1kr-801da3178efa74a1fdb8f69aba35f746%2F002A0017.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 11",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549450-1w42jsm54bs-801da3178efa74a1fdb8f69aba35f746%2F002A0031.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 12",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549460-37pocbrd02u-801da3178efa74a1fdb8f69aba35f746%2F002A0057.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 13",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549477-9zpt2vi99hk-801da3178efa74a1fdb8f69aba35f746%2F59+Pittsburg002A0080.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 14",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577630-1ufxgm15jtg-801da3178efa74a1fdb8f69aba35f746%2FDJI_0157.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 15",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577632-87mng4meywt-801da3178efa74a1fdb8f69aba35f746%2FDJI_0162.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 16",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577644-avw6p5l0hkv-801da3178efa74a1fdb8f69aba35f746%2FDJI_0166.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 17",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577636-6jdnsp6yajy-801da3178efa74a1fdb8f69aba35f746%2FDJI_0164.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 18",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577634-07dwddzzcxea-801da3178efa74a1fdb8f69aba35f746%2FDJI_0163.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 19",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577638-1w2pu3ld7z0h-801da3178efa74a1fdb8f69aba35f746%2FDJI_0165.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 20",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791510401987-5jz8focm6pe-ebdb5399a26055b77363d7f9bbe2be0e%2FPhoto+08-10-26%2C+09+53+38.jpg",
+          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — floor plan 1",
+          "type": "floorplan"
+        }
+      ],
+      "tours": [
+        "https://iguide.au/59_pittsburgh_rd_kalkallo_vic_au/",
+        "https://youtu.be/vuFlC5Uoo5I"
+      ],
+      "inspections": [
+        {
+          "date": "2026-10-17",
+          "startTime": "11:30",
+          "endTime": "12:00"
+        }
+      ],
+      "agents": [
+        {
+          "name": "CHIRAG YADAV",
+          "phone": "0479092216",
+          "email": "chirag@krishrealestate.com.au",
+          "photo": "/images/team-chirag.webp"
+        },
+        {
+          "name": "MEENU BHAGTANA",
+          "phone": "0476308203",
+          "email": "meenu@krishrealestate.com.au",
+          "photo": "/images/team-meenu.webp"
+        }
+      ],
+      "slug": "59-pittsburgh-road-kalkallo-3064-1864076",
+      "updatedAt": "2026-10-16T10:31:40+11:00"
+    },
     {
       "listingId": "1855355",
       "status": "active",
@@ -145,164 +304,6 @@
       ],
       "slug": "58-hardwood-grove-donnybrook-3064-1855355",
       "updatedAt": "2026-10-10T18:19:18+11:00"
-    },
-    {
-      "listingId": "1864076",
-      "status": "active",
-      "transactionType": "sale",
-      "propertyType": "House",
-      "address": {
-        "display": "59 Pittsburgh Road, Kalkallo VIC 3064",
-        "street": "59 Pittsburgh Road",
-        "suburb": "Kalkallo",
-        "state": "VIC",
-        "postcode": "3064"
-      },
-      "price": {
-        "display": "ESR: $729,000 to $759,000 Dennis Family Home",
-        "from": 729000
-      },
-      "beds": 4,
-      "baths": 2,
-      "cars": 2,
-      "landSize": 392,
-      "description": "Krish Real Estate proudly presents this Dennis Family home, combining a spacious family layout with an appealing Kalkallo location. \r\n\r\nSet on approximately 392 m² Land, this four-bedroom residence offers three living zones and an alfresco area, giving everyone room to relax, entertain and enjoy everyday life.\r\n\r\nA separate front lounge welcomes you inside, providing a peaceful retreat away from the main entertaining area. At the heart of the home, the kitchen features an island bench and walk-in pantry, overlooking the open-plan meals and family area. Sliding doors connect this space to the alfresco, making indoor and outdoor gatherings easy.\r\n\r\nA dedicated games room adds flexibility for a children’s retreat, media space or an additional lounge.\r\n\r\nThe generously sized master bedroom features a walk-in robe, additional built-in robe and private ensuite. Three further bedrooms include built-in robes and are serviced by a central bathroom with a bathtub and separate toilet. \r\n\r\nA separate laundry and double garage with internal access complete the practical layout.\r\n\r\nProperty highlights:\r\n\r\nBuilt by Dennis Family Homes and less than one year old\r\n\r\nApproximately 392 m² of land\r\n\r\nFour bedrooms, two bathrooms and a double garage\r\n\r\nThree living zones: front lounge, open-plan family/meals and games room\r\n\r\nMaster bedroom with ensuite, walk-in robe and additional built-in robe\r\n\r\nBuilt-in robes to all remaining bedrooms\r\n\r\nKitchen with island bench and walk-in pantry\r\n\r\nAlfresco area for outdoor dining and entertaining\r\n\r\nCentral bathroom with bathtub and separate toilet\r\n\r\nSeparate laundry\r\n\r\nInternal access from the double garage\r\n\r\nA Location for Family Convenience\r\n\r\nEnjoy access to a range of schools and everyday amenities across Kalkallo and neighbouring Donnybrook. Local education options include Banum Warrik Primary School, Gilgai Plains Primary School, Hume Anglican Grammar’s Kalkallo campus and Ngayuk College.\r\n\r\nKallo Town Centre, local childcare facilities including Green Leaves Early Learning Cloverton, and Kalkallo North Community Centre add everyday convenience. Nearby recreation options include Mode Park, Roscoe Avenue Playground and Kalkallo Recreation Reserve, while Donnybrook railway station, Donnybrook Road and the Hume Highway provide connections beyond the neighbourhood.\r\n\r\nWith its nearly new appeal, multiple living spaces and family-focused layout, this home is an opportunity to make your next move with confidence.\r\n\r\nFor further information or to arrange an inspection, please contact:\r\n\r\nChirag Yadav\r\nDirector – Licensed Estate Agent\r\nKrish Real Estate\r\nPhone: 0479 092 216\r\n\r\nDisclaimer:\r\nAll information contained in this advertisement has been provided to Krish Real Estate by the property owner or other sources considered reliable. While every effort has been made to ensure its accuracy, no representation or warranty is given. Photographs, floor plans, measurements, boundaries, distances and descriptions are indicative and provided for illustrative purposes only. They may not be to scale and may contain items that are not included with the property. Interested parties should make their own enquiries, conduct independent inspections and obtain appropriate professional advice before making any decision.",
-      "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791425144568-muwil2qd46-94f3d310e73896bf4cda161d73750835%2FPropertyPriceStatement-59_PITTSBURGH_ROAD-KALKALLO-VIC_3064.pdf",
-      "features": [],
-      "media": [
-        {
-          "url": "/images/properties/1864076-0-c75b89da.webp",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 1",
-          "type": "image",
-          "srcSet": "/images/properties/1864076-0-c75b89da-360.webp 360w, /images/properties/1864076-0-c75b89da-720.webp 720w, /images/properties/1864076-0-c75b89da-1080.webp 1080w"
-        },
-        {
-          "url": "/images/properties/1864076-1-f31e9754.webp",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 2",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424565751-3aug6rvh5mj-801da3178efa74a1fdb8f69aba35f746%2FPhoto+07-10-26%2C+21+02+18+%282%29+%281%29.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 3",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424565753-uuxb4h4h8h-801da3178efa74a1fdb8f69aba35f746%2FPhoto+07-10-26%2C+21+02+18+%282%29.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 4",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424565749-0koqbiqbw5ph-801da3178efa74a1fdb8f69aba35f746%2FPhoto+07-10-26%2C+21+02+18+%281%29.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 5",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424565756-4237179rg5u-801da3178efa74a1fdb8f69aba35f746%2FPhoto+07-10-26%2C+21+02+18.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 6",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549435-b8slphzklki-801da3178efa74a1fdb8f69aba35f746%2F002A0004.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 7",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549452-1rn2b8nosnn-801da3178efa74a1fdb8f69aba35f746%2F002A0038.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 8",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549463-b0uws3o9ber-801da3178efa74a1fdb8f69aba35f746%2F002A0065.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 9",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549455-xtbtn02pd1g-801da3178efa74a1fdb8f69aba35f746%2F002A0044.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 10",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549446-6pfa85fv1kr-801da3178efa74a1fdb8f69aba35f746%2F002A0017.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 11",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549450-1w42jsm54bs-801da3178efa74a1fdb8f69aba35f746%2F002A0031.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 12",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549460-37pocbrd02u-801da3178efa74a1fdb8f69aba35f746%2F002A0057.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 13",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424549477-9zpt2vi99hk-801da3178efa74a1fdb8f69aba35f746%2F59+Pittsburg002A0080.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 14",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577630-1ufxgm15jtg-801da3178efa74a1fdb8f69aba35f746%2FDJI_0157.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 15",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577632-87mng4meywt-801da3178efa74a1fdb8f69aba35f746%2FDJI_0162.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 16",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577644-avw6p5l0hkv-801da3178efa74a1fdb8f69aba35f746%2FDJI_0166.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 17",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577636-6jdnsp6yajy-801da3178efa74a1fdb8f69aba35f746%2FDJI_0164.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 18",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577634-07dwddzzcxea-801da3178efa74a1fdb8f69aba35f746%2FDJI_0163.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 19",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791424577638-1w2pu3ld7z0h-801da3178efa74a1fdb8f69aba35f746%2FDJI_0165.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — property photograph 20",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791510401987-5jz8focm6pe-ebdb5399a26055b77363d7f9bbe2be0e%2FPhoto+08-10-26%2C+09+53+38.jpg",
-          "alt": "59 Pittsburgh Road, Kalkallo VIC 3064 — floor plan 1",
-          "type": "floorplan"
-        }
-      ],
-      "tours": [
-        "https://iguide.au/59_pittsburgh_rd_kalkallo_vic_au/"
-      ],
-      "inspections": [
-        {
-          "date": "2026-10-17",
-          "startTime": "11:30",
-          "endTime": "12:00"
-        }
-      ],
-      "agents": [
-        {
-          "name": "CHIRAG YADAV",
-          "phone": "0479092216",
-          "email": "chirag@krishrealestate.com.au",
-          "photo": "/images/team-chirag.webp"
-        },
-        {
-          "name": "MEENU BHAGTANA",
-          "phone": "0476308203",
-          "email": "meenu@krishrealestate.com.au",
-          "photo": "/images/team-meenu.webp"
-        }
-      ],
-      "slug": "59-pittsburgh-road-kalkallo-3064-1864076",
-      "updatedAt": "2026-10-10T18:18:35+11:00"
     },
     {
       "listingId": "1848847",
