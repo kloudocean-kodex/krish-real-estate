@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-17T00:32:57.141Z",
+  "syncedAt": "2026-10-17T05:39:04.668Z",
   "listings": [
     {
       "listingId": "1864076",
@@ -281,13 +281,7 @@
         }
       ],
       "tours": [],
-      "inspections": [
-        {
-          "date": "2026-10-17",
-          "startTime": "12:30",
-          "endTime": "13:00"
-        }
-      ],
+      "inspections": [],
       "agents": [
         {
           "name": "CHIRAG YADAV",
