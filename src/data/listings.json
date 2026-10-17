@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-16T01:26:41.633Z",
+  "syncedAt": "2026-10-17T00:32:57.141Z",
   "listings": [
     {
       "listingId": "1864076",
@@ -136,13 +136,7 @@
         "https://iguide.au/59_pittsburgh_rd_kalkallo_vic_au/",
         "https://youtu.be/vuFlC5Uoo5I"
       ],
-      "inspections": [
-        {
-          "date": "2026-10-17",
-          "startTime": "11:30",
-          "endTime": "12:00"
-        }
-      ],
+      "inspections": [],
       "agents": [
         {
           "name": "CHIRAG YADAV",
@@ -452,13 +446,7 @@
         }
       ],
       "tours": [],
-      "inspections": [
-        {
-          "date": "2026-10-17",
-          "startTime": "10:30",
-          "endTime": "11:00"
-        }
-      ],
+      "inspections": [],
       "agents": [
         {
           "name": "CHIRAG YADAV",
