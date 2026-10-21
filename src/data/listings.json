@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-18T23:19:19.097Z",
+  "syncedAt": "2026-10-21T07:45:19.269Z",
   "listings": [
     {
       "listingId": "1855355",
@@ -304,11 +304,6 @@
       ],
       "inspections": [
         {
-          "date": "2026-10-21",
-          "startTime": "17:30",
-          "endTime": "18:00"
-        },
-        {
           "date": "2026-10-24",
           "startTime": "10:30",
           "endTime": "11:00"
@@ -461,11 +456,6 @@
         "https://youtu.be/vuFlC5Uoo5I"
       ],
       "inspections": [
-        {
-          "date": "2026-10-21",
-          "startTime": "18:30",
-          "endTime": "19:00"
-        },
         {
           "date": "2026-10-24",
           "startTime": "11:30",
