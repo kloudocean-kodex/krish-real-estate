@@ -33,13 +33,7 @@
     "tours": [
       "https://youtu.be/YA5z6M-01LE"
     ],
-    "inspections": [
-      {
-        "date": "2026-10-24",
-        "startTime": "12:30",
-        "endTime": "13:00"
-      }
-    ],
+    "inspections": [],
     "agents": [
       {
         "name": "CHIRAG YADAV",
