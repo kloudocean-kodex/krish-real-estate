@@ -1,6 +1,158 @@
 {
-  "syncedAt": "2026-10-25T18:26:46.812Z",
+  "syncedAt": "2026-10-26T00:26:39.838Z",
   "listings": [
+    {
+      "listingId": "1855355",
+      "status": "active",
+      "transactionType": "sale",
+      "propertyType": "House",
+      "address": {
+        "display": "58 Hardwood Grove, Donnybrook VIC 3064",
+        "street": "58 Hardwood Grove",
+        "suburb": "Donnybrook",
+        "state": "VIC",
+        "postcode": "3064"
+      },
+      "price": {
+        "display": "ESR: $675,000 to $710,000 Carlisle Build",
+        "from": 675000
+      },
+      "beds": 4,
+      "baths": 2,
+      "cars": 2,
+      "landSize": 400,
+      "description": "Quality Carlisle Homes Residence in the Popular Olivine Estate\r\n\r\nWelcome to 58 Hardwood Grove, Donnybrook a beautifully maintained family residence, quality-built by the well-known Carlisle Homes and ideally positioned within the highly popular Olivine Estate.\r\n\r\nThoughtfully designed with generous bedrooms, multiple living areas and excellent storage, this impressive property offers comfort, space and practicality for the entire family.\r\n\r\nAt the heart of the home is an expansive open-plan living and dining area, complemented by a well-appointed kitchen featuring an island bench and convenient butler’s pantry. A separate theatre room provides the perfect space for family movie nights, relaxation or a second living zone.\r\n\r\nThe spacious master bedroom is privately positioned at the front of the home and includes a walk-in robe and ensuite. Bedrooms 2 and 4 also feature walk-in robes, while Bedroom 3 includes a built-in robe. The house is serviced by a central family bathroom and separate toilet.\r\n\r\nOutside, the covered alfresco area provides an inviting space for entertaining family and friends throughout the year.\r\n\r\nThis is a very well-looked-after property, allowing the new owner to move in and enjoy comfortable family living from day one.\r\n\r\nProperty features include:\r\n\r\n* Located in the popular Olivine Estate\r\n* Quality-built by Carlisle Homes\r\n* Four generously sized bedrooms\r\n* Master bedroom with walk-in robe and private ensuite\r\n* Walk-in robes in Bedrooms 2 and 4\r\n* Built-in robe in Bedroom 3\r\n* Spacious open-plan living and dining area\r\n* Well-appointed kitchen with island bench\r\n* Separate butler’s pantry\r\n* Dedicated theatre room\r\n* Central family bathroom\r\n* Separate toilet\r\n* Full-sized laundry with storage\r\n* Covered alfresco entertaining area\r\n* Double garage with internal access\r\n* Functional and family-friendly floor plan\r\n* Beautifully maintained and presented throughout\r\n\r\nConveniently positioned within the highly regarded Olivine Estate, the property provides easy access to local schools, childcare facilities, parks, public transport and shopping amenities.\r\n\r\nWhether you are searching for a spacious family home or a quality investment opportunity, 58 Hardwood Grove, Donnybrook is worthy of your inspection.\r\n\r\nFor further information or to arrange an inspection, please contact:\r\n\r\nChirag Yadav\r\nDirector – Licensed Estate Agent\r\nKrish Real Estate\r\nPhone: 0479 092 216\r\n\r\nDisclaimer: \r\nAll information contained in this advertisement has been provided to Krish Real Estate by the property owner or other sources considered reliable. While every effort has been made to ensure its accuracy, no representation or warranty is given. Photographs, floor plans, measurements, boundaries, distances and descriptions are indicative and provided for illustrative purposes only. They may not be to scale and may contain items that are not included with the property. Interested parties should make their own enquiries, conduct independent inspections and obtain appropriate professional advice before making any decision.",
+      "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791156199381-frs35wjmlpw-7a5a225b97c929474d0e49eda5006abc%2FPropertyPriceStatement-58_HARDWOOD_GROVE-DONNYBROOK-VIC_3064.pdf",
+      "features": [],
+      "media": [
+        {
+          "url": "/images/properties/1855355-0-8d87326d.webp",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 1",
+          "type": "image",
+          "srcSet": "/images/properties/1855355-0-8d87326d-360.webp 360w, /images/properties/1855355-0-8d87326d-720.webp 720w, /images/properties/1855355-0-8d87326d-1080.webp 1080w"
+        },
+        {
+          "url": "/images/properties/1855355-1-be01a3e1.webp",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 2",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217798-r1be2l1rnws-7df52906fa22dbce77072e9d2d175961%2F1G3A8010.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 3",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217803-foi4hsdw5e7-7df52906fa22dbce77072e9d2d175961%2F1G3A8025.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 4",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217795-u64hul86nhq-7df52906fa22dbce77072e9d2d175961%2F1G3A8002.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 5",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217797-gd45wa2et55-7df52906fa22dbce77072e9d2d175961%2F1G3A8006.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 6",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217800-y5msbibv0up-7df52906fa22dbce77072e9d2d175961%2F1G3A8021.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 7",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217806-u7nwm5p6q19-7df52906fa22dbce77072e9d2d175961%2F1G3A8029.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 8",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217779-9nwybm57kae-7df52906fa22dbce77072e9d2d175961%2F1G3A7970.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 9",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035228178-g4ud8d3nvv6-7df52906fa22dbce77072e9d2d175961%2FPhoto+20-09-26%2C+14+19+33+%281%29.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 10",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035228181-sjebh5jl8yq-7df52906fa22dbce77072e9d2d175961%2FPhoto+20-09-26%2C+14+19+33.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 11",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035228180-2haxoa12t5h-7df52906fa22dbce77072e9d2d175961%2FPhoto+20-09-26%2C+14+19+33+%282%29.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 12",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217781-jnc4nr3itkl-7df52906fa22dbce77072e9d2d175961%2F1G3A7974.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 13",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217791-fpj2dbifyx-7df52906fa22dbce77072e9d2d175961%2F1G3A7993.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 14",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217812-cou1tyg9srq-7df52906fa22dbce77072e9d2d175961%2Freal_estate_4k_1.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 15",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035241056-tqsuubhhkyi-7df52906fa22dbce77072e9d2d175961%2FDJI_0639.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 16",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035241053-s704ln2t1oq-7df52906fa22dbce77072e9d2d175961%2FDJI_0638.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 17",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035241047-dz2lm8fyi5g-7df52906fa22dbce77072e9d2d175961%2FDJI_0635.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 18",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035241049-lyqaih9r8er-7df52906fa22dbce77072e9d2d175961%2FDJI_0636.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 19",
+          "type": "image"
+        },
+        {
+          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035260995-h8pezkahc7p-36f8d4aaefd8bb963386713a4c3ee36b%2FPhoto+21-09-26%2C+10+37+40.jpg",
+          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — floor plan 1",
+          "type": "floorplan"
+        }
+      ],
+      "tours": [
+        "https://youtu.be/YA5z6M-01LE"
+      ],
+      "inspections": [
+        {
+          "date": "2026-10-29",
+          "startTime": "17:30",
+          "endTime": "18:00"
+        },
+        {
+          "date": "2026-10-31",
+          "startTime": "12:30",
+          "endTime": "13:00"
+        }
+      ],
+      "agents": [
+        {
+          "name": "CHIRAG YADAV",
+          "phone": "0479092216",
+          "email": "chirag@krishrealestate.com.au",
+          "photo": "/images/team-chirag.webp"
+        }
+      ],
+      "slug": "58-hardwood-grove-donnybrook-3064-1855355",
+      "updatedAt": "2026-10-26T09:05:18+11:00"
+    },
     {
       "listingId": "1864076",
       "status": "active",
@@ -139,13 +291,13 @@
       "inspections": [
         {
           "date": "2026-10-28",
-          "startTime": "21:30",
-          "endTime": "22:00"
+          "startTime": "18:30",
+          "endTime": "19:00"
         },
         {
           "date": "2026-10-31",
-          "startTime": "14:30",
-          "endTime": "15:00"
+          "startTime": "11:30",
+          "endTime": "12:00"
         }
       ],
       "agents": [
@@ -163,159 +315,7 @@
         }
       ],
       "slug": "59-pittsburgh-road-kalkallo-3064-1864076",
-      "updatedAt": "2026-10-26T04:47:39+11:00"
-    },
-    {
-      "listingId": "1855355",
-      "status": "active",
-      "transactionType": "sale",
-      "propertyType": "House",
-      "address": {
-        "display": "58 Hardwood Grove, Donnybrook VIC 3064",
-        "street": "58 Hardwood Grove",
-        "suburb": "Donnybrook",
-        "state": "VIC",
-        "postcode": "3064"
-      },
-      "price": {
-        "display": "ESR: $675,000 to $710,000 Carlisle Build",
-        "from": 675000
-      },
-      "beds": 4,
-      "baths": 2,
-      "cars": 2,
-      "landSize": 400,
-      "description": "Quality Carlisle Homes Residence in the Popular Olivine Estate\r\n\r\nWelcome to 58 Hardwood Grove, Donnybrook a beautifully maintained family residence, quality-built by the well-known Carlisle Homes and ideally positioned within the highly popular Olivine Estate.\r\n\r\nThoughtfully designed with generous bedrooms, multiple living areas and excellent storage, this impressive property offers comfort, space and practicality for the entire family.\r\n\r\nAt the heart of the home is an expansive open-plan living and dining area, complemented by a well-appointed kitchen featuring an island bench and convenient butler’s pantry. A separate theatre room provides the perfect space for family movie nights, relaxation or a second living zone.\r\n\r\nThe spacious master bedroom is privately positioned at the front of the home and includes a walk-in robe and ensuite. Bedrooms 2 and 4 also feature walk-in robes, while Bedroom 3 includes a built-in robe. The house is serviced by a central family bathroom and separate toilet.\r\n\r\nOutside, the covered alfresco area provides an inviting space for entertaining family and friends throughout the year.\r\n\r\nThis is a very well-looked-after property, allowing the new owner to move in and enjoy comfortable family living from day one.\r\n\r\nProperty features include:\r\n\r\n* Located in the popular Olivine Estate\r\n* Quality-built by Carlisle Homes\r\n* Four generously sized bedrooms\r\n* Master bedroom with walk-in robe and private ensuite\r\n* Walk-in robes in Bedrooms 2 and 4\r\n* Built-in robe in Bedroom 3\r\n* Spacious open-plan living and dining area\r\n* Well-appointed kitchen with island bench\r\n* Separate butler’s pantry\r\n* Dedicated theatre room\r\n* Central family bathroom\r\n* Separate toilet\r\n* Full-sized laundry with storage\r\n* Covered alfresco entertaining area\r\n* Double garage with internal access\r\n* Functional and family-friendly floor plan\r\n* Beautifully maintained and presented throughout\r\n\r\nConveniently positioned within the highly regarded Olivine Estate, the property provides easy access to local schools, childcare facilities, parks, public transport and shopping amenities.\r\n\r\nWhether you are searching for a spacious family home or a quality investment opportunity, 58 Hardwood Grove, Donnybrook is worthy of your inspection.\r\n\r\nFor further information or to arrange an inspection, please contact:\r\n\r\nChirag Yadav\r\nDirector – Licensed Estate Agent\r\nKrish Real Estate\r\nPhone: 0479 092 216\r\n\r\nDisclaimer: \r\nAll information contained in this advertisement has been provided to Krish Real Estate by the property owner or other sources considered reliable. While every effort has been made to ensure its accuracy, no representation or warranty is given. Photographs, floor plans, measurements, boundaries, distances and descriptions are indicative and provided for illustrative purposes only. They may not be to scale and may contain items that are not included with the property. Interested parties should make their own enquiries, conduct independent inspections and obtain appropriate professional advice before making any decision.",
-      "statementOfInformation": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1791156199381-frs35wjmlpw-7a5a225b97c929474d0e49eda5006abc%2FPropertyPriceStatement-58_HARDWOOD_GROVE-DONNYBROOK-VIC_3064.pdf",
-      "features": [],
-      "media": [
-        {
-          "url": "/images/properties/1855355-0-8d87326d.webp",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 1",
-          "type": "image",
-          "srcSet": "/images/properties/1855355-0-8d87326d-360.webp 360w, /images/properties/1855355-0-8d87326d-720.webp 720w, /images/properties/1855355-0-8d87326d-1080.webp 1080w"
-        },
-        {
-          "url": "/images/properties/1855355-1-be01a3e1.webp",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 2",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217798-r1be2l1rnws-7df52906fa22dbce77072e9d2d175961%2F1G3A8010.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 3",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217803-foi4hsdw5e7-7df52906fa22dbce77072e9d2d175961%2F1G3A8025.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 4",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217795-u64hul86nhq-7df52906fa22dbce77072e9d2d175961%2F1G3A8002.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 5",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217797-gd45wa2et55-7df52906fa22dbce77072e9d2d175961%2F1G3A8006.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 6",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217800-y5msbibv0up-7df52906fa22dbce77072e9d2d175961%2F1G3A8021.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 7",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217806-u7nwm5p6q19-7df52906fa22dbce77072e9d2d175961%2F1G3A8029.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 8",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217779-9nwybm57kae-7df52906fa22dbce77072e9d2d175961%2F1G3A7970.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 9",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035228178-g4ud8d3nvv6-7df52906fa22dbce77072e9d2d175961%2FPhoto+20-09-26%2C+14+19+33+%281%29.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 10",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035228181-sjebh5jl8yq-7df52906fa22dbce77072e9d2d175961%2FPhoto+20-09-26%2C+14+19+33.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 11",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035228180-2haxoa12t5h-7df52906fa22dbce77072e9d2d175961%2FPhoto+20-09-26%2C+14+19+33+%282%29.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 12",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217781-jnc4nr3itkl-7df52906fa22dbce77072e9d2d175961%2F1G3A7974.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 13",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217791-fpj2dbifyx-7df52906fa22dbce77072e9d2d175961%2F1G3A7993.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 14",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035217812-cou1tyg9srq-7df52906fa22dbce77072e9d2d175961%2Freal_estate_4k_1.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 15",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035241056-tqsuubhhkyi-7df52906fa22dbce77072e9d2d175961%2FDJI_0639.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 16",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035241053-s704ln2t1oq-7df52906fa22dbce77072e9d2d175961%2FDJI_0638.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 17",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035241047-dz2lm8fyi5g-7df52906fa22dbce77072e9d2d175961%2FDJI_0635.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 18",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035241049-lyqaih9r8er-7df52906fa22dbce77072e9d2d175961%2FDJI_0636.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — property photograph 19",
-          "type": "image"
-        },
-        {
-          "url": "https://s3-us-west-2.amazonaws.com/eagleagent-orig/uploads%2F1790035260995-h8pezkahc7p-36f8d4aaefd8bb963386713a4c3ee36b%2FPhoto+21-09-26%2C+10+37+40.jpg",
-          "alt": "58 Hardwood Grove, Donnybrook VIC 3064 — floor plan 1",
-          "type": "floorplan"
-        }
-      ],
-      "tours": [
-        "https://youtu.be/YA5z6M-01LE"
-      ],
-      "inspections": [
-        {
-          "date": "2026-10-29",
-          "startTime": "20:30",
-          "endTime": "21:00"
-        },
-        {
-          "date": "2026-10-31",
-          "startTime": "15:30",
-          "endTime": "16:00"
-        }
-      ],
-      "agents": [
-        {
-          "name": "CHIRAG YADAV",
-          "phone": "0479092216",
-          "email": "chirag@krishrealestate.com.au",
-          "photo": "/images/team-chirag.webp"
-        }
-      ],
-      "slug": "58-hardwood-grove-donnybrook-3064-1855355",
-      "updatedAt": "2026-10-26T04:47:05+11:00"
+      "updatedAt": "2026-10-26T09:05:04+11:00"
     },
     {
       "listingId": "1848847",
@@ -469,13 +469,13 @@
       "inspections": [
         {
           "date": "2026-10-28",
-          "startTime": "20:30",
-          "endTime": "21:00"
+          "startTime": "17:30",
+          "endTime": "18:00"
         },
         {
           "date": "2026-10-31",
-          "startTime": "13:30",
-          "endTime": "14:00"
+          "startTime": "10:30",
+          "endTime": "11:00"
         }
       ],
       "agents": [
@@ -487,7 +487,7 @@
         }
       ],
       "slug": "78-huntington-drive-craigieburn-3064-1848847",
-      "updatedAt": "2026-10-26T04:46:33+11:00"
+      "updatedAt": "2026-10-26T09:04:47+11:00"
     },
     {
       "listingId": "1847091",
