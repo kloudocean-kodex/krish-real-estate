@@ -75,13 +75,7 @@
       }
     ],
     "tours": [],
-    "inspections": [
-      {
-        "date": "2026-11-07",
-        "startTime": "13:30",
-        "endTime": "13:45"
-      }
-    ],
+    "inspections": [],
     "agents": [
       {
         "name": "CHIRAG YADAV",
